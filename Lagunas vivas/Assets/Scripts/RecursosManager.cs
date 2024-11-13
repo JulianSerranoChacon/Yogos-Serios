@@ -5,11 +5,6 @@ using UnityEngine;
 
 public class RecursosManager : MonoBehaviour
 {
-    #region constantes
-    const double MAX_REC = 100; //La constante que guarda el máximo valor que puede tomar cualquiera de los recursos
-    const int DINERO_INICIAL = 150; //La constante que guarda el dinero con el que empieza el jugador. Podemos cambiarlo a una variable si queremos que esta varíe según la dificultad
-    const float PORCENTAJE_INICIAL = 0.6f; //La constante por la que se multiplica los recursos para inicializarlos
-    #endregion
     #region variables
     //Cantidad de dinero
     int _dinero;
@@ -19,13 +14,18 @@ public class RecursosManager : MonoBehaviour
     double _fauna;
     #endregion
 
+    void Start()
+    {
+        GameManager.Instance.AssignRecursosManager(this);
+        init();
+    }
     //Método al que se llama para inicializar los recursos
     public void init()
     {
-        _dinero = DINERO_INICIAL;
-        _felicidad = MAX_REC * PORCENTAJE_INICIAL;
-        _ecosistema = MAX_REC * PORCENTAJE_INICIAL;
-        _fauna = MAX_REC * PORCENTAJE_INICIAL;
+        _dinero = Constants.DINERO_INICIAL;
+        _felicidad = Constants.MAX_REC * Constants.PORCENTAJE_INICIAL;
+        _ecosistema = Constants.MAX_REC * Constants.PORCENTAJE_INICIAL;
+        _fauna = Constants.MAX_REC * Constants.PORCENTAJE_INICIAL;
     }
 
     public void AddToFelicidad(double x)

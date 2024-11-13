@@ -1,22 +1,24 @@
 public class Evento
 {
     #region atributos
-    struct Opcion
+     struct Opcion
     {
-        string _textOpcion;
-        int _din;
-        double _eco;
-        double _faun;
-        double _feli;
+        public string _textOpcion;
+        public int _din;
+        public double _eco;
+        public double _faun;
+        public double _feli;
     }
     Opcion[] opciones;      //Un array con todas las opciones que puede seleccionar el jugador junto a sus consecuencias
     string _texto;           //Un string con el texto que apaercerá en pantalla, explicando el evento
+    public int _numOpciones;
     #endregion
 
     public Evento(string texto, int numOpc, string[] textOpciones, int[] din, double[] eco, double[] faun, double[] feli)
     {
         opciones = new Opcion[numOpc];
         _texto = texto;
+        _numOpciones = numOpc;
         for(int i = 0; i < numOpc; i++)
         {
             opciones[i]._textOpcion = textOpciones[i];
