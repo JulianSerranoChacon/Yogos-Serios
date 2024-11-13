@@ -34,4 +34,8 @@ public class GameManager : MonoBehaviour
     {
         _eventManager.NewEvent();
     }
+    void Start()
+    {
+        _eventManager.NewEvent();
+    }
 }

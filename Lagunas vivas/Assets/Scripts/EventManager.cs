@@ -15,10 +15,13 @@ public class EventManager : MonoBehaviour
 
     Evento evActual;
     #region Principio
+    void Awake()
+    {
+        getEventos();       
+    }
     void Start()
     {
         GameManager.Instance.AssignEventManager(this);
-        getEventos();
         _recursosManager = GameManager.Instance.getResMan();
     }
 
@@ -61,10 +64,7 @@ public class EventManager : MonoBehaviour
                 _listaEventos[i] = new Evento(textoPrincipal, numOpciones, textOp, din, eco, faun, feli);
             }
         }
-        rd.Close();
-
-
-        NewEvent();
+        rd.Close();        
     }
     #endregion
     //Método mediante el que elige un evento aleatorio de los que tiene en su lista de eventos
