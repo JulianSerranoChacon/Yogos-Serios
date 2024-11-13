@@ -22,8 +22,16 @@ public class GameManager : MonoBehaviour
         _recursosManager = x;
     }
     #endregion
+    #region recursos/variables
     #region references
     EventManager _eventManager;
     RecursosManager _recursosManager;
-    #endregion       
+    public RecursosManager getResMan() { return _recursosManager; }
+    #endregion
+    public bool EnJuego = true;
+    #endregion
+    public void GenerateNewEvent()
+    {
+        _eventManager.NewEvent();
+    }
 }

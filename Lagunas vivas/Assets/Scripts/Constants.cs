@@ -8,4 +8,6 @@ public class Constants
     public const float PORCENTAJE_INICIAL = 0.6f;
     //Constante que guarda la dirección al archivo para leer todos los eventos
     public const string EVENT_DIR = "/Jsons/ListaEventos.txt";
+    //COnstante que guarde el número máximo de opciones que puede tener un evento
+    public const int MAX_OPT = 4;
 }

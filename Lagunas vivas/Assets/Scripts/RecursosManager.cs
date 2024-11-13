@@ -48,4 +48,13 @@ public class RecursosManager : MonoBehaviour
     {
         return _dinero >0 && _ecosistema >0 && _fauna > 0 && _felicidad > 0;
     }
+
+    //Método TEMPORAL para renderizar por consola los atributos
+    public void DebugStats()
+    {
+        Debug.Log("Dinero: " + _dinero);
+        Debug.Log("Felicidad: " + _felicidad);
+        Debug.Log("Ecosistema: " + _ecosistema);
+        Debug.Log("Fauna: " + _fauna);
+    }
 }
