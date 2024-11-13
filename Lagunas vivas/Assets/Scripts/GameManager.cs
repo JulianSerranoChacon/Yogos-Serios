@@ -30,6 +30,15 @@ public class GameManager : MonoBehaviour
     #endregion
     public bool EnJuego = true;
     #endregion
+    public void HandleClick(GameObject clickedObject)
+    {
+        ClickeableObject clickeable = clickedObject.GetComponent<ClickeableObject>();
+
+        if (clickeable != null)
+        {
+            Debug.Log("Objeto clickeable detectado");
+        }
+    }
     public void GenerateNewEvent()
     {
         _eventManager.NewEvent();
