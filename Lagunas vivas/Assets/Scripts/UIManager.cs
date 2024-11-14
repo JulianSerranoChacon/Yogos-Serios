@@ -24,12 +24,14 @@ public class UIManager : MonoBehaviour
         _sliderEcosistema.fillAmount = (float)_recursosManager.getEcosistema() / (float)Constants.MAX_REC;
         _sliderFauna.fillAmount = (float)_recursosManager.getFauna() / (float)Constants.MAX_REC;
     }
-
+    private void OnEnable()
+    {
+        _gameManager = GameManager.Instance();
+        _gameManager.AssignUIManager(this);
+    }
     // Start is called before the first frame update
     void Start()
     {
-        _gameManager = GameManager.Instance;
-        _gameManager.AssignUIManager(this);
         _recursosManager = _gameManager.getResMan();
         ActualizarInterfaz();
     }

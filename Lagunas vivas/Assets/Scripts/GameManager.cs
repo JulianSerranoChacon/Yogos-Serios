@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     #region Instance
     static private GameManager _instance;
-    public GameManager Instance() {
-        if (_instance == null)
-            _instance = this;
+    static public GameManager Instance() {
         return _instance;}
     #endregion
     #region Asignaciones
+    void Awake()
+    {
+        _instance = this;
+    } 
     public void AssignEventManager(EventManager x)
     {
         _eventManager = x;
