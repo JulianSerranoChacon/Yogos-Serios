@@ -21,8 +21,7 @@ public class EventManager : MonoBehaviour
     #region Principio
     void Start()
     {
-        //getEventos();
-        GameManager.Instance.AssignEventManager(this);
+        GameManager.Instance.AssignEventManager(this);        
     }
 
     public void setEvento(string e)

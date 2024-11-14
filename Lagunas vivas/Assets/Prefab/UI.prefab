@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1684791703512412371}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: CooseOpcion
         m_Mode: 3
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1684791703512412371}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: CooseOpcion
         m_Mode: 3
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1684791703512412371}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: CooseOpcion
         m_Mode: 3
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1684791703512412371}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: CooseOpcion
         m_Mode: 3
@@ -1862,6 +1862,7 @@ GameObject:
   - component: {fileID: 5048594339678314141}
   - component: {fileID: 623236674190539445}
   - component: {fileID: 5144968016935637345}
+  - component: {fileID: 1684791703512412371}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1953,6 +1954,31 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1684791703512412371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793255574757904402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fe90148bbe3f04faec2a00d92aa470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventFrame: {fileID: 5718890232010278353}
+  TextoPrincipal: {fileID: 2242324564468424020}
+  Opciones:
+  - {fileID: 4869220283679172754}
+  - {fileID: 2702020208540985669}
+  - {fileID: 691865315729089936}
+  - {fileID: 755590191229037652}
+  TextosOpciones:
+  - {fileID: 4923628422186059995}
+  - {fileID: 4854975778469928028}
+  - {fileID: 5101185070552979957}
+  - {fileID: 5935642841715086785}
+  evento: 
 --- !u!1 &7083912533685891277
 GameObject:
   m_ObjectHideFlags: 0
