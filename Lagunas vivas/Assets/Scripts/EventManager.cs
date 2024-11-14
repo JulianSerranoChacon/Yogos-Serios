@@ -15,6 +15,7 @@ public class EventManager : MonoBehaviour
     [SerializeField] TMP_Text TextoPrincipal;
     [SerializeField] GameObject[] Opciones;
     [SerializeField] TMP_Text[] TextosOpciones;
+    [SerializeField] string evento;
 
     Evento evActual;
     #region Principio
@@ -29,16 +30,17 @@ public class EventManager : MonoBehaviour
     {
         _recursosManager = GameManager.Instance.getResMan();
         _uiManager = GameManager.Instance.getUIManager();
-        string file = Application.dataPath + Constants.EVENT_DIR;
+        string file = Application.dataPath + Constants.EVENT_DIR + evento + ".txt"; 
+
         StreamReader rd = new StreamReader(file);
         if (File.Exists(file))
         {
             string aux;
             aux = rd.ReadLine();
             int numEventos = int.Parse(aux);
-            _listaEventos = new Evento[numEventos];           
+            _listaEventos = new Evento[numEventos];
 
-            for(int i = 0; i < numEventos; i++)
+            for (int i = 0; i < numEventos; i++)
             {
                 string textoPrincipal = rd.ReadLine();
                 aux = rd.ReadLine();
@@ -49,7 +51,7 @@ public class EventManager : MonoBehaviour
                 double[] faun = new double[numOpciones];
                 double[] feli = new double[numOpciones];
 
-                for(int j = 0; j < numOpciones; j++)
+                for (int j = 0; j < numOpciones; j++)
                 {
                     textOp[j] = rd.ReadLine();
                     aux = rd.ReadLine();
@@ -65,6 +67,8 @@ public class EventManager : MonoBehaviour
                 _listaEventos[i] = new Evento(textoPrincipal, numOpciones, textOp, din, eco, faun, feli);
             }
         }
+        else
+            Debug.Log("no existe el evento");
         rd.Close();        
     }
     #endregion

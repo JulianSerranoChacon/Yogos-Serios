@@ -13,7 +13,11 @@ public class GameManager : MonoBehaviour
     #region Asignaciones
     void OnEnable()
     {
+        if (Instance != null)
+            Destroy(gameObject);
+
         _instance = this;
+        DontDestroyOnLoad(gameObject);
     } 
     public void AssignEventManager(EventManager x)
     {
@@ -58,5 +62,6 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        _UIManager.ActualizarInterfaz();    
     }
 }

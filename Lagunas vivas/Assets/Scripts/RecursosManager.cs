@@ -38,18 +38,22 @@ public class RecursosManager : MonoBehaviour
     public void AddToFelicidad(double x)
     {
         _felicidad += x;
+        if (_felicidad > Constants.MAX_REC) _felicidad = Constants.MAX_REC;
     }
     public void AddToEcosistema(double x)
     {
         _ecosistema += x;
+        if (_ecosistema > Constants.MAX_REC) _ecosistema = Constants.MAX_REC;
     }
     public void AddToFauna(double x)
     {
         _fauna += x;
+        if (_fauna > Constants.MAX_REC) _fauna = Constants.MAX_REC;
     }
     public void AddToDinero(int x)
     {
         _dinero += x;
+        if (_dinero > Constants.MAX_DINERO) _dinero = (int)Constants.MAX_DINERO;
     }
     public bool CheckIfGameOver()
     {
