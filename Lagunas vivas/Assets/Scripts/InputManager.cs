@@ -15,12 +15,20 @@ public class InputManager : MonoBehaviour
 
     public void OnClick(InputAction.CallbackContext context)
     {
-        if(!context.canceled) return;
-
-        var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
-        if (rayHit.collider)
+        if (context.started)
         {
-            GameManager.Instance.HandleClick(rayHit.collider.gameObject);
+            var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue())); if (rayHit.collider)
+            {
+                GameManager.Instance.sendEvent(rayHit.collider.gameObject);
+            }
+        }
+        else if (context.canceled)
+        {
+            var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+            if (rayHit.collider)
+            {
+                GameManager.Instance.HandleClick(rayHit.collider.gameObject);
+            }
         }
     }
 }

@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ClickeableObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Constants.EVENTOS_ENUM evento;
 
-    // Update is called once per frame
-    void Update()
+    public void enviaEvento()
     {
-        
+        GameManager.Instance.setEvent(Constants.EVENTOS[(int)evento]);
     }
 }

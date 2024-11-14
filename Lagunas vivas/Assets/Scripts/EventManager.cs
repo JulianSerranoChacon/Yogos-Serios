@@ -21,12 +21,17 @@ public class EventManager : MonoBehaviour
     #region Principio
     void Start()
     {
-        getEventos();
+        //getEventos();
         GameManager.Instance.AssignEventManager(this);
     }
 
+    public void setEvento(string e)
+    {
+        evento = e;
+    }
+
     //Método que lee del archivo de texto donde están todos los eventos y crea una lista con todos ellos
-    void getEventos()
+    public void getEventos()
     {
         _recursosManager = GameManager.Instance.getResMan();
         _uiManager = GameManager.Instance.getUIManager();

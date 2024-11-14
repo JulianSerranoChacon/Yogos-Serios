@@ -1,3 +1,5 @@
+using System;
+
 public class Constants
 {
     //La constante que guarda el máximo valor que puede tomar cualquiera de los recursos
@@ -12,4 +14,11 @@ public class Constants
     public const string EVENT_DIR = "/Eventos/";
     //COnstante que guarde el número máximo de opciones que puede tener un evento
     public const int MAX_OPT = 4;
+
+    //Eventos
+    public const int NUM_EVENTOS = 2;
+    public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA};
+
+    public static string[] EVENTOS = new string[]{ "ListaEventos", "Fiesta" };
+
 }

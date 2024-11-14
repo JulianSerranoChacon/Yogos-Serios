@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class GameManager : MonoBehaviour
     { 
         _UIManager = x;
     }
+    public void setEvent(string s)
+    {
+        _eventManager.setEvento(s);
+    }
     #endregion
     #region recursos/variables
     #region references
@@ -41,6 +46,12 @@ public class GameManager : MonoBehaviour
     #endregion
     public bool EnJuego = true;
     #endregion
+    public void sendEvent(GameObject clickedObject)
+    {
+        ClickeableObject clickeable = clickedObject.GetComponent<ClickeableObject>();
+        clickeable.enviaEvento();
+        _eventManager.getEventos();
+    }
     public void HandleClick(GameObject clickedObject)
     {
         ClickeableObject clickeable = clickedObject.GetComponent<ClickeableObject>();
