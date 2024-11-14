@@ -18,9 +18,12 @@ public class UIManager : MonoBehaviour
     #endregion
 
     public void ActualizarInterfaz()
-    {        
-        if(_recursosManager == null)
+    {
+        if (_recursosManager == null)
             _recursosManager = _gameManager.getResMan();
+        
+        if(_recursosManager == null)
+            return;
 
         _sliderDinero.fillAmount = _recursosManager.getDinero() / (float)Constants.MAX_DINERO;
         _sliderFelicidad.fillAmount = (float)_recursosManager.getFelicidad() / (float)Constants.MAX_REC;
