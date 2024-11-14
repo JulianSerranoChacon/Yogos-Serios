@@ -6,11 +6,10 @@ public class GameManager : MonoBehaviour
 {
     #region Instance
     static private GameManager _instance;
-    static public GameManager Instance { get { return _instance; } }
-    void Awake()
-    {
-        _instance = GetComponent<GameManager>();
-    }
+    public GameManager Instance() {
+        if (_instance == null)
+            _instance = this;
+        return _instance;}
     #endregion
     #region Asignaciones
     public void AssignEventManager(EventManager x)
