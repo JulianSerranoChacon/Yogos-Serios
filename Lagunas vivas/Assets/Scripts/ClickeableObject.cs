@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ClickeableObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] int numScene = -1; // -1 si no quieres que cambie de escena sino que sea solo un evento
 
-    // Update is called once per frame
-    void Update()
+    public int getNumScene()
     {
-        
+        return numScene;
     }
 }
