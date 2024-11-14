@@ -1,0 +1,5 @@
+"Lagunas vivas"/*.unity merge = unityamlmerge
+"Lagunas vivas"/*.prefab merge = unityamlmerge
+"Lagunas vivas"/*.asset merge = unityamlmerge
+"Lagunas vivas"/*.mat merge = unityamlmerge
+"Lagunas vivas"/*.meta merge = unityamlmerge
