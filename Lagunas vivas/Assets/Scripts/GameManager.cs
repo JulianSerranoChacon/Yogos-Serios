@@ -62,6 +62,6 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        _UIManager.ActualizarInterfaz();    
+        if(_UIManager != null)_UIManager.ActualizarInterfaz();    
     }
 }
