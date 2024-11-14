@@ -19,6 +19,7 @@ public class Constants
     public const int NUM_EVENTOS = 2;
     public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA};
 
-    public static string[] EVENTOS = new string[]{ "ListaEventos", "Fiesta" };
+    public static string[] EVENTOS = new string[]{ "ListaEventos" +
+        "", "Fiesta" };
 
 }
