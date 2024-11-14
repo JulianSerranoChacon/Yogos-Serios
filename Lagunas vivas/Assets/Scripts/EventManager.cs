@@ -116,8 +116,7 @@ public class EventManager : MonoBehaviour
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())
             {
-                EventFrame.SetActive(false);
-                _recursosManager.DebugStats();
+                EventFrame.SetActive(false);                
             }
             else
             {
