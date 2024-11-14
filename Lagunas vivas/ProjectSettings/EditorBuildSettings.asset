@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 652a18e73c878d24f8dec4b21775389d
   - enabled: 1
+    path: Assets/Scenes/Mapa.unity
+    guid: a24b9528d3f1317439382dea07ce0157
+  - enabled: 1
     path: Assets/Scenes/LaGrande.unity
     guid: 4bba1ea4a247fd44c859b7d0cff077eb
   - enabled: 1
