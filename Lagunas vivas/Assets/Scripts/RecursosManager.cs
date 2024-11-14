@@ -20,13 +20,10 @@ public class RecursosManager : MonoBehaviour
     public double getEcosistema() { return _ecosistema; }
     public double getFauna() { return _fauna; }
     #endregion
-    private void OnEnable()
-    {
-        GameManager.Instance().AssignRecursosManager(this);
-    }
 
     void Start()
     {
+        GameManager.Instance.AssignRecursosManager(this);
         init();
     }
     //Método al que se llama para inicializar los recursos

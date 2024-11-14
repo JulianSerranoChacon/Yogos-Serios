@@ -20,7 +20,7 @@ public class InputManager : MonoBehaviour
         var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
         if (rayHit.collider)
         {
-            GameManager.Instance().HandleClick(rayHit.collider.gameObject);
+            GameManager.Instance.HandleClick(rayHit.collider.gameObject);
         }
     }
 }

@@ -7,11 +7,10 @@ public class GameManager : MonoBehaviour
 {
     #region Instance
     static private GameManager _instance;
-    static public GameManager Instance() {
-        return _instance;}
+    static public GameManager Instance { get { return _instance; } }
     #endregion
     #region Asignaciones
-    void Awake()
+    void OnEnable()
     {
         _instance = this;
     } 

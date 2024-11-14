@@ -18,20 +18,17 @@ public class EventManager : MonoBehaviour
 
     Evento evActual;
     #region Principio
-    void Awake()
-    {
-        getEventos();       
-    }
     void Start()
     {
-        GameManager.Instance().AssignEventManager(this);
-        _recursosManager = GameManager.Instance().getResMan();
-        _uiManager = GameManager.Instance().getUIManager();
+        getEventos();
+        GameManager.Instance.AssignEventManager(this);
     }
 
     //Método que lee del archivo de texto donde están todos los eventos y crea una lista con todos ellos
     void getEventos()
     {
+        _recursosManager = GameManager.Instance.getResMan();
+        _uiManager = GameManager.Instance.getUIManager();
         string file = Application.dataPath + Constants.EVENT_DIR;
         StreamReader rd = new StreamReader(file);
         if (File.Exists(file))
@@ -101,7 +98,7 @@ public class EventManager : MonoBehaviour
     //Método al que se llama una vez se elige alguna de las opciones
     public void CooseOpcion(int i)
     {
-        if(i <= evActual._numOpciones && GameManager.Instance().EnJuego)
+        if (i <= evActual._numOpciones && GameManager.Instance.EnJuego)
         {
             _recursosManager.AddToFelicidad(evActual.opciones[i]._feli);
             _recursosManager.AddToEcosistema(evActual.opciones[i]._eco);
@@ -116,7 +113,7 @@ public class EventManager : MonoBehaviour
             }
             else
             {
-                GameManager.Instance().EnJuego = false;
+                GameManager.Instance.EnJuego = false;
                 Debug.Log("HAS PERDIDO");
             }
         }
