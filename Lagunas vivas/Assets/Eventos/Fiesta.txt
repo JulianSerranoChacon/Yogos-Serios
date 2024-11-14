@@ -1,0 +1,25 @@
+2
+Unos habitantes desean celebrar una fiesta de cumpleaños en la zona de ocio de las lagunas. ¿Les dejas reservar o les niegas la petición?
+2
+Pueden realizar su fiesta de cumpleaños mientras tengan cuidado
+0
+-7
+-7
+20
+No, lo ensuciarán todo
+0
+5
+5
+-20
+El útimo cumpleaños realizado en la zona recreativa ha dejado el área llena de basura sin recoger. Hay que limpiar la zona
+2
+Pide voluntarios para realizar la limpieza
+0
+10
+10
+-15
+Contrata un servicio privado para ello
+-20
+10
+10
+0
