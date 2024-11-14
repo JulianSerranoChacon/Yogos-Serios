@@ -32,5 +32,6 @@ public class UIManager : MonoBehaviour
     {
         _gameManager = GameManager.Instance;
         _gameManager.AssignUIManager(this);
+         
     }
 }
