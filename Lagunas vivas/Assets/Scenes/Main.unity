@@ -251,6 +251,7 @@ MonoBehaviour:
   - {fileID: 160635993}
   - {fileID: 1723468328}
   - {fileID: 1558356791}
+  evento: ListaEventos
 --- !u!114 &155003520
 MonoBehaviour:
   m_ObjectHideFlags: 0
