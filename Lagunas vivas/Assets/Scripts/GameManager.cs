@@ -21,12 +21,18 @@ public class GameManager : MonoBehaviour
     {
         _recursosManager = x;
     }
+    public void AssignUIManager(UIManager x) 
+    { 
+        _UIManager = x;
+    }
     #endregion
     #region recursos/variables
     #region references
     EventManager _eventManager;
     RecursosManager _recursosManager;
+    UIManager _UIManager;
     public RecursosManager getResMan() { return _recursosManager; }
+    public UIManager getUIManager() { return _UIManager; }
     #endregion
     public bool EnJuego = true;
     #endregion

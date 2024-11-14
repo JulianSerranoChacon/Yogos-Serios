@@ -14,6 +14,13 @@ public class RecursosManager : MonoBehaviour
     double _fauna;
     #endregion
 
+    #region getters
+    public int getDinero() { return _dinero; }
+    public double getFelicidad() { return _felicidad; }
+    public double getEcosistema() { return _ecosistema; }
+    public double getFauna() { return _fauna; } 
+    #endregion
+
     void Start()
     {
         GameManager.Instance.AssignRecursosManager(this);
@@ -30,7 +37,7 @@ public class RecursosManager : MonoBehaviour
 
     public void AddToFelicidad(double x)
     {
-        _felicidad += x;        
+        _felicidad += x;
     }
     public void AddToEcosistema(double x)
     {

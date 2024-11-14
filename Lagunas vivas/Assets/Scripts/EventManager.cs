@@ -7,6 +7,7 @@ using TMPro;
 public class EventManager : MonoBehaviour
 {
     RecursosManager _recursosManager;
+    UIManager _uiManager;
     Evento[] _listaEventos;
 
     [SerializeField] TMP_Text TextoPrincipal;
@@ -23,6 +24,7 @@ public class EventManager : MonoBehaviour
     {
         GameManager.Instance.AssignEventManager(this);
         _recursosManager = GameManager.Instance.getResMan();
+        _uiManager = GameManager.Instance.getUIManager();
     }
 
     //Método que lee del archivo de texto donde están todos los eventos y crea una lista con todos ellos
@@ -102,6 +104,7 @@ public class EventManager : MonoBehaviour
             _recursosManager.AddToEcosistema(evActual.opciones[i]._eco);
             _recursosManager.AddToFauna(evActual.opciones[i]._faun);
             _recursosManager.AddToDinero(evActual.opciones[i]._din);
+            _uiManager.ActualizarInterfaz();
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())
             {
