@@ -1863,6 +1863,7 @@ GameObject:
   - component: {fileID: 623236674190539445}
   - component: {fileID: 5144968016935637345}
   - component: {fileID: 1684791703512412371}
+  - component: {fileID: 8371590434032095715}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1979,6 +1980,22 @@ MonoBehaviour:
   - {fileID: 5101185070552979957}
   - {fileID: 5935642841715086785}
   evento: 
+--- !u!114 &8371590434032095715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793255574757904402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e475c218f4fc8f6488de98822ed45dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sliderDinero: {fileID: 8650069434626304390}
+  _sliderFelicidad: {fileID: 8465207366575994367}
+  _sliderEcosistema: {fileID: 8443764976771373790}
+  _sliderFauna: {fileID: 2687317549787409852}
 --- !u!1 &7083912533685891277
 GameObject:
   m_ObjectHideFlags: 0
