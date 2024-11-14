@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
         if (clickeable != null)
         {
-            Debug.Log("Objeto clickeable detectado");
+            GenerateNewEvent();
         }
     }
     public void GenerateNewEvent()
@@ -45,6 +45,5 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        _eventManager.NewEvent();
     }
 }
