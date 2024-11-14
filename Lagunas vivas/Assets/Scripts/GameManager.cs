@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     #region recursos/variables
     #region references
     EventManager _eventManager;
-    RecursosManager _recursosManager;
+    [SerializeField]RecursosManager _recursosManager;
     UIManager _UIManager;
     public RecursosManager getResMan() { return _recursosManager; }
     public UIManager getUIManager() { return _UIManager; }
@@ -73,6 +73,6 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        _UIManager.ActualizarInterfaz();    
+        //_UIManager.ActualizarInterfaz();    
     }
 }

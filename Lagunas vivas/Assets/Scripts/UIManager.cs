@@ -19,10 +19,9 @@ public class UIManager : MonoBehaviour
 
     public void ActualizarInterfaz()
     {
-        if (_recursosManager == null)
+        if (_gameManager.getResMan() != null)
             _recursosManager = _gameManager.getResMan();
-        
-        if(_recursosManager == null)
+        else 
             return;
 
         _sliderDinero.fillAmount = _recursosManager.getDinero() / (float)Constants.MAX_DINERO;
