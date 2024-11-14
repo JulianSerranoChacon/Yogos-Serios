@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class EventManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EventManager : MonoBehaviour
     UIManager _uiManager;
     Evento[] _listaEventos;
 
+    [SerializeField] GameObject EventFrame;
     [SerializeField] TMP_Text TextoPrincipal;
     [SerializeField] GameObject[] Opciones;
     [SerializeField] TMP_Text[] TextosOpciones;
@@ -78,6 +80,7 @@ public class EventManager : MonoBehaviour
     //Void que pilla un nuevo evento y lo renderiza
     public void NewEvent()
     {
+        EventFrame.SetActive(true);
         evActual = PickRandEvent();
         TextoPrincipal.text = evActual._textoPrincipal;
         for (int i = 0; i < Constants.MAX_OPT; i++)  //Preparación de botones
@@ -108,9 +111,8 @@ public class EventManager : MonoBehaviour
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())
             {
+                EventFrame.SetActive(false);
                 _recursosManager.DebugStats();
-
-                GameManager.Instance.GenerateNewEvent();
             }
             else
             {
