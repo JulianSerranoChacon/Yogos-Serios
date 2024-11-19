@@ -593,6 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d858ee369144c41b08ab6ff2fab788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _recursosManager: {fileID: 818059294}
   EnJuego: 1
 --- !u!114 &818059294
 MonoBehaviour:

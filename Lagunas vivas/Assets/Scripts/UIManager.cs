@@ -16,15 +16,13 @@ public class UIManager : MonoBehaviour
     private GameManager _gameManager;
     private RecursosManager _recursosManager;
     #endregion
-
     public void ActualizarInterfaz()
     {
-        if (_recursosManager == null)
+        if (_gameManager.getResMan() != null)
             _recursosManager = _gameManager.getResMan();
-        
-        if(_recursosManager == null)
-            return;
+        else
 
+            return;
         _sliderDinero.fillAmount = _recursosManager.getDinero() / (float)Constants.MAX_DINERO;
         _sliderFelicidad.fillAmount = (float)_recursosManager.getFelicidad() / (float)Constants.MAX_REC;
         _sliderEcosistema.fillAmount = (float)_recursosManager.getEcosistema() / (float)Constants.MAX_REC;
