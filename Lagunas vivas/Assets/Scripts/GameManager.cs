@@ -12,14 +12,18 @@ public class GameManager : MonoBehaviour
     static public GameManager Instance { get { return _instance; } }
     #endregion
     #region Asignaciones
-    void OnEnable()
+    private void Awake()
     {
-        if (Instance != null)
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (_instance != this)
+        {
             Destroy(gameObject);
-
-        _instance = this;
-        DontDestroyOnLoad(gameObject);
-    } 
+        }
+    }
     public void AssignEventManager(EventManager x)
     {
         _eventManager = x;

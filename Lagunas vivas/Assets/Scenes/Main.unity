@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d858ee369144c41b08ab6ff2fab788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _recursosManager: {fileID: 155003518}
   EnJuego: 1
 --- !u!1 &519420028
 GameObject:
@@ -559,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0385f510c079a3d43aae1fc2b3c07f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numScene: -1
   evento: 0
 --- !u!212 &1386352472
 SpriteRenderer:
@@ -748,6 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0385f510c079a3d43aae1fc2b3c07f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numScene: -1
   evento: 1
 --- !u!212 &1796204972
 SpriteRenderer:
