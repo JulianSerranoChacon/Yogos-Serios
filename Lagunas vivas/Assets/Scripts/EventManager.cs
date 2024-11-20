@@ -105,17 +105,15 @@ public class EventManager : MonoBehaviour
     }
     //Método al que se llama una vez se elige alguna de las opciones
     public void CooseOpcion(int i)
-    {
-        Debug.Log(GameManager.Instance);
+    {        
         _recursosManager = GameManager.Instance.getResMan();
-        _uiManager = GameManager.Instance.getUIManager();
-        Debug.Log(_recursosManager == null);
+        _uiManager = GameManager.Instance.getUIManager();        
         if (i <= evActual._numOpciones && GameManager.Instance.EnJuego)
         {
             _recursosManager.AddToFelicidad(evActual.opciones[i]._feli);
             _recursosManager.AddToEcosistema(evActual.opciones[i]._eco);
             _recursosManager.AddToFauna(evActual.opciones[i]._faun);
-            _recursosManager.AddToDinero(evActual.opciones[i]._din);
+            _recursosManager.AddToDinero(evActual.opciones[i]._din);            
             _uiManager.ActualizarInterfaz();
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())

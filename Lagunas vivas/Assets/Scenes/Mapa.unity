@@ -269,7 +269,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19, y: 10, z: 1}
+  m_LocalScale: {x: 19.475, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1056642358}
@@ -515,54 +515,6 @@ Transform:
   - {fileID: 1789354389}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &732263382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 732263384}
-  - component: {fileID: 732263383}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &732263383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732263382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e475c218f4fc8f6488de98822ed45dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliderDinero: {fileID: 0}
-  _sliderFelicidad: {fileID: 0}
-  _sliderEcosistema: {fileID: 0}
-  _sliderFauna: {fileID: 0}
---- !u!4 &732263384
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732263382}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58898294, y: 1.6488593, z: -0.007664153}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818059292
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d858ee369144c41b08ab6ff2fab788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recursosManager: {fileID: 818059294}
   EnJuego: 1
 --- !u!114 &818059294
 MonoBehaviour:
@@ -1113,5 +1064,4 @@ SceneRoots:
   - {fileID: 331497436}
   - {fileID: 167104256}
   - {fileID: 1311562841}
-  - {fileID: 732263384}
   - {fileID: 818059295}

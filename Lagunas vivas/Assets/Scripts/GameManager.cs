@@ -23,14 +23,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        _recursosManager = GetComponent<RecursosManager>();
     }
     public void AssignEventManager(EventManager x)
     {
         _eventManager = x;
-    }
-    public void AssignRecursosManager(RecursosManager x)
-    {
-        _recursosManager = x;
     }
     public void AssignUIManager(UIManager x) 
     { 
@@ -74,9 +71,5 @@ public class GameManager : MonoBehaviour
     public void GenerateNewEvent()
     {
         _eventManager.NewEvent();
-    }
-    void Start()
-    {
-        _UIManager.ActualizarInterfaz();    
-    }
+    }    
 }

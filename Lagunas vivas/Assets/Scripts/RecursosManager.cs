@@ -21,9 +21,8 @@ public class RecursosManager : MonoBehaviour
     public double getFauna() { return _fauna; }
     #endregion
 
-    void Start()
-    {
-        GameManager.Instance.AssignRecursosManager(this);
+    void Awake()
+    {        
         init();
     }
     //Método al que se llama para inicializar los recursos
