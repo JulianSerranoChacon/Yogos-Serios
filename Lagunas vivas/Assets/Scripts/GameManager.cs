@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         _recursosManager = GetComponent<RecursosManager>();
+        _listImages = GetComponent<ListaImagenes>();
     }
     public void AssignEventManager(EventManager x)
     {
@@ -43,8 +44,10 @@ public class GameManager : MonoBehaviour
     EventManager _eventManager;
     RecursosManager _recursosManager;
     UIManager _UIManager;
+    ListaImagenes _listImages;
     public RecursosManager getResMan() { return _recursosManager; }
     public UIManager getUIManager() { return _UIManager; }
+    public Sprite getImageEv(int i) {  return _listImages.getImage(i); }
     #endregion
     public bool EnJuego = true;
     #endregion

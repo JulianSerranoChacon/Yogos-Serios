@@ -12,13 +12,15 @@ public class Evento
     public Opcion[] opciones;      //Un array con todas las opciones que puede seleccionar el jugador junto a sus consecuencias
     public string _textoPrincipal;           //Un string con el texto que apaercerá en pantalla, explicando el evento
     public int _numOpciones;
+    public int _mySprite;
     private Evento proxEv = null;
     #endregion
 
-    public Evento(string texto, int numOpc, string[] textOpciones, int[] din, double[] eco, double[] faun, double[] feli)
+    public Evento(string texto, int numSprite, int numOpc, string[] textOpciones, int[] din, double[] eco, double[] faun, double[] feli)
     {
         opciones = new Opcion[numOpc];
         _textoPrincipal = texto;
+        _mySprite = numSprite;
         _numOpciones = numOpc;
         for(int i = 0; i < numOpc; i++)
         {

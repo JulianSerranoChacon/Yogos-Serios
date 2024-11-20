@@ -4,6 +4,8 @@ using UnityEngine;
 using System.IO;
 using TMPro;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
+using UGUIImage = UnityEngine.UI.Image;
 
 public class EventManager : MonoBehaviour
 {
@@ -12,10 +14,12 @@ public class EventManager : MonoBehaviour
     Evento[] _listaEventos;
 
     [SerializeField] GameObject EventFrame;
+    [SerializeField] GameObject _GOImagen;
     [SerializeField] TMP_Text TextoPrincipal;
     [SerializeField] GameObject[] Opciones;
     [SerializeField] TMP_Text[] TextosOpciones;
     [SerializeField] string evento;
+    UGUIImage _imagenPrincipal;
 
     Evento evActual;
     #region Principio
@@ -24,6 +28,7 @@ public class EventManager : MonoBehaviour
         GameManager.Instance.AssignEventManager(this);        
         _recursosManager = GameManager.Instance.getResMan();
         _uiManager = GameManager.Instance.getUIManager();
+        _imagenPrincipal = _GOImagen.GetComponent<UGUIImage>();
     }
 
     public void setEvento(string e)
@@ -34,8 +39,9 @@ public class EventManager : MonoBehaviour
     private Evento createEvent(StreamReader rd)
     {
         string textoPrincipal = rd.ReadLine();
-        string aux = rd.ReadLine();
-        int numOpciones = int.Parse(aux);
+        rd.ReadLine();
+        int NumImagen = int.Parse(rd.ReadLine());
+        int numOpciones = int.Parse(rd.ReadLine());
         string[] textOp = new string[numOpciones];
         int[] din = new int[numOpciones];
         double[] eco = new double[numOpciones];
@@ -45,7 +51,7 @@ public class EventManager : MonoBehaviour
         for (int j = 0; j < numOpciones; j++)
         {
             textOp[j] = rd.ReadLine();
-            aux = rd.ReadLine();
+            string aux = rd.ReadLine();
             din[j] = int.Parse(aux);
             aux = rd.ReadLine();
             eco[j] = int.Parse(aux);
@@ -54,7 +60,7 @@ public class EventManager : MonoBehaviour
             aux = rd.ReadLine();
             feli[j] = int.Parse(aux);
         }
-        return new Evento(textoPrincipal, numOpciones, textOp, din, eco, faun, feli);
+        return new Evento(textoPrincipal, NumImagen, numOpciones, textOp, din, eco, faun, feli);
     }
     //Método que lee del archivo de texto donde están todos los eventos y crea una lista con todos ellos
     public void getEventos()
@@ -113,6 +119,14 @@ public class EventManager : MonoBehaviour
         if(ev == null) evActual = PickRandEvent();
         else evActual = ev;
         TextoPrincipal.text = evActual._textoPrincipal;
+        if (evActual._mySprite != -1)
+        {
+            _imagenPrincipal.sprite = GameManager.Instance.getImageEv(evActual._mySprite);             
+        }
+        else
+        {
+            _imagenPrincipal.sprite = null;
+        }
         for (int i = 0; i < Constants.MAX_OPT; i++)  //Preparación de botones
         {
             if(i < evActual._numOpciones)   //Si ese botón tiene que estar activo
