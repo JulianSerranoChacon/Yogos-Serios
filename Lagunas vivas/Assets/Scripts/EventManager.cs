@@ -22,6 +22,8 @@ public class EventManager : MonoBehaviour
     void Start()
     {
         GameManager.Instance.AssignEventManager(this);        
+        _recursosManager = GameManager.Instance.getResMan();
+        _uiManager = GameManager.Instance.getUIManager();
     }
 
     public void setEvento(string e)
@@ -29,11 +31,34 @@ public class EventManager : MonoBehaviour
         evento = e;
     }
 
+    private Evento createEvent(StreamReader rd)
+    {
+        string textoPrincipal = rd.ReadLine();
+        string aux = rd.ReadLine();
+        int numOpciones = int.Parse(aux);
+        string[] textOp = new string[numOpciones];
+        int[] din = new int[numOpciones];
+        double[] eco = new double[numOpciones];
+        double[] faun = new double[numOpciones];
+        double[] feli = new double[numOpciones];
+
+        for (int j = 0; j < numOpciones; j++)
+        {
+            textOp[j] = rd.ReadLine();
+            aux = rd.ReadLine();
+            din[j] = int.Parse(aux);
+            aux = rd.ReadLine();
+            eco[j] = int.Parse(aux);
+            aux = rd.ReadLine();
+            faun[j] = int.Parse(aux);
+            aux = rd.ReadLine();
+            feli[j] = int.Parse(aux);
+        }
+        return new Evento(textoPrincipal, numOpciones, textOp, din, eco, faun, feli);
+    }
     //Método que lee del archivo de texto donde están todos los eventos y crea una lista con todos ellos
     public void getEventos()
     {
-        _recursosManager = GameManager.Instance.getResMan();
-        _uiManager = GameManager.Instance.getUIManager();
         string file = Application.dataPath + Constants.EVENT_DIR + evento + ".txt"; 
 
         StreamReader rd = new StreamReader(file);
@@ -41,35 +66,34 @@ public class EventManager : MonoBehaviour
         {
             string aux;
             aux = rd.ReadLine();
-            int numEventos = int.Parse(aux);
-            _listaEventos = new Evento[numEventos];
-
-            for (int i = 0; i < numEventos; i++)
-            {
-                string textoPrincipal = rd.ReadLine();
-                aux = rd.ReadLine();
-                int numOpciones = int.Parse(aux);
-                string[] textOp = new string[numOpciones];
-                int[] din = new int[numOpciones];
-                double[] eco = new double[numOpciones];
-                double[] faun = new double[numOpciones];
-                double[] feli = new double[numOpciones];
-
-                for (int j = 0; j < numOpciones; j++)
-                {
-                    textOp[j] = rd.ReadLine();
-                    aux = rd.ReadLine();
-                    din[j] = int.Parse(aux);
-                    aux = rd.ReadLine();
-                    eco[j] = int.Parse(aux);
-                    aux = rd.ReadLine();
-                    faun[j] = int.Parse(aux);
-                    aux = rd.ReadLine();
-                    feli[j] = int.Parse(aux);
-                }
-
-                _listaEventos[i] = new Evento(textoPrincipal, numOpciones, textOp, din, eco, faun, feli);
+            switch (aux){
+                case "r":
+                    {
+                        int numEventos = int.Parse(rd.ReadLine());
+                        _listaEventos = new Evento[numEventos];
+                        for (int i = 0; i < numEventos; i++)
+                        {
+                            _listaEventos[i] = createEvent(rd);
+                        }
+                        break;
+                    }
+                case "s":
+                    {
+                        int numEventos = int.Parse(rd.ReadLine());
+                        _listaEventos = new Evento[1];
+                        _listaEventos[0] = createEvent(rd);
+                        Evento ev = _listaEventos[0];
+                        for (int i = 1; i < numEventos; i++)
+                        {                            
+                            ev.addNextEv(createEvent(rd));
+                            ev = ev.getNextEv();
+                        }
+                        break;
+                    }
+                default:                    
+                    break;
             }
+
         }
         else
             Debug.Log("no existe el evento");
@@ -83,10 +107,11 @@ public class EventManager : MonoBehaviour
         return _listaEventos[aux];
     }
     //Void que pilla un nuevo evento y lo renderiza
-    public void NewEvent()
+    public void NewEvent(Evento ev = null)
     {
         EventFrame.SetActive(true);
-        evActual = PickRandEvent();
+        if(ev == null) evActual = PickRandEvent();
+        else evActual = ev;
         TextoPrincipal.text = evActual._textoPrincipal;
         for (int i = 0; i < Constants.MAX_OPT; i++)  //Preparación de botones
         {
@@ -118,7 +143,11 @@ public class EventManager : MonoBehaviour
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())
             {
-                EventFrame.SetActive(false);                
+                if(evActual.getNextEv() != null)
+                {
+                    NewEvent(evActual.getNextEv());
+                }
+                else EventFrame.SetActive(false);               
             }
             else
             {
