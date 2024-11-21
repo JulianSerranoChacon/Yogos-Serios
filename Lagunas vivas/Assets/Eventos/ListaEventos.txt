@@ -9,11 +9,13 @@ Ok
 0
 0
 -15
+
 No
 0
 0
 0
 5
+
 Qué quieres bajar
 Imagen
 -1
@@ -23,11 +25,13 @@ La fauna
 0
 -15
 0
+
 El ecosistema
 0
 -15
 0
 0
+
 El dinero
 -20
 0

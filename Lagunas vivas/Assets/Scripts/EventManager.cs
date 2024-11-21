@@ -47,6 +47,7 @@ public class EventManager : MonoBehaviour
         double[] eco = new double[numOpciones];
         double[] faun = new double[numOpciones];
         double[] feli = new double[numOpciones];
+        bool[] continuar = new bool[numOpciones];
 
         for (int j = 0; j < numOpciones; j++)
         {
@@ -59,8 +60,11 @@ public class EventManager : MonoBehaviour
             faun[j] = int.Parse(aux);
             aux = rd.ReadLine();
             feli[j] = int.Parse(aux);
+            aux = rd.ReadLine();
+            continuar[j] = (aux == "Cont");
+
         }
-        return new Evento(textoPrincipal, NumImagen, numOpciones, textOp, din, eco, faun, feli);
+        return new Evento(textoPrincipal, NumImagen, numOpciones, textOp, din, eco, faun, feli, continuar);
     }
     //Método que lee del archivo de texto donde están todos los eventos y crea una lista con todos ellos
     public void getEventos()
@@ -157,7 +161,7 @@ public class EventManager : MonoBehaviour
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())
             {
-                if(evActual.getNextEv() != null)
+                if(evActual.getNextEv() != null && evActual.opciones[i]._continueNextEv)
                 {
                     NewEvent(evActual.getNextEv());
                 }
