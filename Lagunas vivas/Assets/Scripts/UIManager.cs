@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     #region parameters
-    [SerializeField] private Image _sliderDinero;
+    [SerializeField] private TMP_Text _textoDinero;    
 
     [SerializeField] private Image _sliderFelicidad;
 
@@ -17,8 +18,12 @@ public class UIManager : MonoBehaviour
     private RecursosManager _recursosManager;
     #endregion
     public void ActualizarInterfaz()
-    {                
-        _sliderDinero.fillAmount = _recursosManager.getDinero() / (float)Constants.MAX_DINERO;
+    {        
+        int din = _recursosManager.getDinero();
+        _textoDinero.text = din.ToString() + "€";
+        if(din >= Constants.BIEN_DE_DINERO) _textoDinero.color = Color.green;
+        else if (din >= Constants.OK_DE_DINERO) _textoDinero.color = Color.yellow;
+        else _textoDinero.color = Color.red;
         _sliderFelicidad.fillAmount = (float)_recursosManager.getFelicidad() / (float)Constants.MAX_REC;
         _sliderEcosistema.fillAmount = (float)_recursosManager.getEcosistema() / (float)Constants.MAX_REC;
         _sliderFauna.fillAmount = (float)_recursosManager.getFauna() / (float)Constants.MAX_REC;

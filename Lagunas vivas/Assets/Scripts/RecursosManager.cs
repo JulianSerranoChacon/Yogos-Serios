@@ -51,8 +51,7 @@ public class RecursosManager : MonoBehaviour
     }
     public void AddToDinero(int x)
     {
-        _dinero += x;
-        if (_dinero > Constants.MAX_DINERO) _dinero = (int)Constants.MAX_DINERO;
+        _dinero += x;        
     }
     public bool CheckIfGameOver()
     {

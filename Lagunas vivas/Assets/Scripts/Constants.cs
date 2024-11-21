@@ -4,8 +4,6 @@ public class Constants
 {
     //La constante que guarda el máximo valor que puede tomar cualquiera de los recursos
     public const double MAX_REC = 100;
-    //la constante indica el valor maximo que puede tener el dinero.
-    public const float MAX_DINERO = 500;
     //La constante que guarda el dinero con el que empieza el jugador. Podemos cambiarlo a una variable si queremos que esta varíe según la dificultad
     public const int DINERO_INICIAL = 150;
     //La constante por la que se multiplica los recursos para inicializarlos
@@ -14,6 +12,13 @@ public class Constants
     public const string EVENT_DIR = "/Eventos/";
     //COnstante que guarde el número máximo de opciones que puede tener un evento
     public const int MAX_OPT = 4;
+
+    //la constante indica cuando el dinero en la UI debe de estar de color verde
+    public const float BIEN_DE_DINERO = 90;
+    //la constante indica cuando el dinero en la UI debe de estar de color amarillo si es mayor
+    public const float OK_DE_DINERO = 50;
+
+
 
     //Eventos
     public const int NUM_EVENTOS = 2;
