@@ -22,9 +22,9 @@ public class Constants
 
     //Eventos
     public const int NUM_EVENTOS = 2;
-    public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA, BALONMANO};
+    public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA, BALONMANO, REPARACIONES_POSITIVO};
 
     public static string[] EVENTOS = new string[]{ "ListaEventos" +
-        "", "Fiesta", "Balonmano" };
+        "", "Fiesta", "Balonmano", "ReparacionesResultadoPositivo" };
 
 }

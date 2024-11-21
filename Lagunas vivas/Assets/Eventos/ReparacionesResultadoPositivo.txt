@@ -1,25 +1,20 @@
 r
-1
-Revisar los pasos de senderismo y otras estructuras de madera para la seguridad de los visitantes.
-2
-4
-La probabilidad de que fallen es muy baja, no hace falta revisarlo
-0
-0
-0
--5
-
-La seguridad es lo primero! Llamar a los profesionales, pagar 100 de dinero
--100
-0
-0
-5
-
-Pedir a los senderistas que pasen que le echen un vistazo
-0
-0
-0
 3
+Ha habido avisos sobre la necesidad de revisar los pasos de senderismo y otras estructuras de madera para la seguridad de los visitantes.
+Imagen
+4
+3
+No creo que haga falta revisarlo, la probabilidad de que algo grave pase es muy baja
+0
+0
+0
+-10
+
+¡La seguridad es lo primero! ¡Haremos reparaciones!
+-30
+0
+0
+15
 
 Lo revisaré yo mismo!
 0
@@ -27,29 +22,31 @@ Lo revisaré yo mismo!
 0
 5
 
-¡Control de cortafuegos! Nos han informado que hay riesgo de incendio por estas fechas, sin embargo, establecer cortafuegos no gusta a todo el mundo y tiene un costo de 50 de dinero.
-3
+Nos han informado que hay riesgo de incendio por estas fechas, por lo que habrá que controlar este peligro a través de cortafuegos. Sin embargo, establecer cortafuegos no gusta a todo el mundo y nos costará dinero
+Imagen
+5
 2
-La seguridad es lo primero! Llamar a los profesionales (-100 de dinero y baja muy muy poquito la felicidad y la ecología)
--100
+Los incendios son un tema importante. Habrá que hacer los cortafuegos
+-15
 -5
 0
 0
 
-No hay que tocar la naturaleza! La madre naturaleza es sabia.
+Esa gente tiene razón. No hay que tocar la naturaleza.
 0
 0
 0
 5
 
-Hay que reforestar algunas zonas. La reforestación es crucial porque ayuda a restaurar ecosistemas, mejorar la calidad del aire y agua, y combatir el cambio climático. Costo de 100 de dinero.
-4
+Hay que realizar esfuerzos de reforestación por la zona que rodea las lagunas. Esto es crucial para restaurar ecosistemas, mejorar la calidad del aire y agua, y combatir el cambio climático, pero será un proceso muy caro
+Imagen
+6
 2
-A reforestar!
--100
-10
-10
-5
+El dinero no es lo que importa
+-60
+20
+20
+15
 
 De momento preferimos no gastar dinero.
 0
