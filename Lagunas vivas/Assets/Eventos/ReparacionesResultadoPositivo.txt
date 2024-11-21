@@ -1,0 +1,59 @@
+r
+1
+Revisar los pasos de senderismo y otras estructuras de madera para la seguridad de los visitantes.
+2
+4
+La probabilidad de que fallen es muy baja, no hace falta revisarlo
+0
+0
+0
+-5
+
+La seguridad es lo primero! Llamar a los profesionales, pagar 100 de dinero
+-100
+0
+0
+5
+
+Pedir a los senderistas que pasen que le echen un vistazo
+0
+0
+0
+3
+
+Lo revisaré yo mismo!
+0
+0
+0
+5
+
+¡Control de cortafuegos! Nos han informado que hay riesgo de incendio por estas fechas, sin embargo, establecer cortafuegos no gusta a todo el mundo y tiene un costo de 50 de dinero.
+3
+2
+La seguridad es lo primero! Llamar a los profesionales (-100 de dinero y baja muy muy poquito la felicidad y la ecología)
+-100
+-5
+0
+0
+
+No hay que tocar la naturaleza! La madre naturaleza es sabia.
+0
+0
+0
+5
+
+Hay que reforestar algunas zonas. La reforestación es crucial porque ayuda a restaurar ecosistemas, mejorar la calidad del aire y agua, y combatir el cambio climático. Costo de 100 de dinero.
+4
+2
+A reforestar!
+-100
+10
+10
+5
+
+De momento preferimos no gastar dinero.
+0
+0
+0
+0
+	
