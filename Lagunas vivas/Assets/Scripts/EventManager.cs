@@ -161,7 +161,10 @@ public class EventManager : MonoBehaviour
                 {
                     NewEvent(evActual.getNextEv());
                 }
-                else EventFrame.SetActive(false);               
+                else {
+                    GameManager.Instance.EventFinsihed();
+                    EventFrame.SetActive(false);    
+                }
             }
             else
             {

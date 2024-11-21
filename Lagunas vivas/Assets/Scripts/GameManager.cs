@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
+    private bool _runningEvent = false; // Determina si ya hay un evento en proceso
     #region Instance
     static private GameManager _instance;
     static public GameManager Instance { get { return _instance; } }
@@ -73,6 +74,14 @@ public class GameManager : MonoBehaviour
     }
     public void GenerateNewEvent()
     {
-        _eventManager.NewEvent();
-    }    
+        if (!_runningEvent)
+        {
+            _runningEvent = true;
+            _eventManager.NewEvent();
+        }
+    }
+    public void EventFinsihed()
+    {
+        _runningEvent = false;
+    }
 }
