@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numScene: -1
-  evento: 0
+  evento: 2
 --- !u!212 &883393608
 SpriteRenderer:
   m_ObjectHideFlags: 0

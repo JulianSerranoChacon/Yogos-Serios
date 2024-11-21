@@ -1,0 +1,43 @@
+s
+3
+El equipo de balonmano ha organizado un torneo en el pueblo y van a venir a este varios equipos que se quedarán unos días en albergues e institutos. El ayuntamiento quiere organizar visitas guiadas a las lagunas y mostrárselas a estos equipos.
+Imagen
+2
+2
+Daré una pequeña charla, simple y segura
+0
+0
+0
+5
+
+Daré una charla, y luego propondré un aperitivo festivo en la zona
+-12
+0
+0
+20
+Cont
+Durante la celebración, compruebas que algunos de los niños del equipo están jugando de forma demasiado agresiva en los columpios
+Imagen
+3
+2
+Es el trabajo del entrenador echarles la bronca. Le avisaré.
+0
+0
+0
+0
+Cont
+Le echas una reprimienda varias veces a los niños, hasta que dejen de liarla
+0
+0
+0
+-5
+
+El entrenador está muy ocupado, y solo les llama la atención un poco. Al final, el columpio se acaba rompiendo. Tocará arreglarlo
+Imagen
+3
+1
+Qué remedio...
+-15
+0
+0
+0

@@ -589,6 +589,8 @@ MonoBehaviour:
   _listImages:
   - {fileID: 21300000, guid: e979cfab054c18748bc9a65919a9245b, type: 3}
   - {fileID: 21300000, guid: c4be9b41180cc194185947d591e27a47, type: 3}
+  - {fileID: 21300000, guid: 9a883ab64d0219f46bc556490583fc5f, type: 3}
+  - {fileID: 21300000, guid: 0e9a35a6ab72e4640a9a8c2c20c0ac35, type: 3}
 --- !u!1 &1056642357
 GameObject:
   m_ObjectHideFlags: 0
