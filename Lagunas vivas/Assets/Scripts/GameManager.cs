@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         _recursosManager = GetComponent<RecursosManager>();
+        _turnosManager = GetComponent<TurnosManager>();
         _listImages = GetComponent<ListaImagenes>();
     }
     public void AssignEventManager(EventManager x)
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
     RecursosManager _recursosManager;
     UIManager _UIManager;
     ListaImagenes _listImages;
+    TurnosManager _turnosManager;
     public RecursosManager getResMan() { return _recursosManager; }
     public UIManager getUIManager() { return _UIManager; }
     public Sprite getImageEv(int i) {  return _listImages.getImage(i); }
@@ -65,7 +67,10 @@ public class GameManager : MonoBehaviour
         if (clickeable != null)
         {
             if(clickeable.getNumScene() < 0)
-            GenerateNewEvent();
+            {
+                GenerateNewEvent();
+                Destroy(clickedObject);
+            }            
             else
             {
                 SceneManager.LoadScene(clickeable.getNumScene());
@@ -83,5 +88,9 @@ public class GameManager : MonoBehaviour
     public void EventFinsihed()
     {
         _runningEvent = false;
+    }
+    public int getTurno()
+    {
+        return _turnosManager.GetTurno();
     }
 }

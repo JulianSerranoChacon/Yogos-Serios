@@ -14,6 +14,6 @@ public class ClickeableObject : MonoBehaviour
 
     public void enviaEvento()
     {
-        GameManager.Instance.setEvent(Constants.EVENTOS[(int)evento]);
+        GameManager.Instance.setEvent(Constants.EVENTOS[(int)evento]);        
     }
 }

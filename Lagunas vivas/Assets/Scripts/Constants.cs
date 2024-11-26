@@ -19,6 +19,9 @@ public class Constants
     public const float OK_DE_DINERO = 50;
 
 
+    //Sistema turnos
+    public const int NUM_TURNOS_PARA_FIN = 10;
+
 
     //Eventos
     public const int NUM_EVENTOS = 2;

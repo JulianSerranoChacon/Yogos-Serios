@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image _sliderEcosistema;
 
     [SerializeField] private Image _sliderFauna;
+
+    [SerializeField] private TMP_Text _diaActual;
     private GameManager _gameManager;
     private RecursosManager _recursosManager;
     #endregion
@@ -27,6 +29,8 @@ public class UIManager : MonoBehaviour
         _sliderFelicidad.fillAmount = (float)_recursosManager.getFelicidad() / (float)Constants.MAX_REC;
         _sliderEcosistema.fillAmount = (float)_recursosManager.getEcosistema() / (float)Constants.MAX_REC;
         _sliderFauna.fillAmount = (float)_recursosManager.getFauna() / (float)Constants.MAX_REC;
+
+        _diaActual.text = "Semana: " + _gameManager.getTurno().ToString() + "/" + Constants.NUM_TURNOS_PARA_FIN;
     }
     // Start is called before the first frame update
     void Start()
