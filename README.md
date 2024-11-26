@@ -1,9 +1,9 @@
 # Lagunas vivas
 - [Lagunas vivas](#lagunas-vivas)
-    -[Nombre del juego](#nombre-del-juego)
-    -[Vista del juego](#vista-del-juego)
-        -[Concepto](#concepto)
-        -[Género](#género)
+  - [Nombre del juego](#nombre-del-juego)
+  - [Vista del juego](#vista-del-juego)
+    - [Concepto](#concepto)
+    - [Género](#género)
 ---
 ## Nombre del juego
 Lagunas vivas
