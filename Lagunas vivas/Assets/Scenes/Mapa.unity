@@ -325,6 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numScene: 4
   evento: 0
+  posEnArray: -1
 --- !u!61 &588767853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -526,8 +527,9 @@ GameObject:
   - component: {fileID: 818059295}
   - component: {fileID: 818059294}
   - component: {fileID: 818059293}
-  - component: {fileID: 818059296}
   - component: {fileID: 818059297}
+  - component: {fileID: 818059296}
+  - component: {fileID: 818059298}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -607,6 +609,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c0c2d9f035b094d9305ecb4e246658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pref: {fileID: 3808836385220957473, guid: 788c07c95cc01d84d8caceef2a8fa7c4, type: 3}
+--- !u!114 &818059298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818059292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998e6bbc81f26754480c1e5ea5c4775d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxEventosGrande: 4
+  NumEvGrande: 00000000010000000200000003000000
+  numSpriteGrande:
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  posXGrande:
+  - -4
+  - 4
+  - -4
+  - 4
+  posYGrande:
+  - -4
+  - -4
+  - 4
+  - 4
+  MaxEventosChica: 4
+  NumEvChica: 00000000010000000200000003000000
+  numSpriteChica:
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  posXChica:
+  - 4
+  - -4
+  - 4
+  - -4
+  posYChica:
+  - 4
+  - 4
+  - -4
+  - -4
+  MaxEventosSal: 4
+  NumEvSal: 00000000010000000200000003000000
+  numSpriteSal:
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  posXSal:
+  - 4
+  - 4
+  - -4
+  - -4
+  posYSal:
+  - 4
+  - -4
+  - 4
+  - -4
 --- !u!1 &1056642357
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numScene: 2
   evento: 0
+  posEnArray: -1
 --- !u!61 &1056642360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -800,6 +867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numScene: 3
   evento: 0
+  posEnArray: -1
 --- !u!61 &1193611780
 BoxCollider2D:
   m_ObjectHideFlags: 0

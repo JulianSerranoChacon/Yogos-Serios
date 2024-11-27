@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &81454331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -200,6 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numScene: -1
   evento: 0
+  posEnArray: -1
 --- !u!212 &81454333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -300,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numScene: 1
   evento: 0
+  posEnArray: -1
 --- !u!61 &83751541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -709,7 +711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1244940751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -769,6 +771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numScene: -1
   evento: 1
+  posEnArray: -1
 --- !u!212 &1244940753
 SpriteRenderer:
   m_ObjectHideFlags: 0

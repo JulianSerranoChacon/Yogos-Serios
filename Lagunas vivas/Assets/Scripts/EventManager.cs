@@ -22,6 +22,7 @@ public class EventManager : MonoBehaviour
     UGUIImage _imagenPrincipal;
 
     Evento evActual;
+
     #region Principio
     void Start()
     {
@@ -29,6 +30,7 @@ public class EventManager : MonoBehaviour
         _recursosManager = GameManager.Instance.getResMan();
         _uiManager = GameManager.Instance.getUIManager();
         _imagenPrincipal = _GOImagen.GetComponent<UGUIImage>();
+        GameManager.Instance.PullUpPrefabs();
     }
 
     public void setEvento(string e)
@@ -109,7 +111,7 @@ public class EventManager : MonoBehaviour
             Debug.Log("no existe el evento");
         rd.Close();        
     }
-    #endregion
+    #endregion    
     //Método mediante el que elige un evento aleatorio de los que tiene en su lista de eventos
     Evento PickRandEvent()
     {

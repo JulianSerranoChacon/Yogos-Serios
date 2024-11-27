@@ -53,12 +53,16 @@ public class GameManager : MonoBehaviour
     public Sprite getImageEv(int i) {  return _listImages.getImage(i); }
     #endregion
     public bool EnJuego = true;
+    int setPrefabs = -1;
     #endregion
     public void sendEvent(GameObject clickedObject)
     {
         ClickeableObject clickeable = clickedObject.GetComponent<ClickeableObject>();
-        clickeable.enviaEvento();
-        _eventManager.getEventos();
+        if(clickeable != null)
+        {
+            clickeable.enviaEvento();
+            _eventManager.getEventos();
+        }            
     }
     public void HandleClick(GameObject clickedObject)
     {
@@ -69,12 +73,25 @@ public class GameManager : MonoBehaviour
             if(clickeable.getNumScene() < 0)
             {
                 GenerateNewEvent();
-                Destroy(clickedObject);
+                if (clickeable.posEnArray != -1) _turnosManager.Uncheck(clickeable.posEnArray);
+                Destroy(clickedObject);                
             }            
             else
             {
                 SceneManager.LoadScene(clickeable.getNumScene());
+                if (clickeable.getNumScene() == 2 || clickeable.getNumScene() == 3 || clickeable.getNumScene() == 4)
+                {
+                    setPrefabs =clickeable.getNumScene() - 2;
+                }
             }
+        }
+    }
+    public void PullUpPrefabs()
+    {
+        if(setPrefabs != -1)
+        {
+            _turnosManager.Show(setPrefabs);
+            setPrefabs=-1;
         }
     }
     public void GenerateNewEvent()
