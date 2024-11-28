@@ -12,10 +12,11 @@ public class TurnosManager : MonoBehaviour
     [SerializeField] GameObject _pref;
     struct ParaPrefab
     {
-        public int NumEv;
+        public Constants.EVENTOS_ENUM NumEv;
         public float PosX;
         public float PosY;
         public Sprite spr;
+        public bool initialized;
     }
     int LastBeen;
     ParaPrefab[,] Lagunas;
@@ -30,7 +31,7 @@ public class TurnosManager : MonoBehaviour
     void ResetPrefabs()
     {
         NumEvLeft = GameManager.Instance.getTurno()+1;    //A cambiar para numero de eventos por turno
-        Lagunas = new ParaPrefab[3, NumEvLeft];
+        Lagunas = new ParaPrefab[3, NumEvLeft];        
         numGran = 0;
         numChic = 0;
         numSal = 0;
@@ -75,6 +76,7 @@ public class TurnosManager : MonoBehaviour
                     Lagunas[donde, numGran].spr = l.numSpriteGrande[ev];
                     Lagunas[donde, numGran].PosX = l.posXGrande[ev];
                     Lagunas[donde, numGran].PosY = l.posYGrande[ev];
+                    Lagunas[donde, numGran].initialized = true;
                     numGran++;
                     break;
                 case 1:
@@ -82,6 +84,7 @@ public class TurnosManager : MonoBehaviour
                     Lagunas[donde, numChic].spr = l.numSpriteChica[ev];
                     Lagunas[donde, numChic].PosX = l.posXChica[ev];
                     Lagunas[donde, numChic].PosY = l.posYChica[ev];
+                    Lagunas[donde, numChic].initialized = true;
                     numChic++;
                     break;
                 case 2:
@@ -89,6 +92,7 @@ public class TurnosManager : MonoBehaviour
                     Lagunas[donde, numSal].spr = l.numSpriteSal[ev];
                     Lagunas[donde, numSal].PosX = l.posXSal[ev];
                     Lagunas[donde, numSal].PosY = l.posYSal[ev];
+                    Lagunas[donde, numSal].initialized = true;
                     numSal++;
                     break;
                 default:
@@ -116,7 +120,7 @@ public class TurnosManager : MonoBehaviour
         }        
         for(int i = 0; i < max; i++)
         {
-            if (Lagunas[donde, i].NumEv != -1)
+            if (Lagunas[donde, i].initialized)
             {                
                 GameObject g = Instantiate(_pref, new Vector3(Lagunas[donde, i].PosX, Lagunas[donde, i].PosY, 0), Quaternion.identity);                                
                 g.GetComponent<ClickeableObject>().SetEvento(Lagunas[donde, i].NumEv, i);
@@ -127,7 +131,7 @@ public class TurnosManager : MonoBehaviour
 
     public void Uncheck(int pos)
     {
-        Lagunas[LastBeen, pos].NumEv = -1;
+        Lagunas[LastBeen, pos].initialized = false;
         NumEvLeft--;
     }
     public bool AllEventsDone()
