@@ -25,9 +25,9 @@ public class ClickeableObject : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = im;
     }
     
-    public void SetEvento(int i, int PosEnArr = -1)
+    public void SetEvento(Constants.EVENTOS_ENUM i, int PosEnArr = -1)
     {
-        evento = (Constants.EVENTOS_ENUM) i;
+        evento = i;
         if (PosEnArr != -1) posEnArray = PosEnArr;
     }
 }
