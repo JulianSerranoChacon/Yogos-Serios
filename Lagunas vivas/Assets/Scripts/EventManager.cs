@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using UGUIImage = UnityEngine.UI.Image;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
@@ -175,7 +176,7 @@ public class EventManager : MonoBehaviour
             else
             {
                 GameManager.Instance.EnJuego = false;
-                Debug.Log("HAS PERDIDO");
+                SceneManager.LoadScene(6);
             }
         }
     }
