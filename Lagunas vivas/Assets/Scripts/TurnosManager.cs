@@ -37,12 +37,12 @@ public class TurnosManager : MonoBehaviour
         numSal = 0;
 
         bool[,] guia = new bool[3, max_bool];
-        int donde = Random.Range(0, 2);
+        int donde = Random.Range(0, 3);
         for (int i = 0; i < NumEvLeft; i++)
         {
+            if (donde >= 3) donde = 0;
             GeneratePrefab(donde, guia);
             donde++;
-            if (donde == 3) donde = 0;
         }
     }
     void GeneratePrefab(int donde, bool[,] guia)
@@ -64,7 +64,7 @@ public class TurnosManager : MonoBehaviour
                 break;
         }
         int ev = Random.Range(0, max);
-        if (guia[donde, ev]) GeneratePrefab(ev, guia);
+        if (guia[donde, ev]) GeneratePrefab(donde, guia);
         else
         {
             guia[donde, ev] = true;            
@@ -145,8 +145,7 @@ public class TurnosManager : MonoBehaviour
         TurnoActual = 0;
         max_bool = GetComponent<ListaEventosPrefabs>().MaxEventosGrande;
         if (max_bool < GetComponent<ListaEventosPrefabs>().MaxEventosChica) max_bool = GetComponent<ListaEventosPrefabs>().MaxEventosChica;
-        if (max_bool < GetComponent<ListaEventosPrefabs>().MaxEventosSal) max_bool = GetComponent<ListaEventosPrefabs>().MaxEventosSal;
-        //NextTurn(); //Esto lo hará el game Manager y todo eso
+        if (max_bool < GetComponent<ListaEventosPrefabs>().MaxEventosSal) max_bool = GetComponent<ListaEventosPrefabs>().MaxEventosSal;        
     }
 
     public int GetTurno()
