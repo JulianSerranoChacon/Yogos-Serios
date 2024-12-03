@@ -25,6 +25,19 @@
     - [Sistema de controles](#sistemas-de-controles)
     - [Audio música y efectos de sonido](#audio-música-y-efectos-de-sonido)
     - [Sistema de ayuda](#sistema-de-ayuda)
+  - [Eventos](#eventos)
+    - [Problemas relaccionados con la población](#problemas-relaccionados-con-la-población)
+      - [Primer evento](#primer-evento)
+      - [Segundo evento](#segundo-evento)
+      - [Tecer evento](#tercer-evento)
+      - [Cuarto evento](#cuarto-evento)
+      - [Quinto evento](#quinto-evento)
+      - [Sexto evento](#sexto-evento)
+      - [Séptimo evento](#séptimo-evento)
+      - [Octavo evento](#octavo-evento)
+      - [Novveno evento](#noveno-evento)
+
+
 ---
 ## Nombre del juego
 Lagunas vivas
@@ -102,3 +115,98 @@ Al clicar sobre entidades sonará un efecto de click. Sin embargo, el sonido ser
 
 ### Sistema de ayuda
 Se podría aumentar el presupuesto con el que comienza a los jugadores que elijan una dificultad más sencilla.
+
+## Eventos
+
+### Problemas relaccionados con la población
+
+#### Primer evento
+- Una fiesta de cumpleaños en la que te piden poder utilizar los merenderos del cerro para celebrarlo.
+  - Si lo permites.
+    - evento 2 al pasar un tiempo, sube la felicidad.
+  - Si no lo permites
+    - baja la felicidad.
+
+- (esto no ocurre si no se celebra el evento 1 y se escoge la opción correcta) Una semana siguiente al cumpleaños recibes un aviso de que el cerro está bastante sucio, con bolsas de chucherías y demás desechos de una fiesta (confeti, etc).
+  - Limpias con voluntarios
+    - el ecosistema mejora levemente.
+  - Limpias con una empresa
+    - el ecosistema mejora bastante pero pierdes dinero.
+  - Llamas a los del cumpleaños y les pides que limpien
+    - Los del cumpleaños se enfadan y empiezan a esparcir rumores contra tí (baja la felicidad), además te vuelve a tocar cómo limpiar el desperdicio de nuevo (sin poder llamarles de nuevo).
+
+#### Segundo evento
+- El equipo de balonmano ha organizado un torneo en el pueblo y van a venir al pueblo varios equipos que se quedarán unos días en albergues e institutos, el ayuntamiento quiere organizar visitas guiadas a las lagunas para mostrarles a estos equipos. (No te puedes negar)
+  - Dar una simple charla y un paseo
+    - sube felicidad levemente.
+  - Dar una charla y hacer después un aperitivo/fiesta en las lagunas.
+    - sube felicidad, baja dinero (el evento continúa en el 2.1 instantáneamente).
+
+- (esto ocurre si eliges la respuesta correcta en el evento 2) Los niños de un equipo empiezan a liarla en uno de los parques con columpios y tú les ves.
+  - Decides avisar al entrenador de los niños para que les diga que paren.
+    - (el entrenador tiene más cosas que atender y solo les echa una pequeña bronca), el columpio se rompe y pierdes el dinero que necesitarás para repararlo.
+  - Pasas del tema, piensas que no es problema tuyo. 
+    - El columpio se rompe y pierdes el dinero que necesitarás para repararlo.
+  - Les echas una reprimenda repetidas veces hasta que paran.
+    - baja la felicidad un poco pero consigues que los niños respeten el lugar, sube el dinero, ya que al rato viene una niña a jugar en el mismo parque sube la felicidad más de lo que había bajado (se puede mover la barra en tiempo de ejecución o solo una vez, sube)
+
+#### Tercer evento
+- Se han hecho pruebas en la laguna, y se ha descubierto que el nivel de microorganismos ha bajado. Esto podría afectar gravemente el ecosistema acuático.
+  - Tienes demasiados problemas en este momento. 
+    - Te encargarás de ello la semana que viene (Baja el ecosistema y te surgirá este evento de nuevo la semana que viene)
+  - Probablemente es culpa de los bañistas. Prohibiremos temporalmente el baño 
+    - (Baja la felicidad y te surgirá este evento de nuevo la semana que viene, pues no es la verdadera causa del problema)
+  - Probablemente sea causa de algún afluente. Cerraremos las presas de los ríos afluentes hasta que los niveles se estabilicen 
+    - (Es la solución correcta. No volverá a surgir este problema)
+
+#### Cuarto evento
+- Te encuentras un pájaro tirado en las raíces de un árbol. Se ha caído del nido. ¿Lo recoges y lo vuelves a colocar en este?
+  - Eliges colocarlo. 
+    - Reduce el nivel de fauna, pues las madres rechazan a sus crías si pillan olor humano.
+  - Eliges dejarlo donde está.
+    - Aumenta el nivel de fauna, pues, si no es una especie en peligro de extinción, es mejor dejar que la naturaleza siga su curso.
+
+#### Quinto evento
+- Ha habido un avistamiento de un pozo que no parece estar regulado. ¿Qué haces?
+  - Tengo que llamar a la policía para que se encargue de esto.
+    - (Bajan la fauna y el ecosistema levemente, pero el problema parece solucionado)
+  - Soy el encargado de las lagunas, debería hacer una investigación a fondo sobre esto.
+    - (Baja el dinero, pero la fauna y el ecosistema se mantienen estables)
+  - Debería pedir voluntarios para que peinen la zona y se aseguren de que no hay más de estos.
+    - (Baja la felicidad, pero la fauna y el ecosistema se mantienen estables)
+
+#### Sexto evento
+- Hay quejas de niños que no respetan el entorno ni el medioambiente. ¿Qué deberías hacer?
+  - Debería organizar charlas para concienciarlos sobre el medioambiente 
+    - (Baja el dinero, pero el ecosistema sube)
+  - Si invertimos algo en parques infantiles, tal vez prefieran jugar ahí.
+    - (Baja el dinero)
+  - No es mi trabajo educarlos, es el de sus padres.
+    - (Baja el ecosistema y la fauna)
+
+#### Séptimo evento
+- Se han encontrado restos de botellones en el bosque. Hay que hacer algo al respecto.
+  - Realizar charlas y concienciar a la gente de lo dañino que pueden ser estas actividades, especialmente en estas zonas.
+    - (Baja ligeramente el ecosistema y la fauna)
+  - Impartir un toque de queda y aumentar vigilancia nocturna
+    - (Baja la felicidad)
+
+#### Octavo evento
+- Algunos habitantes han cogido la costumbre de pasear a sus perros por las lagunas. Esto tarde o temprano va a afectar negativamente a la fauna del ecosistema
+  - Por ahora confiemos en la responsabilidad de los dueños.
+    - (Baja la fauna)
+  - Hagamos que se limite a los bosques de los alrededores
+    - (Baja ligeramente la felicidad y la fauna)
+  - Prohibimos directamente el paseo de mascotas en toda la zona.
+    - (Baja la felicidad)
+
+#### Noveno evento
+- Entre los jóvenes del pueblo se ha iniciado una nueva moda de ir a pescar a los embarcaderos, pero nadie los ha enseñado a pescar y lo hacen sin respetar el medio ambiente, pescan todo tipo de peces de manera indiscriminada y dejan el agua llena de anzuelos porque muchas veces no los colocan correctamente.
+  - Haces varios cursos y charlas para concienciar de la pesca responsable, enseñando a los jóvenes qué peces pueden pescar y a cuales deben respetar y devolver al agua, además les enseñas a manejar correctamente el material de pesca, aunque la actividad de pesca sigue siendo excesiva.
+    - aumenta la felicidad bastante y muy  poco el ecosistema (por los anzuelos), pero baja bastante la fauna.
+  - Decides que es una moda pasajera que no durará mucho y son cosas de críos.
+    - Bajan mucho el ecosistema y la fauna.
+  - Decides prohibir la pesca.
+    - baja bastante la felicidad, suben la fauna y el ecosistema.
+  - Decides regular la pesca para que solamente gente con cierta licencia y experiencia pueda pescar.
+    - baja poco la felicidad, suben un poco el ecosistema y la fauna.
