@@ -139,6 +139,23 @@ public class TurnosManager : MonoBehaviour
         return NumEvLeft <= 0;
     }
 
+    public bool LagunaTieneEventos(int donde) // Determina si una laguna tiene eventos
+    {
+        int max = 0;
+        switch (donde)
+        {
+            case 0: max = numGran; break;
+            case 1: max = numChic; break;
+            case 2: max = numSal; break;
+            default: return false;
+        }
+        for (int i = 0; i < max; i++)
+        {
+            if (Lagunas[donde, i].initialized) return true;
+        }
+        return false;
+    }
+
     #endregion
     private void Start()
     {

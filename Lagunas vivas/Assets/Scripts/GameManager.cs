@@ -110,4 +110,8 @@ public class GameManager : MonoBehaviour
     {
         return _turnosManager.GetTurno();
     }
+    public bool getLagunaTieneEventos(int donde)
+    {
+        return _turnosManager.LagunaTieneEventos(donde);
+    }
 }
