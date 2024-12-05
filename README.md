@@ -36,7 +36,13 @@
       - [Séptimo evento](#séptimo-evento)
       - [Octavo evento](#octavo-evento)
       - [Novveno evento](#noveno-evento)
-
+    - [Eventos reparaciones](#eventos-reparaciones)
+      - [Primer evento](#primer-evento-1)
+      - [Segundo evento](#segundo-evento-1)
+      - [Tercer evento](#tercer-evento-1)
+      - [Cuarto evento](#cuarto-evento-1)
+      - [Quinto evento](#quinto-evento-1)
+      - [Sexto evento](#sexto-evento-1)
 
 ---
 ## Nombre del juego
@@ -123,11 +129,11 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
 #### Primer evento
 - Una fiesta de cumpleaños en la que te piden poder utilizar los merenderos del cerro para celebrarlo.
   - Si lo permites.
-    - evento 2 al pasar un tiempo, sube la felicidad.
+    - evento 1.2, sube la felicidad.
   - Si no lo permites
     - baja la felicidad.
 
-- (esto no ocurre si no se celebra el evento 1 y se escoge la opción correcta) Una semana siguiente al cumpleaños recibes un aviso de que el cerro está bastante sucio, con bolsas de chucherías y demás desechos de una fiesta (confeti, etc).
+- 1.2 Una semana siguiente al cumpleaños recibes un aviso de que el cerro está bastante sucio, con bolsas de chucherías y demás desechos de una fiesta (confeti, etc).
   - Limpias con voluntarios
     - el ecosistema mejora levemente.
   - Limpias con una empresa
@@ -142,7 +148,7 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   - Dar una charla y hacer después un aperitivo/fiesta en las lagunas.
     - sube felicidad, baja dinero (el evento continúa en el 2.1 instantáneamente).
 
-- (esto ocurre si eliges la respuesta correcta en el evento 2) Los niños de un equipo empiezan a liarla en uno de los parques con columpios y tú les ves.
+- 2.1 Los niños de un equipo empiezan a liarla en uno de los parques con columpios y tú les ves.
   - Decides avisar al entrenador de los niños para que les diga que paren.
     - (el entrenador tiene más cosas que atender y solo les echa una pequeña bronca), el columpio se rompe y pierdes el dinero que necesitarás para repararlo.
   - Pasas del tema, piensas que no es problema tuyo. 
@@ -210,3 +216,77 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
     - baja bastante la felicidad, suben la fauna y el ecosistema.
   - Decides regular la pesca para que solamente gente con cierta licencia y experiencia pueda pescar.
     - baja poco la felicidad, suben un poco el ecosistema y la fauna.
+
+### Eventos reparaciones
+
+#### Primer evento
+- Se ha reportado algún deterioro en los pasos de senderos, necesitamos revisar estos pasos para la seguridad de los visitantes.
+  - No hace falta revisarlo.
+    - 50% de que alguien tenga un accidente, (ir al 1.2).
+  - ¡La seguridad es lo primero! Llamar a los profesionales.
+    - Pierde dinero.
+- 1.2 ¡Oh no! Alguien ha tenido un accidente. El afectado reclama una indemnización.
+  - baja la felicidad y bajará el dinero.
+
+#### Segundo evento
+- ¡Control de cortafuegos! Nos han informado que hay riesgo de incendio por estas fechas, deberíamos establecer uno, sin embargo, esto no gusta a todo el mundo.
+  - ¡La seguridad es lo primero! Llamar a los profesionales.
+    - pierde dinero y baja poquito la ecología y felicidad.
+  - ¡No hay que tocar la naturaleza! La madre naturaleza es sabia.
+    - 50% de probabilidad de incendio (ir a 2.1), bajarán todos los indicadores.
+
+- 2.1  ¡Oh no! Un incendio está arrasando con todo.
+  - Evacuar a todo el mundo y llamar a los bomberos de inmediato 
+    - Baja el ecosistema y la felicidad.
+
+#### Tercer evento
+- Hay que reforestar algunas zonas. La reforestación es crucial porque ayuda a restaurar ecosistemas, mejorar la calidad del aire y agua, y combatir el cambio climático.
+  - ¡A reforestar! 
+    - Pierde dinero, suben el resto de stats.
+  - De momento preferimos no gastar dinero.
+    - Baja un poquito el ecosistema.
+
+#### Cuarto evento
+- Hay un puente que cruza un pequeño río y que los visitantes utilizan frecuentemente. Se reporta que algunas tablas están podridas.
+  - Reparar inmediatamente con una empresa especializada.
+    - Pierdes dinero.
+  - Hacer una reparación provisional.
+    - 50% de probabilidad de que el puente se dañe más gravemente (ir a 4.1).
+  - Ignorar el problema.
+    -  baja la felicidad y hay un 50% de accidente (ir a 4.2).
+
+- 4.1 ¡El puente ha acabado por dañarse más gravemente! 
+  - Arreglar el puente.
+    - pierdes dinero.
+
+- 4.2 ¡Ha habido un accidente en el río!
+  -  indemnizar a la persona afectada.
+    - pierdes felicidad y dinero.
+
+#### Quinto evento
+- Un grupo de expertos forestales han propuesto realizar un incendio controlado ya que el exceso de materia seca acumulada podría ocasionar un incendio de grandes dimensiones. Sin embargo, algunos vecinos de la zona y visitantes están preocupados por la propuesta. El viento actualmente está en calma.
+  - Sí, confío en los expertos y autorizo el incendio controlado.
+    - baja la barra de ecosistema un poquitín y baja el dinero un poco.
+  - No, jamás provocaremos un incendio. 
+    - 50% de incendio (ir al 5.1).
+
+- 5.1  ¡Oh no! Un incendio está arrasando con todo.
+  - Evacuar a todo el mundo y llamar a los bomberos de inmediato.
+    - Baja el ecosistema y la felicidad.
+
+- Diálogo educativo con el agente forestal antes de aparecer este evento: “No realizar un incendio controlado puede parecer más seguro a corto plazo, pero aumenta las probabilidades de incendios incontrolados en el futuro”
+
+#### Sexto evento
+- Un grupo de expertos forestales han propuesto realizar un incendio controlado ya que el exceso de materia seca acumulada podría ocasionar un incendio de grandes dimensiones. Sin embargo, algunos vecinos de la zona y visitantes están preocupados por la propuesta. Actualmente hay mucho viento.
+  - Sí, confío en los expertos y autorizo el incendio controlado.
+    - baja la barra de ecosistema un poquitín y baja el dinero un poco. 50% de que el incendio se descontrole (ir a 6.1).
+  - No, el riesgo en estas condiciones actuales es demasiado alto, mejor esperamos a que no haya viento. 
+    - (No cambian los indicadores. Si al final vamos a hacer lo que dijimos de poder mostrar un evento en la siguiente semana, yo mostraría el evento anterior, que es el mismo pero sin viento).
+  - No, jamás provocaremos un incendio.
+    - 50% de incendio (ir a 6.1)
+
+- 6.1  ¡Oh no! Un incendio está arrasando con todo.
+  - Evacuar a todo el mundo y llamar a los bomberos de inmediato.
+    - Baja el ecosistema y la felicidad.
+
+- Diálogo educativo con el agente forestal antes de aparecer este evento: “Cuidado con realizar incendios controlados cuando hay mucho viento, pueden descontrolarse…”
