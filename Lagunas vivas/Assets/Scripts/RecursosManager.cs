@@ -12,13 +12,37 @@ public class RecursosManager : MonoBehaviour
     double _felicidad;
     double _ecosistema;
     double _fauna;
+
+    //Las variableas que guardan los valores anteriores, solo para 
+    double _prevFelicidad;
+    double _prevEcosistema;
+    double _prevFauna;
     #endregion
 
     #region getters
-    public int getDinero() { return _dinero; }
-    public double getFelicidad() { return _felicidad; }
+    public int getDinero() { return _dinero; }    
+    public double getFelicidad() { return _felicidad; }    
     public double getEcosistema() { return _ecosistema; }
     public double getFauna() { return _fauna; }
+
+    public double getPrevFelicidad() 
+    { 
+        double x = _prevFelicidad;
+        _prevFelicidad = _felicidad;
+        return x; 
+    }
+    public double getPrevEcosistema()
+    {
+        double x = _prevEcosistema;
+        _prevEcosistema = _ecosistema;
+        return x;
+    }
+    public double getPrevFauna()
+    {
+        double x = _prevFauna;
+        _prevFauna = _fauna;
+        return x;
+    }
     #endregion
 
     void Awake()
@@ -36,6 +60,7 @@ public class RecursosManager : MonoBehaviour
 
     public void AddToFelicidad(double x)
     {
+        _prevFelicidad = _felicidad;
         _felicidad += x;
         if (_felicidad > Constants.MAX_REC) _felicidad = Constants.MAX_REC;
         if(x>0) GameManager.Instance.getUIManager().SumaFel();
@@ -43,6 +68,7 @@ public class RecursosManager : MonoBehaviour
     }
     public void AddToEcosistema(double x)
     {
+        _prevEcosistema = _ecosistema;
         _ecosistema += x;
         if (_ecosistema > Constants.MAX_REC) _ecosistema = Constants.MAX_REC;
         if (x > 0) GameManager.Instance.getUIManager().SumaEco();
@@ -50,6 +76,7 @@ public class RecursosManager : MonoBehaviour
     }
     public void AddToFauna(double x)
     {
+        _prevFauna = _fauna;
         _fauna += x;
         if (_fauna > Constants.MAX_REC) _fauna = Constants.MAX_REC;
         if (x > 0) GameManager.Instance.getUIManager().SumaFau();

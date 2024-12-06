@@ -160,7 +160,7 @@ public class EventManager : MonoBehaviour
             _recursosManager.AddToEcosistema(evActual.opciones[i]._eco);
             _recursosManager.AddToFauna(evActual.opciones[i]._faun);
             _recursosManager.AddToDinero(evActual.opciones[i]._din);            
-            _uiManager.ActualizarInterfaz();
+            _uiManager.ActualizarInterfaz(true);
             //Esto de abajo se deberá cambiar a medida que cambie la UI y todo lo que haga falta
             if (_recursosManager.CheckIfGameOver())
             {

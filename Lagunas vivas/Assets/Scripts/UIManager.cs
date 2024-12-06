@@ -33,9 +33,9 @@ public class UIManager : MonoBehaviour
     private RecursosManager _recursosManager;
     #endregion
     #region EfectoColoresBarras
-    const float DIVISIONES1 = 4.0f;
-    const float DIVISIONES2 = 2.0f;
-    const float TIEMPO_FUNDIDO = 0.08f;
+    const float DIVISIONES1 = 6.0f;
+    const float DIVISIONES2 = 4.0f;
+    const float TIEMPO_FUNDIDO = 0.15f;
     public void SumaFel()
     {
         StartCoroutine(ChangeFel(0, 0.5f, 0));
@@ -136,7 +136,7 @@ public class UIManager : MonoBehaviour
         _sliderFauna.color = new Color(_r, _g, _b);
     }
     #endregion
-    public void ActualizarInterfaz()
+    public void ActualizarInterfaz(bool smooth = false)
     {        
         int din = _recursosManager.getDinero();
         _textoDinero.text = din.ToString() + "€";
@@ -145,18 +145,35 @@ public class UIManager : MonoBehaviour
 
         float maxWidth = _sliderFelicidad.rectTransform.rect.width; // Asumiendo que las barras son del mismo ancho, usamos el de felicidad
 
-        SetBarWidth(_sliderFelicidad, _recursosManager.getFelicidad(), _maxFelicidadWidth);
-        SetBarWidth(_sliderEcosistema, _recursosManager.getEcosistema(), _maxEcosistemaWidth);
-        SetBarWidth(_sliderFauna, _recursosManager.getFauna(), _maxFaunaWidth);
+        SetBarWidth(_sliderFelicidad, _recursosManager.getFelicidad(), _recursosManager.getPrevFelicidad(), _maxFelicidadWidth, smooth);
+        SetBarWidth(_sliderEcosistema, _recursosManager.getEcosistema(), _recursosManager.getPrevEcosistema(), _maxEcosistemaWidth, smooth);
+        SetBarWidth(_sliderFauna, _recursosManager.getFauna(), _recursosManager.getPrevFauna(), _maxFaunaWidth, smooth);
 
         _diaActual.text = "Semana: " + _gameManager.getTurno().ToString() + "/" + Constants.NUM_TURNOS_PARA_FIN;
 
         SetInfoIcons();
     }
     // Metodo para establecer el with de las barras segun su valor
-    private void SetBarWidth(Image bar, double currentValue, float maxWidth)
+    private void SetBarWidth(Image bar, double currentValue, double prevValue, float maxWidth, bool smooth)
     {
+        
         float percentage = (float)currentValue / (float)Constants.MAX_REC;
+        if (smooth)
+        {
+            float percentageAct = (float)prevValue / (float)Constants.MAX_REC;
+            StartCoroutine(BarWidthSmooth(bar, percentage, percentageAct, maxWidth));
+        }
+        else bar.rectTransform.sizeDelta = new Vector2(maxWidth * percentage, bar.rectTransform.sizeDelta.y);                        
+    }
+    IEnumerator BarWidthSmooth(Image bar, float percentage, float percentageAct, float maxWidth)
+    {
+        float diff = percentageAct - percentage;
+        for (int i = 1; i < DIVISIONES2+ DIVISIONES1; i++)
+        {
+            yield return new WaitForSeconds((2*TIEMPO_FUNDIDO) / (DIVISIONES2+DIVISIONES1));
+            bar.rectTransform.sizeDelta = new Vector2(maxWidth * (percentageAct - ((diff/(DIVISIONES2 + DIVISIONES1)) * i)), bar.rectTransform.sizeDelta.y);
+        }
+        yield return new WaitForSeconds((2 * TIEMPO_FUNDIDO) / (DIVISIONES2 + DIVISIONES1));
         bar.rectTransform.sizeDelta = new Vector2(maxWidth * percentage, bar.rectTransform.sizeDelta.y);
     }
     // Metodo para mostrar los iconos en las lagunas donde hay eventos
