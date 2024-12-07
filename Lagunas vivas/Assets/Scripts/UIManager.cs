@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     #region parameters
-    [SerializeField] private TMP_Text _textoDinero;    
+    [SerializeField] private TMP_Text _textoDinero;
+
 
     [SerializeField] private Image _sliderFelicidad;
 
@@ -24,6 +25,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Image _infoIconSal;
 
+    [SerializeField] private TMP_Text _EfectoDinero;
 
     private float _maxFelicidadWidth;
     private float _maxEcosistemaWidth;
@@ -139,9 +141,17 @@ public class UIManager : MonoBehaviour
     public void ActualizarInterfaz(bool smooth = false)
     {        
         int din = _recursosManager.getDinero();
+        int prevDin = _recursosManager.getPrevDinero();
         _textoDinero.text = din.ToString() + "€";
         if(din >= Constants.BIEN_DE_DINERO) _textoDinero.color = Color.yellow;
-        else _textoDinero.color = Color.red;
+        else _textoDinero.color = Color.red;        
+        if(prevDin != 0)
+        {
+            _EfectoDinero.text = prevDin.ToString() + "€";
+            if (prevDin > 0) _EfectoDinero.color = Color.green;
+            else _EfectoDinero.color = Color.red;
+            _EfectoDinero.GetComponent<Animator>().Play("EfectoDinero");
+        }
 
         float maxWidth = _sliderFelicidad.rectTransform.rect.width; // Asumiendo que las barras son del mismo ancho, usamos el de felicidad
 

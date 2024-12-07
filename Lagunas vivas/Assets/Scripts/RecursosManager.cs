@@ -13,10 +13,11 @@ public class RecursosManager : MonoBehaviour
     double _ecosistema;
     double _fauna;
 
-    //Las variableas que guardan los valores anteriores, solo para 
+    //Las variableas que guardan los valores anteriores, solo para efectos visuales
     double _prevFelicidad;
     double _prevEcosistema;
     double _prevFauna;
+    int _prevDinero;
     #endregion
 
     #region getters
@@ -41,6 +42,12 @@ public class RecursosManager : MonoBehaviour
     {
         double x = _prevFauna;
         _prevFauna = _fauna;
+        return x;
+    }
+    public int getPrevDinero()
+    {
+        int x = _prevDinero;
+        _prevDinero = 0;
         return x;
     }
     #endregion
@@ -84,6 +91,7 @@ public class RecursosManager : MonoBehaviour
     }
     public void AddToDinero(int x)
     {
+        _prevDinero = x;
         _dinero += x;        
     }
     public bool CheckIfGameOver()
