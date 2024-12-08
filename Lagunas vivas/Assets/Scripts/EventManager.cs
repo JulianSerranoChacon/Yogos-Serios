@@ -19,6 +19,7 @@ public class EventManager : MonoBehaviour
     [SerializeField] TMP_Text TextoPrincipal;
     [SerializeField] GameObject[] Opciones;
     [SerializeField] TMP_Text[] TextosOpciones;
+    [SerializeField] GameObject _efectoFondoOscuro;
     [SerializeField] string evento;
     UGUIImage _imagenPrincipal;
 
@@ -123,7 +124,13 @@ public class EventManager : MonoBehaviour
     public void NewEvent(Evento ev = null)
     {
         EventFrame.SetActive(true);
-        if(ev == null) evActual = PickRandEvent();
+        _efectoFondoOscuro.SetActive(true);
+        if (ev == null)
+        {
+            EventFrame.GetComponent<Animator>().Play("PopUpEvent");
+            _efectoFondoOscuro.GetComponent<Animator>().Play("OscurimientoFondo");
+            evActual = PickRandEvent();
+        }
         else evActual = ev;
         TextoPrincipal.text = evActual._textoPrincipal;
         if (evActual._mySprite != -1)
@@ -170,7 +177,8 @@ public class EventManager : MonoBehaviour
                 }
                 else {
                     GameManager.Instance.EventFinsihed();
-                    EventFrame.SetActive(false);    
+                    EventFrame.SetActive(false);
+                    _efectoFondoOscuro.SetActive(false);
                 }
             }
             else
