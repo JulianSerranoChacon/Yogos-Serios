@@ -270,8 +270,8 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
 - Un grupo de expertos forestales han propuesto realizar un incendio controlado ya que el exceso de materia seca acumulada podría ocasionar un incendio de grandes dimensiones. Sin embargo, algunos vecinos de la zona y visitantes están preocupados por la propuesta. Actualmente hay mucho viento.
   - Sí, confío en los expertos y autorizo el incendio controlado.
     - baja la barra de ecosistema un poquitín. 50% de que el incendio se descontrole (ir a 6.1).
-  - No, el riesgo en estas condiciones actuales es demasiado alto, mejor esperamos a que no haya viento. 
-    - (No cambian los indicadores. A la siguiente semana, surge el evento anterior).
+  - No, el riesgo en estas condiciones actuales es demasiado alto, mejor esperamos a que no haya viento y entonces lo hacemos. 
+    - baja la barra de ecosistema un poquitín
   - No, jamás provocaremos un incendio.
     - 50% de incendio (ir a 6.1)
 
