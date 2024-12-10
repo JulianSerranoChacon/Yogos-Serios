@@ -26,9 +26,11 @@ public class Constants
 
     //Eventos
     public const int NUM_EVENTOS = 2;
-    public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA, BALONMANO, REPARACIONES_POSITIVO};
+    public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA, BALONMANO, REFORESTACION, REP_SENDERO_POS, REP_SENDERO_NEG, REP_CORTAFUEGOS_POS, REP_CORTAFUEGOS_NEG,
+        REP_PUENTE_POS, REP_PUENTE_NEG, INCENDIO_CONT_POS, INCENDIO_CONT_NEG, INCENDIO_CONT_VIENTO_POS, INCENDIO_CONT_VIENTO_NEG};
 
-    public static string[] EVENTOS = new string[]{ "ListaEventos" +
-        "", "Fiesta", "Balonmano", "ReparacionesResultadoPositivo" };
+    public static string[] EVENTOS = new string[]{ "ListaEventos",
+        "Fiesta", "Balonmano", "Reforestacion", "RepSendero_positivo","RepSendero_Negativo", "RepCortafuegos_Positivo", "RepCortafuegos_Negativo",
+        "RepPuente_Positivo", "RepPuente_Negativo", "IncendioControlado_Positivo","IncendioControlado_Negativo","VientoIncendioControlado_Positivo","VientoIncendioControlado_Negativo"};
 
 }

@@ -1,0 +1,27 @@
+s
+2
+Nos han informado que hay riesgo de incendio por estas fechas, por lo que habrá que controlar este peligro a través de cortafuegos. Sin embargo, establecer cortafuegos no gusta a todo el mundo y nos costará dinero
+Imagen
+5
+2
+Los incendios son un tema importante. Habrá que hacer los cortafuegos
+-25
+-5
+0
+0
+
+Esa gente tiene razón. No hay que tocar la naturaleza.
+0
+0
+0
+0
+Cont
+¡Desastre! Los avisos de incendio no habían sido en vano, y la falta de estos cortafuegos ha provocado uno que se expande a toda velocidad
+Imagen
+0
+1
+¡Evacuad a la población y llamad a los bomberos!
+0
+-30
+-30
+-30

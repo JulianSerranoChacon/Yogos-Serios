@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxEventosGrande: 4
-  NumEvGrande: 00000000010000000200000003000000
+  NumEvGrande: 0d0000000d0000000d0000000d000000
   numSpriteGrande:
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
