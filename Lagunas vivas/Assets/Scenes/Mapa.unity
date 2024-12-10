@@ -530,6 +530,7 @@ GameObject:
   - component: {fileID: 818059297}
   - component: {fileID: 818059296}
   - component: {fileID: 818059298}
+  - component: {fileID: 818059299}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -673,6 +674,60 @@ MonoBehaviour:
   - -4
   - 4
   - -4
+--- !u!114 &818059299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818059292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67812a334b97ea54b92101b4c3b935cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogoInicial:
+  - "Hola Buenos d\xEDas."
+  - 'Soy Sandra de recursos humanos, espero que te vaya bien en tu nuevo trabajo.
+
+'
+  - "Ver\xE1s que ser un guarda forestal no es tan f\xE1cil, tines que estar atento
+    a una serie de factores para la correcta realizaci\xF3n de tus tareas."
+  - "Deber\xE1s vigilar la fauna, la cual es importante mantener saludable y vigilada,
+    pues la diversidad entre especies es una de las mayores virtudes de unas lagunas."
+  - "Deber\xE1s vigilar la felicidad de los habitantes, en el pueblo las lagunas
+    son el principal atractivo de los turistas y para los ciudadanos es un motivo
+    para estar orgulloso, no quieres que te linchen."
+  - "Deber\xE1s vigilar el ecosistema, pues la basura, los malos usos de las infraestructuras
+    de las lagunas y las malas pr\xE1cticas ambientales que perjudiquen a fauna y
+    flora son muy perjudiciales para las lagunas."
+  - "Y por \xFAltimo debes vigilar tu presupuesto, las reparaciones de infrestructuras
+    y dem\xE1s costos de mantenimiento podr\xEDan arruinarnos."
+  - "Dicho esto, buena suerte y \xE1nimo en tu nuevo trabajo."
+  semana1:
+  - YEEEEEEEEEEEEEEEEEEEEA
+  semana2:
+  - dawdadsadwa
+  semana3: []
+  semana4: []
+  semana5: []
+  semana6: []
+  semana7: []
+  semana8: []
+  semana9: []
+  semana10: []
+  pocoFe: []
+  bastanteFe: []
+  muchoFe: []
+  pocoD: []
+  bastanteD: []
+  muchoD: []
+  pocoFa: []
+  bastanteFa: []
+  muchoFa: []
+  pocoE: []
+  bastanteE: []
+  muchoE: []
 --- !u!1 &1056642357
 GameObject:
   m_ObjectHideFlags: 0

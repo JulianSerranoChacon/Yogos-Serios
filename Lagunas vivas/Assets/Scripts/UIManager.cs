@@ -233,5 +233,6 @@ public class UIManager : MonoBehaviour
         _maxFaunaWidth = _sliderFauna.rectTransform.rect.width;
 
         ActualizarInterfaz();
+        _dialogManager.startDialogue(_gameManager.GetDialogos().dialogoInicial);
     }
 }

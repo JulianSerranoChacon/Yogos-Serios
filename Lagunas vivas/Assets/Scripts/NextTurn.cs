@@ -11,6 +11,10 @@ public class NextTurn : MonoBehaviour
 
     public void Next()
     {
+
+        if (GameManager.Instance.getUIManager().getInDialgue())
+            return;
+
         GameManager.Instance.GetComponent<TurnosManager>().NextTurn();
         GameManager.Instance.getUIManager().ActualizarInterfaz();
         gameObject.SetActive(false);

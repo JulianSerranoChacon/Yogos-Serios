@@ -8,9 +8,8 @@ public class DialogManager : MonoBehaviour
     [SerializeField] TMP_Text TMPro ;
     [SerializeField] GameObject recuadroDeTexto;
     [SerializeField] private float typingTime = Constants.VELOCIDAD_DE_ESCRITURA;
-    [SerializeField, TextArea(4, 6)] private string [] dialogos;
+    private string [] _dialogos;
     private int dialogoIndex;
-
     private bool inDialogue;
 
     public bool getDialogue()
@@ -18,12 +17,15 @@ public class DialogManager : MonoBehaviour
         return inDialogue;
     }
 
-    public void startDialogue()
+    public void startDialogue(string[] dialogos)
     {
+        _dialogos = dialogos;
+        if(_dialogos.Length == 0)
+            return;
         recuadroDeTexto.SetActive(true);
         inDialogue = true;
         dialogoIndex = 0;
-        if (dialogos.Length > 0)
+        if (_dialogos.Length > 0)
             StartCoroutine(Showline());
     }
 
@@ -36,12 +38,12 @@ public class DialogManager : MonoBehaviour
     public void saltaDialogo()
     {
         StopAllCoroutines();
-        TMPro.text = dialogos[dialogoIndex];
+        TMPro.text = _dialogos[dialogoIndex];
     }
 
     public void nextLine()
     {
-        if(TMPro.text != dialogos[dialogoIndex])
+        if(TMPro.text != _dialogos[dialogoIndex])
         {
             saltaDialogo();
             return;
@@ -49,7 +51,7 @@ public class DialogManager : MonoBehaviour
 
 
         dialogoIndex++;
-        if( dialogoIndex < dialogos.Length )
+        if( dialogoIndex < _dialogos.Length )
             StartCoroutine(Showline());
         else
             endDialogue();
@@ -59,7 +61,7 @@ public class DialogManager : MonoBehaviour
     {
         TMPro.text = string.Empty;
 
-        foreach(char ch in dialogos[dialogoIndex])
+        foreach(char ch in _dialogos[dialogoIndex])
         {
             TMPro.text += ch;
             yield return new WaitForSeconds(typingTime);

@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         _recursosManager = GetComponent<RecursosManager>();
         _turnosManager = GetComponent<TurnosManager>();
         _listImages = GetComponent<ListaImagenes>();
+        _dialogos = GetComponent<Dialogos>();
     }
     public void AssignEventManager(EventManager x)
     {
@@ -48,9 +49,11 @@ public class GameManager : MonoBehaviour
     UIManager _UIManager;
     ListaImagenes _listImages;
     TurnosManager _turnosManager;
+    Dialogos _dialogos;
     public RecursosManager getResMan() { return _recursosManager; }
     public UIManager getUIManager() { return _UIManager; }
     public Sprite getImageEv(int i) {  return _listImages.getImage(i); }
+    public Dialogos GetDialogos() { return _dialogos; }
     #endregion
     public bool EnJuego = true;
     int setPrefabs = -1;
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour
             _eventManager.getEventos();
         }            
     }
+
     public void HandleClick(GameObject clickedObject)
     {
         ClickeableObject clickeable = clickedObject.GetComponent<ClickeableObject>();
