@@ -133,28 +133,24 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   - Si no lo permites
     - baja la felicidad.
 
-- 1.2 Una semana siguiente al cumpleaños recibes un aviso de que el cerro está bastante sucio, con bolsas de chucherías y demás desechos de una fiesta (confeti, etc).
+- 1.2 En el caso de que hayas aceptado, puede que recibes un aviso de que el cerro está bastante sucio, con bolsas de chucherías y demás desechos de una fiesta (confeti, etc). Ahora hay que limpiar
   - Limpias con voluntarios
-    - el ecosistema mejora levemente.
+    - el ecosistema mejora levemente pero pierdes felicidad
   - Limpias con una empresa
     - el ecosistema mejora bastante pero pierdes dinero.
-  - Llamas a los del cumpleaños y les pides que limpien
-    - Los del cumpleaños se enfadan y empiezan a esparcir rumores contra tí (baja la felicidad), además te vuelve a tocar cómo limpiar el desperdicio de nuevo (sin poder llamarles de nuevo).
 
 #### Segundo evento
 - El equipo de balonmano ha organizado un torneo en el pueblo y van a venir al pueblo varios equipos que se quedarán unos días en albergues e institutos, el ayuntamiento quiere organizar visitas guiadas a las lagunas para mostrarles a estos equipos. (No te puedes negar)
   - Dar una simple charla y un paseo
-    - sube felicidad levemente.
+    - sube la felicidad levemente.
   - Dar una charla y hacer después un aperitivo/fiesta en las lagunas.
-    - sube felicidad, baja dinero (el evento continúa en el 2.1 instantáneamente).
+    - sube bastante la felicidad y baja dinero
 
-- 2.1 Los niños de un equipo empiezan a liarla en uno de los parques con columpios y tú les ves.
+- 2.1 En el case de que ofrezcas el aperitivo, unos niños de un equipo empiezan a jugar a lo bestia en uno de los parques con columpios y tú les ves.
   - Decides avisar al entrenador de los niños para que les diga que paren.
     - (el entrenador tiene más cosas que atender y solo les echa una pequeña bronca), el columpio se rompe y pierdes el dinero que necesitarás para repararlo.
-  - Pasas del tema, piensas que no es problema tuyo. 
-    - El columpio se rompe y pierdes el dinero que necesitarás para repararlo.
   - Les echas una reprimenda repetidas veces hasta que paran.
-    - baja la felicidad un poco pero consigues que los niños respeten el lugar, sube el dinero, ya que al rato viene una niña a jugar en el mismo parque sube la felicidad más de lo que había bajado (se puede mover la barra en tiempo de ejecución o solo una vez, sube)
+    - baja la felicidad un poco pero consigues que los niños respeten el lugar
 
 #### Tercer evento
 - Se han hecho pruebas en la laguna, y se ha descubierto que el nivel de microorganismos ha bajado. Esto podría afectar gravemente el ecosistema acuático.
@@ -198,46 +194,46 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
     - (Baja la felicidad)
 
 #### Octavo evento
-- Algunos habitantes han cogido la costumbre de pasear a sus perros por las lagunas. Esto tarde o temprano va a afectar negativamente a la fauna del ecosistema
+- Algunos habitantes han cogido la costumbre de pasear a sus perros por las lagunas. Esto tarde o temprano puede afectar negativamente a la fauna del ecosistema
   - Por ahora confiemos en la responsabilidad de los dueños.
     - (Baja la fauna)
   - Hagamos que se limite a los bosques de los alrededores
     - (Baja ligeramente la felicidad y la fauna)
   - Prohibimos directamente el paseo de mascotas en toda la zona.
-    - (Baja la felicidad)
+    - (Baja la felicidad considerablemente)
 
 #### Noveno evento
-- Entre los jóvenes del pueblo se ha iniciado una nueva moda de ir a pescar a los embarcaderos, pero nadie los ha enseñado a pescar y lo hacen sin respetar el medio ambiente, pescan todo tipo de peces de manera indiscriminada y dejan el agua llena de anzuelos porque muchas veces no los colocan correctamente.
+- Entre los jóvenes del pueblo se ha iniciado una nueva moda de ir a pescar a los embarcaderos, pero nadie los ha enseñado a pescar y lo hacen sin respetar el medio ambiente. Pescan todo tipo de peces de manera indiscriminada y dejan el agua llena de anzuelos, al no colocarlos correctamente.
   - Haces varios cursos y charlas para concienciar de la pesca responsable, enseñando a los jóvenes qué peces pueden pescar y a cuales deben respetar y devolver al agua, además les enseñas a manejar correctamente el material de pesca, aunque la actividad de pesca sigue siendo excesiva.
-    - aumenta la felicidad bastante y muy  poco el ecosistema (por los anzuelos), pero baja bastante la fauna.
+    - aumenta la felicidad bastante, pero baja bastante la fauna y el dinero.
   - Decides que es una moda pasajera que no durará mucho y son cosas de críos.
     - Bajan mucho el ecosistema y la fauna.
   - Decides prohibir la pesca.
-    - baja bastante la felicidad, suben la fauna y el ecosistema.
+    - baja la felicidad, suben la fauna y el ecosistema.
   - Decides regular la pesca para que solamente gente con cierta licencia y experiencia pueda pescar.
-    - baja poco la felicidad, suben un poco el ecosistema y la fauna.
+    - baja poco la felicidad, suben el ecosistema y la fauna.
 
 ### Eventos reparaciones
 
 #### Primer evento
-- Se ha reportado algún deterioro en los pasos de senderos, necesitamos revisar estos pasos para la seguridad de los visitantes.
+- Se ha reportado algún deterioro en los pasos de senderos, necesitamos revisar estos pasos por la seguridad de los visitantes.
   - No hace falta revisarlo.
-    - 50% de que alguien tenga un accidente, (ir al 1.2).
+    - 50% de probabilidades de que alguien tenga un accidente, (ir al 1.2).
   - ¡La seguridad es lo primero! Llamar a los profesionales.
     - Pierde dinero.
 - 1.2 ¡Oh no! Alguien ha tenido un accidente. El afectado reclama una indemnización.
   - baja la felicidad y bajará el dinero.
 
 #### Segundo evento
-- ¡Control de cortafuegos! Nos han informado que hay riesgo de incendio por estas fechas, deberíamos establecer uno, sin embargo, esto no gusta a todo el mundo.
+- ¡Control de cortafuegos! Nos han informado que hay riesgo de incendio por estas fechas, deberíamos establecer uno, sin embargo, estas decisiones no gustan a todo el mundo.
   - ¡La seguridad es lo primero! Llamar a los profesionales.
-    - pierde dinero y baja poquito la ecología y felicidad.
-  - ¡No hay que tocar la naturaleza! La madre naturaleza es sabia.
-    - 50% de probabilidad de incendio (ir a 2.1), bajarán todos los indicadores.
+    - pierde dinero
+  - Si no les gusta, tendrán sus razones ¡No hay que tocar la naturaleza!
+    - 50% de probabilidad de incendio (ir a 2.1)
 
 - 2.1  ¡Oh no! Un incendio está arrasando con todo.
   - Evacuar a todo el mundo y llamar a los bomberos de inmediato 
-    - Baja el ecosistema y la felicidad.
+    - Baja el ecosistema, la fauna y la felicidad considerablemente.
 
 #### Tercer evento
 - Hay que reforestar algunas zonas. La reforestación es crucial porque ayuda a restaurar ecosistemas, mejorar la calidad del aire y agua, y combatir el cambio climático.
@@ -252,36 +248,30 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
     - Pierdes dinero.
   - Hacer una reparación provisional.
     - 50% de probabilidad de que el puente se dañe más gravemente (ir a 4.1).
-  - Ignorar el problema.
-    -  baja la felicidad y hay un 50% de accidente (ir a 4.2).
 
 - 4.1 ¡El puente ha acabado por dañarse más gravemente! 
   - Arreglar el puente.
     - pierdes dinero.
 
-- 4.2 ¡Ha habido un accidente en el río!
-  -  indemnizar a la persona afectada.
-    - pierdes felicidad y dinero.
-
 #### Quinto evento
 - Un grupo de expertos forestales han propuesto realizar un incendio controlado ya que el exceso de materia seca acumulada podría ocasionar un incendio de grandes dimensiones. Sin embargo, algunos vecinos de la zona y visitantes están preocupados por la propuesta. El viento actualmente está en calma.
   - Sí, confío en los expertos y autorizo el incendio controlado.
-    - baja la barra de ecosistema un poquitín y baja el dinero un poco.
+    - baja la barra de ecosistema un poquitín
   - No, jamás provocaremos un incendio. 
     - 50% de incendio (ir al 5.1).
 
-- 5.1  ¡Oh no! Un incendio está arrasando con todo.
+- 5.1  ¡Oh no! Ha comenzado un incendio y está arrasando con todo.
   - Evacuar a todo el mundo y llamar a los bomberos de inmediato.
-    - Baja el ecosistema y la felicidad.
+    - Baja el ecosistema la fauna y la felicidad.
 
 - Diálogo educativo con el agente forestal antes de aparecer este evento: “No realizar un incendio controlado puede parecer más seguro a corto plazo, pero aumenta las probabilidades de incendios incontrolados en el futuro”
 
 #### Sexto evento
 - Un grupo de expertos forestales han propuesto realizar un incendio controlado ya que el exceso de materia seca acumulada podría ocasionar un incendio de grandes dimensiones. Sin embargo, algunos vecinos de la zona y visitantes están preocupados por la propuesta. Actualmente hay mucho viento.
   - Sí, confío en los expertos y autorizo el incendio controlado.
-    - baja la barra de ecosistema un poquitín y baja el dinero un poco. 50% de que el incendio se descontrole (ir a 6.1).
+    - baja la barra de ecosistema un poquitín. 50% de que el incendio se descontrole (ir a 6.1).
   - No, el riesgo en estas condiciones actuales es demasiado alto, mejor esperamos a que no haya viento. 
-    - (No cambian los indicadores. Si al final vamos a hacer lo que dijimos de poder mostrar un evento en la siguiente semana, yo mostraría el evento anterior, que es el mismo pero sin viento).
+    - (No cambian los indicadores. A la siguiente semana, surge el evento anterior).
   - No, jamás provocaremos un incendio.
     - 50% de incendio (ir a 6.1)
 

@@ -1156,6 +1156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopBar
       objectReference: {fileID: 0}
+    - target: {fileID: 5718890232010278353, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6793255574757904402, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: m_Name
       value: UI

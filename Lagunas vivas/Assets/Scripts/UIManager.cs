@@ -37,9 +37,9 @@ public class UIManager : MonoBehaviour
     private RecursosManager _recursosManager;
     #endregion
     #region EfectoColoresBarras
-    const float DIVISIONES1 = 6.0f;
-    const float DIVISIONES2 = 4.0f;
-    const float TIEMPO_FUNDIDO = 0.15f;
+    const float DIVISIONES1 = 8.0f;
+    const float DIVISIONES2 = 5.0f;
+    const float TIEMPO_FUNDIDO = 0.25f;
     public void SumaFel()
     {
         StartCoroutine(ChangeFel(0, 0.5f, 0));
