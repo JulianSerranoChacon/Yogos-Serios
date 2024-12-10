@@ -221,7 +221,14 @@ public class UIManager : MonoBehaviour
     {
         return _dialogManager.getDialogue();
     }
-
+    public void startDialogue(string[] dialogo)
+    {
+        _dialogManager.startDialogue(dialogo);
+    }
+    public void startDialogue(int turno)
+    {
+        _dialogManager.startDialogue(GameManager.Instance.getWeekDialogue(turno));
+    }
     void Start()
     {
         _gameManager = GameManager.Instance;
@@ -233,6 +240,8 @@ public class UIManager : MonoBehaviour
         _maxFaunaWidth = _sliderFauna.rectTransform.rect.width;
 
         ActualizarInterfaz();
-        _dialogManager.startDialogue(_gameManager.GetDialogos().dialogoInicial);
+
+        if (_gameManager.getTurno() == 0)
+            _dialogManager.startDialogue(_gameManager.GetDialogos().dialogoInicial);
     }
 }

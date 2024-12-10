@@ -16,7 +16,9 @@ public class NextTurn : MonoBehaviour
             return;
 
         GameManager.Instance.GetComponent<TurnosManager>().NextTurn();
-        GameManager.Instance.getUIManager().ActualizarInterfaz();
         gameObject.SetActive(false);
+        UIManager uIManager = GameManager.Instance.getUIManager();
+        uIManager.ActualizarInterfaz();
+        uIManager.startDialogue(GameManager.Instance.getTurno());
     }
 }

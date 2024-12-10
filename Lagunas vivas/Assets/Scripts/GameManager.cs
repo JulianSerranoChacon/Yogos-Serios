@@ -54,6 +54,46 @@ public class GameManager : MonoBehaviour
     public UIManager getUIManager() { return _UIManager; }
     public Sprite getImageEv(int i) {  return _listImages.getImage(i); }
     public Dialogos GetDialogos() { return _dialogos; }
+    public string[] getWeekDialogue(int day)
+    {
+        switch (day)
+        {
+            case 1:
+                return _dialogos.semana1;
+                break;
+            case 2:
+                return _dialogos.semana2;
+                break;
+            case 3:
+                return _dialogos.semana3;
+                break;
+            case 4:
+                return _dialogos.semana4;
+                break;
+            case 5:
+                return _dialogos.semana5;
+                break;
+            case 6:
+                return _dialogos.semana6;
+                break;
+            case 7:
+                return _dialogos.semana7;
+                break;
+            case 8:
+                return _dialogos.semana8;
+                break;
+            case 9:
+                return _dialogos.semana9;
+                break;
+            case 10:
+                return _dialogos.semana10;
+                break;
+            default:
+                return new string[0];
+                break;
+        }
+    }
+
     #endregion
     public bool EnJuego = true;
     int setPrefabs = -1;
