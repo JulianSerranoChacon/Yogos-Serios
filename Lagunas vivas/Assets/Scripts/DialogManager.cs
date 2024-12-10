@@ -33,8 +33,21 @@ public class DialogManager : MonoBehaviour
         inDialogue=false;
     }
 
+    public void saltaDialogo()
+    {
+        StopAllCoroutines();
+        TMPro.text = dialogos[dialogoIndex];
+    }
+
     public void nextLine()
     {
+        if(TMPro.text != dialogos[dialogoIndex])
+        {
+            saltaDialogo();
+            return;
+        }
+
+
         dialogoIndex++;
         if( dialogoIndex < dialogos.Length )
             StartCoroutine(Showline());

@@ -1170,7 +1170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8089643688689617592, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: dialogos.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8089643688689617592, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: dialogos.Array.data[0]
@@ -1179,6 +1179,14 @@ PrefabInstance:
     - target: {fileID: 8089643688689617592, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: dialogos.Array.data[1]
       value: Mira a Homer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089643688689617592, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: dialogos.Array.data[2]
+      value: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089643688689617592, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: dialogos.Array.data[3]
+      value: ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       objectReference: {fileID: 0}
     - target: {fileID: 8220784808807739457, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: m_AnchoredPosition.y
