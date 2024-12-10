@@ -27,6 +27,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private TMP_Text _EfectoDinero;
 
+    [SerializeField] private DialogManager _dialogManager;
+
     private float _maxFelicidadWidth;
     private float _maxEcosistemaWidth;
     private float _maxFaunaWidth;
@@ -209,6 +211,17 @@ public class UIManager : MonoBehaviour
         }
 
     }
+
+    public void nextLine()
+    {
+        _dialogManager.nextLine();
+    }
+
+    public bool getInDialgue()
+    {
+        return _dialogManager.getDialogue();
+    }
+
     void Start()
     {
         _gameManager = GameManager.Instance;

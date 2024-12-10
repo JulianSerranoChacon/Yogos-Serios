@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,11 @@ public class InputManager : MonoBehaviour
 
     public void OnClick(InputAction.CallbackContext context)
     {
+
+        UIManager _myUI = GameManager.Instance.getUIManager();
+        if (context.started && _myUI.getInDialgue())
+            return;
+
         if (context.started)
         {
             var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue())); if (rayHit.collider)
@@ -24,6 +30,12 @@ public class InputManager : MonoBehaviour
         }
         else if (context.canceled)
         {
+
+            if (_myUI.getInDialgue())
+            {
+                _myUI.nextLine();
+                return;
+            }
             var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
             if (rayHit.collider)
             {
