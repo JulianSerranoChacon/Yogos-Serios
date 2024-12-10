@@ -3,7 +3,7 @@ r
 Ha habido avisos sobre la necesidad de revisar los pasos de senderismo y otras estructuras de madera para la seguridad de los visitantes.
 Imagen
 4
-3
+2
 No creo que haga falta revisarlo, la probabilidad de que algo grave pase es muy baja
 0
 0
@@ -11,23 +11,17 @@ No creo que haga falta revisarlo, la probabilidad de que algo grave pase es muy 
 -10
 
 ¡La seguridad es lo primero! ¡Haremos reparaciones!
--30
+-40
 0
 0
 15
-
-Lo revisaré yo mismo!
-0
-0
-0
-5
 
 Nos han informado que hay riesgo de incendio por estas fechas, por lo que habrá que controlar este peligro a través de cortafuegos. Sin embargo, establecer cortafuegos no gusta a todo el mundo y nos costará dinero
 Imagen
 5
 2
 Los incendios son un tema importante. Habrá que hacer los cortafuegos
--15
+-25
 -5
 0
 0
@@ -43,7 +37,7 @@ Imagen
 6
 2
 El dinero no es lo que importa
--60
+-90
 20
 20
 15
