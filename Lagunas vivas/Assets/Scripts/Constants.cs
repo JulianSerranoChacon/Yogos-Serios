@@ -20,6 +20,9 @@ public class Constants
     //Sistema turnos
     public const int NUM_TURNOS_PARA_FIN = 10;
 
+    //Sistemas de diálogos
+    public const float VELOCIDAD_DE_ESCRITURA = 0.5f;
+
 
     //Eventos
     public const int NUM_EVENTOS = 2;

@@ -7,7 +7,7 @@ public class DialogManager : MonoBehaviour
 {
     [SerializeField] TMP_Text TMPro ;
     [SerializeField] GameObject recuadroDeTexto;
-    [SerializeField] private float typingTime = 0.05f;
+    [SerializeField] private float typingTime = Constants.VELOCIDAD_DE_ESCRITURA;
     [SerializeField, TextArea(4, 6)] private string [] dialogos;
     private int dialogoIndex;
 
