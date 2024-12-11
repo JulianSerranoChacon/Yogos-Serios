@@ -2,7 +2,7 @@ s
 2
 Un grupo de expertos forestales han propuesto realizar un incendio controlado pues la materia seca acumulada podría causar un incendio de grandes dimensiones. Algunos vecinos y visitantes están preocupados por la propuesta. El viento actualmente está en calma.
 Imagen
-4
+7
 2
 Sí, confío en los expertos y autorizo el incendio controlado
 0
@@ -18,7 +18,7 @@ No, jamás provocaremos un incendio
 Cont
 ¡Desastre! Los expertos tenían razón, y toda la materia seca acumulada ha causado un incendio de gran tamaño
 Imagen
-0
+8
 1
 ¡Evacuad a la población y llamad a los bomberos!
 0

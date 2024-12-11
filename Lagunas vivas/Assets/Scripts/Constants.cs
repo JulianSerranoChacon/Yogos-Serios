@@ -16,6 +16,9 @@ public class Constants
     //la constante indica cuando el dinero en la UI debe de estar de color verde
     public const float BIEN_DE_DINERO = 30;
 
+    public const float MAX_POS_XY_EV = 380;    
+    public const float MIN_POS_XY_EV = -380;
+
 
     //Sistema turnos
     public const int NUM_TURNOS_PARA_FIN = 10;

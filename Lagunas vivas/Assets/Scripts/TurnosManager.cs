@@ -74,24 +74,24 @@ public class TurnosManager : MonoBehaviour
                 case 0:
                     Lagunas[donde, numGran].NumEv = l.NumEvGrande[ev];
                     Lagunas[donde, numGran].spr = l.numSpriteGrande[ev];
-                    Lagunas[donde, numGran].PosX = l.posXGrande[ev];
-                    Lagunas[donde, numGran].PosY = l.posYGrande[ev];
+                    Lagunas[donde, numGran].PosX = Random.Range(Constants.MIN_POS_XY_EV/100.0f, Constants.MAX_POS_XY_EV/100.0f);
+                    Lagunas[donde, numGran].PosY = Random.Range(Constants.MIN_POS_XY_EV / 100.0f, Constants.MAX_POS_XY_EV / 100.0f);
                     Lagunas[donde, numGran].initialized = true;
                     numGran++;
                     break;
                 case 1:
                     Lagunas[donde, numChic].NumEv = l.NumEvChica[ev];
                     Lagunas[donde, numChic].spr = l.numSpriteChica[ev];
-                    Lagunas[donde, numChic].PosX = l.posXChica[ev];
-                    Lagunas[donde, numChic].PosY = l.posYChica[ev];
+                    Lagunas[donde, numChic].PosX = Random.Range(Constants.MIN_POS_XY_EV / 100.0f, Constants.MAX_POS_XY_EV / 100.0f);
+                    Lagunas[donde, numChic].PosY = Random.Range(Constants.MIN_POS_XY_EV / 100.0f, Constants.MAX_POS_XY_EV / 100.0f);
                     Lagunas[donde, numChic].initialized = true;
                     numChic++;
                     break;
                 case 2:
                     Lagunas[donde, numSal].NumEv = l.NumEvSal[ev];
                     Lagunas[donde, numSal].spr = l.numSpriteSal[ev];
-                    Lagunas[donde, numSal].PosX = l.posXSal[ev];
-                    Lagunas[donde, numSal].PosY = l.posYSal[ev];
+                    Lagunas[donde, numSal].PosX = Random.Range(Constants.MIN_POS_XY_EV / 100.0f, Constants.MAX_POS_XY_EV / 100.0f);
+                    Lagunas[donde, numSal].PosY = Random.Range(Constants.MIN_POS_XY_EV / 100.0f, Constants.MAX_POS_XY_EV / 100.0f);
                     Lagunas[donde, numSal].initialized = true;
                     numSal++;
                     break;
