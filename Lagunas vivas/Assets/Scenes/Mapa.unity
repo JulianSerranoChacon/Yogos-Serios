@@ -630,23 +630,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998e6bbc81f26754480c1e5ea5c4775d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxEventosGrande: 4
-  NumEvGrande: 0e0000000e0000000e0000000e000000
+  MaxEventosGrande: 6
+  NumEvGrande: 100000000e0000000a0000000b0000000c0000000d000000
   numSpriteGrande:
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
-  MaxEventosChica: 4
-  NumEvChica: 00000000010000000200000003000000
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  MaxEventosChica: 6
+  NumEvChica: 01000000020000001100000012000000030000000f000000
   numSpriteChica:
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
-  MaxEventosSal: 4
-  NumEvSal: 00000000010000000200000003000000
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  MaxEventosSal: 6
+  NumEvSal: 070000000600000005000000040000000800000009000000
   numSpriteSal:
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
+  - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}

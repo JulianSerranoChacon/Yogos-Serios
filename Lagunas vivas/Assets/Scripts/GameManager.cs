@@ -116,9 +116,12 @@ public class GameManager : MonoBehaviour
         {
             if(clickeable.getNumScene() < 0)
             {
-                GenerateNewEvent();
-                if (clickeable.posEnArray != -1) _turnosManager.Uncheck(clickeable.posEnArray);
-                Destroy(clickedObject);                
+                if (!_eventManager.IsThereEvent())
+                {
+                    GenerateNewEvent();
+                    if (clickeable.posEnArray != -1) _turnosManager.Uncheck(clickeable.posEnArray);
+                    Destroy(clickedObject);
+                }                
             }            
             else
             {

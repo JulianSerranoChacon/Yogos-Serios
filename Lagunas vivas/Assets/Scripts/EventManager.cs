@@ -25,9 +25,13 @@ public class EventManager : MonoBehaviour
 
     Evento evActual;
 
+    bool inUsage;
+    public bool IsThereEvent() {  return inUsage; }
+
     #region Principio
     void Start()
     {
+        inUsage = false;
         GameManager.Instance.AssignEventManager(this);        
         _recursosManager = GameManager.Instance.getResMan();
         _uiManager = GameManager.Instance.getUIManager();
@@ -123,6 +127,7 @@ public class EventManager : MonoBehaviour
     //Void que pilla un nuevo evento y lo renderiza
     public void NewEvent(Evento ev = null)
     {
+        inUsage = true;
         EventFrame.SetActive(true);
         _efectoFondoOscuro.SetActive(true);
         if (ev == null)
@@ -158,7 +163,8 @@ public class EventManager : MonoBehaviour
     }
     //Método al que se llama una vez se elige alguna de las opciones
     public void CooseOpcion(int i)
-    {        
+    {
+        inUsage = false;
         _recursosManager = GameManager.Instance.getResMan();
         _uiManager = GameManager.Instance.getUIManager();        
         if (i <= evActual._numOpciones && GameManager.Instance.EnJuego)

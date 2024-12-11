@@ -1,4 +1,4 @@
-r
+s
 1
 Nos han informado que hay riesgo de incendio por estas fechas, por lo que habrá que controlar este peligro a través de cortafuegos. Sin embargo, establecer cortafuegos no gusta a todo el mundo y nos costará dinero
 Imagen
