@@ -1,0 +1,27 @@
+s
+2
+Mientras estás caminando por el bosque, te encuentras una cría de pájaro tirada en las raíces de un árbol. Se ha caído del nido. ¿Lo recoges y lo vuelves a colocar en este?
+Imagen
+11
+2
+Colocarlo
+0
+0
+-5
+0
+Cont
+Dejarlo donde está
+0
+0
+5
+0
+Cont
+Lo correcto, por muy cruel que suene, es dejarlo donde estaba. Las madres pájaro no aceptan a las crías si tienen olor humano, así que, si no es una especie en peligro de extinción, lo mejor es dejar que la naturaleza siga su curso
+Imagen
+11
+1
+Está bien...
+0
+0
+0
+0

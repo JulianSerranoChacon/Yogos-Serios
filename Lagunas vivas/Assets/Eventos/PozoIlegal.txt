@@ -1,0 +1,23 @@
+r
+1
+Ha habido un avistamiento de un pozo de agua que no parece estar regulado en los alrededores de las lagunas. ¿Qué deberías hacer?
+Imagen
+12
+3
+Tengo que llamar a la policía para que se encargue del asunto
+0
+-10
+-10
+0
+
+Yo soy el encargado de las lagunas, debería hacer una investigación a fondo sobre esto...
+-50
+0
+0
+0
+
+Debería pedir voluntarios para que peinen la zona y se aseguren de que no hay más pozos ilegales.
+0
+0
+0
+-10

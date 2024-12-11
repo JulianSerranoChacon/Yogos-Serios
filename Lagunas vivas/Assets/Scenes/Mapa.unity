@@ -601,6 +601,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 92b3eb27940755840858a4a0f1ae4f0c, type: 3}
   - {fileID: 21300000, guid: bd10cba4d8b26234da0506035fa358f5, type: 3}
   - {fileID: 21300000, guid: 748fc435f92facb45a001225a310fb18, type: 3}
+  - {fileID: 21300000, guid: 110d0e606d51b3946a96689794b61e42, type: 3}
+  - {fileID: 21300000, guid: 305e1849bccca7d4b9ae849bca939188, type: 3}
+  - {fileID: 21300000, guid: 89880c8a38baf744ab3471ffed007f92, type: 3}
+  - {fileID: 21300000, guid: bcc06a5ed34a36343aea26bf601a5c40, type: 3}
 --- !u!114 &818059297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,22 +631,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxEventosGrande: 4
-  NumEvGrande: 0d0000000d0000000d0000000d000000
+  NumEvGrande: 0e0000000e0000000e0000000e000000
   numSpriteGrande:
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
-  posXGrande:
-  - -4
-  - 4
-  - -4
-  - 4
-  posYGrande:
-  - -4
-  - -4
-  - 4
-  - 4
   MaxEventosChica: 4
   NumEvChica: 00000000010000000200000003000000
   numSpriteChica:
@@ -650,16 +644,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
-  posXChica:
-  - 4
-  - -4
-  - 4
-  - -4
-  posYChica:
-  - 4
-  - 4
-  - -4
-  - -4
   MaxEventosSal: 4
   NumEvSal: 00000000010000000200000003000000
   numSpriteSal:
@@ -667,16 +651,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
   - {fileID: 21300000, guid: 84b86e650e6826540aff4e16836fb55e, type: 3}
-  posXSal:
-  - 4
-  - 4
-  - -4
-  - -4
-  posYSal:
-  - 4
-  - -4
-  - 4
-  - -4
 --- !u!114 &818059299
 MonoBehaviour:
   m_ObjectHideFlags: 0
