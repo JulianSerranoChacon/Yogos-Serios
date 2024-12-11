@@ -114,23 +114,24 @@ public class GameManager : MonoBehaviour
 
         if (clickeable != null)
         {
-            if(clickeable.getNumScene() < 0)
+
+            if (!_eventManager.IsThereEvent())
             {
-                if (!_eventManager.IsThereEvent())
+                if (clickeable.getNumScene() < 0)
                 {
                     GenerateNewEvent();
                     if (clickeable.posEnArray != -1) _turnosManager.Uncheck(clickeable.posEnArray);
                     Destroy(clickedObject);
-                }                
-            }            
-            else
-            {
-                SceneManager.LoadScene(clickeable.getNumScene());
-                if (clickeable.getNumScene() == 2 || clickeable.getNumScene() == 3 || clickeable.getNumScene() == 4)
-                {
-                    setPrefabs =clickeable.getNumScene() - 2;
                 }
-            }
+                else
+                {
+                    SceneManager.LoadScene(clickeable.getNumScene());
+                    if (clickeable.getNumScene() == 2 || clickeable.getNumScene() == 3 || clickeable.getNumScene() == 4)
+                    {
+                        setPrefabs = clickeable.getNumScene() - 2;
+                    }
+                }
+            }            
         }
     }
     public void PullUpPrefabs()
