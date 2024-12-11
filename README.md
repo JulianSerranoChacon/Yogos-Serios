@@ -155,11 +155,11 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
 #### Tercer evento
 - Se han hecho pruebas en la laguna, y se ha descubierto que el nivel de microorganismos ha bajado. Esto podría afectar gravemente el ecosistema acuático.
   - Tienes demasiados problemas en este momento. 
-    - Te encargarás de ello la semana que viene (Baja el ecosistema y te surgirá este evento de nuevo la semana que viene)
+    - Decides ocuparte de ello más tarde, por lo que baja el ecosistema
   - Probablemente es culpa de los bañistas. Prohibiremos temporalmente el baño 
-    - (Baja la felicidad y te surgirá este evento de nuevo la semana que viene, pues no es la verdadera causa del problema)
+    - Baja exclusivamente la felicidad, pues esta no es la verdadera causa del problema
   - Probablemente sea causa de algún afluente. Cerraremos las presas de los ríos afluentes hasta que los niveles se estabilicen 
-    - (Es la solución correcta. No volverá a surgir este problema)
+    - Es la solución correcta
 
 #### Cuarto evento
 - Te encuentras un pájaro tirado en las raíces de un árbol. Se ha caído del nido. ¿Lo recoges y lo vuelves a colocar en este?
