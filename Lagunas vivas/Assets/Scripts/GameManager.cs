@@ -96,6 +96,49 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+    public string[] getRecursoDialogue(string recurso)
+    {
+        switch (recurso)
+        {
+            case "Felicidad":
+                if (_recursosManager.getFelicidad() < Constants.MAX_REC * 0.25)
+                    return _dialogos.pocoFe;
+                else if(_recursosManager.getFelicidad() < Constants.MAX_REC * 0.75)
+                    return _dialogos.muchoFe;
+                else
+                    return _dialogos.bastanteFe;
+                break;
+            case "Fauna":
+                if (_recursosManager.getFauna() < Constants.MAX_REC * 0.25)
+                    return _dialogos.pocoFa;
+                else if (_recursosManager.getFauna() < Constants.MAX_REC * 0.75)
+                    return _dialogos.muchoFa;
+                else
+                    return _dialogos.bastanteFa;
+                break;
+            case "Dinero":
+                if (_recursosManager.getDinero() < Constants.BIEN_DE_DINERO * 0.25)
+                    return _dialogos.pocoD
+                        ;
+                else if (_recursosManager.getDinero() < Constants.BIEN_DE_DINERO * 2)
+                    return _dialogos.muchoD;
+                else
+                    return _dialogos.bastanteD;
+                break;
+            case "Ecosistema":
+                if (_recursosManager.getEcosistema() < Constants.MAX_REC * 0.25)
+                    return _dialogos.pocoE;
+                else if (_recursosManager.getEcosistema() < Constants.MAX_REC * 0.75)
+                    return _dialogos.muchoE;
+                else
+                    return _dialogos.bastanteE;
+                break;
+            default: 
+                return new string[0];
+                break;
+
+        }
+    }
 
     #endregion
     public bool EnJuego = true;

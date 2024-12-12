@@ -15,10 +15,16 @@ public class NextTurn : MonoBehaviour
         if (GameManager.Instance.getUIManager().getInDialgue())
             return;
 
-        GameManager.Instance.GetComponent<TurnosManager>().NextTurn();
+        GameManager gM = GameManager.Instance;
+        gM.GetComponent<TurnosManager>().NextTurn();
         gameObject.SetActive(false);
-        UIManager uIManager = GameManager.Instance.getUIManager();
+        UIManager uIManager = gM.getUIManager();
         uIManager.ActualizarInterfaz();
-        uIManager.startDialogue(GameManager.Instance.getTurno());
+        uIManager.addDialogue(gM.getTurno());
+        uIManager.addDialogue(gM.getRecursoDialogue("Felicidad"));
+        uIManager.addDialogue(gM.getRecursoDialogue("Fauna"));
+        uIManager.addDialogue(gM.getRecursoDialogue("Dinero"));
+        uIManager.addDialogue(gM.getRecursoDialogue("Ecosistema"));
+
     }
 }

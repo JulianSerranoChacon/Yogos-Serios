@@ -221,11 +221,11 @@ public class UIManager : MonoBehaviour
     {
         return _dialogManager.getDialogue();
     }
-    public void startDialogue(string[] dialogo)
+    public void addDialogue(string[] dialogo)
     {
         _dialogManager.addDialogue(dialogo);
     }
-    public void startDialogue(int turno)
+    public void addDialogue(int turno)
     {
         _dialogManager.addDialogue(GameManager.Instance.getWeekDialogue(turno));
     }
