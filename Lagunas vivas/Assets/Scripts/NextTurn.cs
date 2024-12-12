@@ -21,10 +21,13 @@ public class NextTurn : MonoBehaviour
         UIManager uIManager = gM.getUIManager();
         uIManager.ActualizarInterfaz();
         uIManager.addDialogue(gM.getTurno());
-        uIManager.addDialogue(gM.getRecursoDialogue("Felicidad"));
-        uIManager.addDialogue(gM.getRecursoDialogue("Fauna"));
-        uIManager.addDialogue(gM.getRecursoDialogue("Dinero"));
-        uIManager.addDialogue(gM.getRecursoDialogue("Ecosistema"));
+        if(gM.getTurno()%2 == 0)
+        {
+            uIManager.addDialogue(gM.getRecursoDialogue("Felicidad"));
+            uIManager.addDialogue(gM.getRecursoDialogue("Fauna"));
+            uIManager.addDialogue(gM.getRecursoDialogue("Dinero"));
+            uIManager.addDialogue(gM.getRecursoDialogue("Ecosistema"));
 
+        }
     }
 }
