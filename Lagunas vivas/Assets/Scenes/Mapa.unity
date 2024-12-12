@@ -688,29 +688,87 @@ MonoBehaviour:
     y dem\xE1s costos de mantenimiento podr\xEDan arruinarnos."
   - "Dicho esto, buena suerte y \xE1nimo en tu nuevo trabajo."
   semana1:
-  - YEEEEEEEEEEEEEEEEEEEEA
+  - "\xA1Bienvenido! Mi nombre es Juan y soy empleado desde hace m\xE1s de 30 a\xF1os.
+    \n"
+  - ' Ahora eres el nuevo gerente de las lagunas. Este es un lugar precioso, lleno
+    de vida y naturaleza.'
+  - "  Tu trabajo es mantener el equilibrio entre felicidad, ecosistema y fauna.
+    Gestiona bien nuestro dinero o no querr\xE1s que el parque entre en bancarrota."
+  - "\xA1Recuerda que tus decisiones afectan a todos! Estoy aqu\xED para ayudarte.
+    \xA1Buena suerte!"
   semana2:
-  - dawdadsadwa
-  semana3: []
-  semana4: []
-  semana5: []
-  semana6: []
-  semana7: []
+  - Los humanos somos parte de la naturaleza, pero a veces nuestras actividades las
+    pueden desequilibrar.
+  - "Fiestas, paseos con mascotas o incluso el descuido de la basura pueden afectar
+    la fauna y el ecosistema. Como gerente, deber\xE1s tomar decisiones para reducir
+    este impacto. \xA1Lo est\xE1s haciendo genial!"
+  semana3:
+  - "La educaci\xF3n es clave para proteger lugares como las lagunas. A veces, organizar
+    charlas o actividades con los visitantes puede marcar una gran diferencia."
+  - "\xBFSab\xEDas que ense\xF1ar a los m\xE1s j\xF3venes c\xF3mo cuidar la naturaleza
+    es una inversi\xF3n para el futuro?"
+  semana4:
+  - 'Un ecosistema saludable es como una balanza: si una especie crece demasiado
+    o desaparece, todo puede desequilibrarse. '
+  - "Por ejemplo, demasiados ratones o conejos pueden da\xF1ar el equilibrio. \xA1Toma
+    decisiones sabias para mantener esa balanza estable!"
+  semana5:
+  - 'Las especies invasoras pueden ser un gran problema. Se ven inofensivas, pero
+    pueden desplazar a las especies locales. '
+  - "Es importante que estemos atentos y actuemos r\xE1pido cuando aparezcan. \xA1Sigue
+    as\xED, lo est\xE1s haciendo genial!"
+  semana6:
+  - "La basura es uno de los mayores enemigos de la naturaleza. Pl\xE1sticos, confeti
+    o restos de comida pueden tardar a\xF1os en desaparecer y afectan tanto al ecosistema
+    como a la fauna."
+  - "Muchos animales confunden pl\xE1sticos con comida. Fomentar el reciclaje y la
+    responsabilidad de los visitantes es clave para evitar problemas."
+  semana7:
+  - "Los incendios son una amenaza seria en lugares como este. A veces, incluso podemos
+    hacer incendios controlados para prevenir desastres mayores debido a la acumulaci\xF3n
+    de materia seca. "
+  - Sin embargo, hay que hacerlo en las condiciones adecuadas, sin viento y siempre
+    con expertos.
   semana8: []
   semana9: []
-  semana10: []
-  pocoFe: []
-  bastanteFe: []
-  muchoFe: []
-  pocoD: []
-  bastanteD: []
-  muchoD: []
-  pocoFa: []
-  bastanteFa: []
-  muchoFa: []
-  pocoE: []
-  bastanteE: []
-  muchoE: []
+  semana10:
+  - "\xA1Has llegado al final de tu gesti\xF3n como gerente de las lagunas! Este
+    lugar es un ejemplo de c\xF3mo peque\xF1as acciones pueden tener grandes impactos. "
+  - "Espero que hayas aprendido lo importante que es cada decisi\xF3n para mantener
+    este lugar equilibrado y lleno de vida."
+  pocoFe:
+  - "La  felicidad del pueblo ha descendido bastante, deber\xEDas tener m\xE1s cuidado
+    en tus decisiones."
+  bastanteFe:
+  - "La felicidad del  pueblo esst\xE1a en unos niveles  razonables."
+  muchoFe:
+  - "La poblaci\xF3n est\xE1 dando saltos de  alegr\xEDa, buen trabajo."
+  pocoD:
+  - "Est\xE1s bastante pelado  de dinero, ten cuidado con el presupuesto,  vas  a
+    tener que contenerte."
+  bastanteD:
+  - "Tienes una  cantidad de dinero aceptable, no permitas que baje m\xE1s de la
+    cuenta."
+  muchoD:
+  - "Est\xE1s  forrado, ahora mismo no tiene pintaa de que vayas  a  tener problemas
+    econ\xF3micos, pero cuidado."
+  pocoFa:
+  - "La fauna del  lugar se est\xE1 viendo  gravemente perjudicada, debes estar m\xE1s
+    atento  a sus  necesidades.\n"
+  bastanteFa:
+  - "La fauna est\xE1 en unos niveles aceptables, aunque habr\xEDa que tratar  de
+    hacer que los animales est\xE9n lo  m\xE1s agusto y saludables posible."
+  muchoFa:
+  - "La fauna est\xE1 en  unos  niveles excelentes, los  animales est\xE1n viviendo
+    en la gloria, buen trabajo."
+  pocoE:
+  - "El ecosistema est\xE1 en  un  estado  deplorable , debes trabajar en mejorarlo."
+  bastanteE:
+  - "El  escosistema est\xE1 en un estado decente, trata de mantenerlo en un estado
+    saludable."
+  muchoE:
+  - "El ecosistema est\xE1 en un estado excelente, Enhorabuena, trataa  de maantenerlo
+    as\xED."
 --- !u!1 &1056642357
 GameObject:
   m_ObjectHideFlags: 0

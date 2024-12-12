@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
             case "Felicidad":
                 if (_recursosManager.getFelicidad() < Constants.MAX_REC * 0.25)
                     return _dialogos.pocoFe;
-                else if(_recursosManager.getFelicidad() < Constants.MAX_REC * 0.75)
+                else if(_recursosManager.getFelicidad() > Constants.MAX_REC * 0.75)
                     return _dialogos.muchoFe;
                 else
                     return _dialogos.bastanteFe;
@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
             case "Fauna":
                 if (_recursosManager.getFauna() < Constants.MAX_REC * 0.25)
                     return _dialogos.pocoFa;
-                else if (_recursosManager.getFauna() < Constants.MAX_REC * 0.75)
+                else if (_recursosManager.getFauna() > Constants.MAX_REC * 0.75)
                     return _dialogos.muchoFa;
                 else
                     return _dialogos.bastanteFa;
@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
                 if (_recursosManager.getDinero() < Constants.BIEN_DE_DINERO * 0.25)
                     return _dialogos.pocoD
                         ;
-                else if (_recursosManager.getDinero() < Constants.BIEN_DE_DINERO * 2)
+                else if (_recursosManager.getDinero() > Constants.BIEN_DE_DINERO * 2)
                     return _dialogos.muchoD;
                 else
                     return _dialogos.bastanteD;
@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
             case "Ecosistema":
                 if (_recursosManager.getEcosistema() < Constants.MAX_REC * 0.25)
                     return _dialogos.pocoE;
-                else if (_recursosManager.getEcosistema() < Constants.MAX_REC * 0.75)
+                else if (_recursosManager.getEcosistema() > Constants.MAX_REC * 0.75)
                     return _dialogos.muchoE;
                 else
                     return _dialogos.bastanteE;
