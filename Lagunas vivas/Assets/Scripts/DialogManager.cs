@@ -11,13 +11,14 @@ public class DialogManager : MonoBehaviour
     private string [] _dialogos;
     private int dialogoIndex;
     private bool inDialogue;
+    private Queue<string[]> _dialogues = new Queue<string[]>();
 
     public bool getDialogue()
     {
         return inDialogue;
     }
 
-    public void startDialogue(string[] dialogos)
+    private void startDialogue(string[] dialogos)
     {
         _dialogos = dialogos;
         if(_dialogos.Length == 0)
@@ -27,6 +28,11 @@ public class DialogManager : MonoBehaviour
         dialogoIndex = 0;
         if (_dialogos.Length > 0)
             StartCoroutine(Showline());
+    }
+
+    public void addDialogue(string[] dialogos)
+    {
+        _dialogues.Enqueue(dialogos);
     }
 
     private void endDialogue()
@@ -65,6 +71,15 @@ public class DialogManager : MonoBehaviour
         {
             TMPro.text += ch;
             yield return new WaitForSeconds(typingTime);
+        }
+    }
+
+    private void Update()
+    {
+        if(!inDialogue && _dialogues.Count  > 0)
+        {
+            startDialogue(_dialogues.Peek());
+            _dialogues.Dequeue();
         }
     }
 }

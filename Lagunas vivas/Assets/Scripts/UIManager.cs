@@ -223,11 +223,11 @@ public class UIManager : MonoBehaviour
     }
     public void startDialogue(string[] dialogo)
     {
-        _dialogManager.startDialogue(dialogo);
+        _dialogManager.addDialogue(dialogo);
     }
     public void startDialogue(int turno)
     {
-        _dialogManager.startDialogue(GameManager.Instance.getWeekDialogue(turno));
+        _dialogManager.addDialogue(GameManager.Instance.getWeekDialogue(turno));
     }
     void Start()
     {
@@ -243,7 +243,7 @@ public class UIManager : MonoBehaviour
 
         if (_gameManager.getTurno() == 0 && !_gameManager.getDialogoInicial())
         {
-            _dialogManager.startDialogue(_gameManager.GetDialogos().dialogoInicial);
+            _dialogManager.addDialogue(_gameManager.GetDialogos().dialogoInicial);
             _gameManager.setDialogoInicial();
         }
     }
