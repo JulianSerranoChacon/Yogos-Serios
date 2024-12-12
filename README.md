@@ -36,6 +36,8 @@
       - [Séptimo evento](#séptimo-evento)
       - [Octavo evento](#octavo-evento)
       - [Novveno evento](#noveno-evento)
+      - [Décimo evento](#décimo-evento)
+      - [Onceavo evento](#onceavo-evento)
     - [Eventos reparaciones](#eventos-reparaciones)
       - [Primer evento](#primer-evento-1)
       - [Segundo evento](#segundo-evento-1)
