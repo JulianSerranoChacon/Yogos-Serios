@@ -31,11 +31,11 @@ public class Constants
     public const int NUM_EVENTOS = 2;
     public enum EVENTOS_ENUM { LISTAPRUEBA, FIESTA, BALONMANO, REFORESTACION, REP_SENDERO_POS, REP_SENDERO_NEG, REP_CORTAFUEGOS_POS, REP_CORTAFUEGOS_NEG,
         REP_PUENTE_POS, REP_PUENTE_NEG, INCENDIO_CONT_POS, INCENDIO_CONT_NEG, INCENDIO_CONT_VIENTO_POS, INCENDIO_CONT_VIENTO_NEG, 
-        MICROORGANISMOS, CRIA_PAJARO, POZO_ILEGAL, BOTELLON, PASEO_PERROS};
+        MICROORGANISMOS, CRIA_PAJARO, POZO_ILEGAL, BOTELLON, PASEO_PERROS, MODA_PESCA, EXCURSION, TORTUGA};
 
     public static string[] EVENTOS = new string[]{ "ListaEventos",
         "Fiesta", "Balonmano", "Reforestacion", "RepSendero_positivo","RepSendero_Negativo", "RepCortafuegos_Positivo", "RepCortafuegos_Negativo",
         "RepPuente_Positivo", "RepPuente_Negativo", "IncendioControlado_Positivo","IncendioControlado_Negativo","VientoIncendioControlado_Positivo","VientoIncendioControlado_Negativo",
-        "MicroorganismosBajos", "CriaPajaro", "PozoIlegal", "Botellon", "PaseoPerros"};
+        "MicroorganismosBajos", "CriaPajaro", "PozoIlegal", "Botellon", "PaseoPerros", "ModaPesca", "Excursion", "Tortuga"};
 
 }

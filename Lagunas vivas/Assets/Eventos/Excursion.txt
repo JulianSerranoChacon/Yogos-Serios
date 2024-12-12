@@ -1,0 +1,33 @@
+s
+2
+Una escuela quiere organizar una excursión a las lagunas para que los niños aprendan sobre el medio ambiente
+Imagen
+15
+2
+Me parece correcto. Les asignaré un guía
+-75
+20
+20
+20
+Cont
+Sintiéndolo mucho, me veo obligado a rechazar la propuesta
+0
+0
+0
+-15
+
+Mientras se planea la excursión, surge la duda sobre si los niños deberían almorzar en el parque público o no, pues este curso es famoso por dejarlo todo hecho un desastre al comer
+Imagen
+15
+2
+Es igual, contrataremos a alguien para que limpie después
+-40
+0
+0
+0
+
+Tal vez sería mejor que la excursión dure menos, aunque signifique que no aprendan tanto como le gustaría a la escuela
+0
+-10
+-10
+-10
