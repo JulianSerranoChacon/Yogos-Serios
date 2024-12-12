@@ -241,7 +241,10 @@ public class UIManager : MonoBehaviour
 
         ActualizarInterfaz();
 
-        if (_gameManager.getTurno() == 0)
+        if (_gameManager.getTurno() == 0 && !_gameManager.getDialogoInicial())
+        {
             _dialogManager.startDialogue(_gameManager.GetDialogos().dialogoInicial);
+            _gameManager.setDialogoInicial();
+        }
     }
 }

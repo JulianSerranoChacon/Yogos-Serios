@@ -41,6 +41,9 @@ public class GameManager : MonoBehaviour
     {
         _eventManager.setEvento(s);
     }
+
+    public void setDialogoInicial(bool b = true) { _dialogoinicial = b; }
+    public bool getDialogoInicial() {  return _dialogoinicial; }
     #endregion
     #region recursos/variables
     #region references
@@ -97,6 +100,9 @@ public class GameManager : MonoBehaviour
     #endregion
     public bool EnJuego = true;
     int setPrefabs = -1;
+
+
+    private bool _dialogoinicial = false;
     #endregion
     public void sendEvent(GameObject clickedObject)
     {
