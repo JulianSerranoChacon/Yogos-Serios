@@ -1,0 +1,27 @@
+s
+1
+Entre los jóvenes del pueblo se ha iniciado una nueva moda de ir a pescar a los embarcaderos, pero nadie los ha enseñado a pescar y lo hacen sin respetar el medio ambiente. Pescan todo tipo de peces de manera indiscriminada y dejan el agua llena de anzuelos, al no colocarlos correctamente.
+Imagen
+14
+4
+Decides hacer charlas para concienciar sobre la pesca responsable, enseñando qué peces pueden pescar y a cuales deben respetar y devolver al agua, además de enseñar a manejar correctamente el material de pesca
+20
+-5
+-20
+-45
+
+Decides que es una moda pasajera que no durará mucho y son cosas de críos
+10
+-20
+-30
+0
+Decides prohibir directamente la pesca
+-20
+0
+0
+0
+Decides regular la pesca para que solamente gente con cierta licencia y experiencia pueda pescar.
+-10
+0
+0
+0

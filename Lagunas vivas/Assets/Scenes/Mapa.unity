@@ -605,6 +605,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 305e1849bccca7d4b9ae849bca939188, type: 3}
   - {fileID: 21300000, guid: 89880c8a38baf744ab3471ffed007f92, type: 3}
   - {fileID: 21300000, guid: bcc06a5ed34a36343aea26bf601a5c40, type: 3}
+  - {fileID: 21300000, guid: 3519ab4b63d2be24981e577729ab28fb, type: 3}
+  - {fileID: 21300000, guid: 0283ef241ca13d24b8f3b39c9b9290b8, type: 3}
 --- !u!114 &818059297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,8 +632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998e6bbc81f26754480c1e5ea5c4775d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxEventosGrande: 6
-  NumEvGrande: 100000000e0000000a0000000b0000000c0000000d000000
+  MaxEventosGrande: 10
+  NumEvGrande: 100000000e0000000a0000000b0000000c0000000d000000100000000e0000001300000013000000
   numSpriteGrande:
   - {fileID: 21300000, guid: 7915d5c46a225af468c64510dd221ec8, type: 3}
   - {fileID: 21300000, guid: 8d9c3d81ae9ec8441b7723bb29ed70df, type: 3}
@@ -639,16 +641,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 910472a24b3f97a4ca4d2c80d1709e96, type: 3}
   - {fileID: 21300000, guid: 910472a24b3f97a4ca4d2c80d1709e96, type: 3}
   - {fileID: 21300000, guid: 910472a24b3f97a4ca4d2c80d1709e96, type: 3}
+  - {fileID: 21300000, guid: 7915d5c46a225af468c64510dd221ec8, type: 3}
+  - {fileID: 21300000, guid: 8d9c3d81ae9ec8441b7723bb29ed70df, type: 3}
+  - {fileID: 21300000, guid: e0a63b135a8e11440a0984c4d7d03930, type: 3}
+  - {fileID: 21300000, guid: e0a63b135a8e11440a0984c4d7d03930, type: 3}
   MaxEventosChica: 5
-  NumEvChica: 010000000200000011000000120000000f000000
+  NumEvChica: 0100000002000000110000001200000014000000
   numSpriteChica:
   - {fileID: 21300000, guid: c0afebe5480aef344845310b8da81f9f, type: 3}
   - {fileID: 21300000, guid: 99ac1580392230e4aac92cc15d3710e4, type: 3}
   - {fileID: 21300000, guid: 6c0d6e082496ac7409bdcfafab9d781c, type: 3}
   - {fileID: 21300000, guid: 61d06c2e4df5afb48b4713d8a20205f3, type: 3}
-  - {fileID: 21300000, guid: 99aa20a61cca8af4981cd8aef7f7cd18, type: 3}
-  MaxEventosSal: 7
-  NumEvSal: 07000000060000000500000004000000080000000900000003000000
+  - {fileID: 21300000, guid: 521ffa2c707a2064b916700c360905ef, type: 3}
+  MaxEventosSal: 12
+  NumEvSal: 07000000060000000500000004000000080000000900000003000000030000000f0000000f0000001500000015000000
   numSpriteSal:
   - {fileID: 21300000, guid: 488b5503c0ae0e9479d5f07bb3cec1ec, type: 3}
   - {fileID: 21300000, guid: 488b5503c0ae0e9479d5f07bb3cec1ec, type: 3}
@@ -657,6 +663,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 488b5503c0ae0e9479d5f07bb3cec1ec, type: 3}
   - {fileID: 21300000, guid: 488b5503c0ae0e9479d5f07bb3cec1ec, type: 3}
   - {fileID: 21300000, guid: be897bb9409b18443bcfce927ec1f684, type: 3}
+  - {fileID: 21300000, guid: be897bb9409b18443bcfce927ec1f684, type: 3}
+  - {fileID: 21300000, guid: 99aa20a61cca8af4981cd8aef7f7cd18, type: 3}
+  - {fileID: 21300000, guid: 99aa20a61cca8af4981cd8aef7f7cd18, type: 3}
+  - {fileID: 21300000, guid: b0b0d19c375db0f40b8ff35826b961f2, type: 3}
+  - {fileID: 21300000, guid: b0b0d19c375db0f40b8ff35826b961f2, type: 3}
 --- !u!114 &818059299
 MonoBehaviour:
   m_ObjectHideFlags: 0

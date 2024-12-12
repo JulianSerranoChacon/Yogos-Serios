@@ -213,6 +213,27 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   - Decides regular la pesca para que solamente gente con cierta licencia y experiencia pueda pescar.
     - baja poco la felicidad, suben el ecosistema y la fauna.
 
+#### Décimo evento
+- Una escuela quiere organizar una excursión a las lagunas para que los niños aprendan sobre el medio ambiente
+  - Me parece correcto. Les asignaré un guía
+    - aumenta la felicidad, el ecosistema y la fauna, pero baja el dinero. Se progresa al evento 10.2
+  - Sintiéndolo mucho, me veo obligado a rechazar la propuesta
+    - Baja la felicidad
+- 10.2 Mientras se planea la excursión, surge la duda sobre si los niños deberían almorzar en el parque público o no, pues este curso es famoso por dejarlo todo hecho un desastre al comer
+  - Es igual, contrataremos a alguien para que limpie después
+    - Baja aún más el dinero
+  - Tal vez sería mejor que la excursión dure menos, aunque signifique que no aprendan tanto como le gustaría a la escuela
+    - El ecosistema, la fauna y la felicidad bajan un poco (menos de lo que habían subido en primer lugar)
+
+#### Onceavo evento
+- Un visitante ha reportado haber visto tortugas no autóctonas en la laguna. Estas son una especie invasora que puede desplazar a las especies nativas.
+  - Organicemos una captura para retirar las especies invasoras
+    - aumenta la fauna por el coste de dinero
+  - Concienciemos a los visitantes sobre los riesgos de liberar mascotas exóticas
+    - Baja la fauna
+  - No hacer nada, son solo unas pocas tortugas
+    - baja la fauna muchísimo
+
 ### Eventos reparaciones
 
 #### Primer evento
