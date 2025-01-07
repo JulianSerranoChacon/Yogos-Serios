@@ -303,3 +303,11 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
     - Baja el ecosistema y la felicidad.
 
 - Diálogo educativo con el agente forestal antes de aparecer este evento: “Cuidado con realizar incendios controlados cuando hay mucho viento, pueden descontrolarse…”
+
+## Capturas
+
+<div style="display: flex; gap: 10px;">
+  <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura0.png" alt="Menu" width="300">
+  <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura1.png" alt="Mapa" width="300">
+  <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura2.png" alt="Eventos" width="300">
+</div>
