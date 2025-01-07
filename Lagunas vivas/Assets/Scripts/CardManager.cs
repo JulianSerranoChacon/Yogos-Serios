@@ -5,6 +5,9 @@ using UnityEngine;
 public class CardManager : MonoBehaviour
 {
     #region parameters
+    const float MaxY = 2.82f;
+    const float MaxX = 7.54f;
+
     EvCard[] mEvCards;
     int mCardMax;
     public int getNumCards() { return mCardMax; }
@@ -27,11 +30,10 @@ public class CardManager : MonoBehaviour
         mCardMax = num;        
         for (int i=0; i < num; i++)
         {            
-            GameObject aux = Instantiate(CardInstance, new Vector3(0,0,0),Quaternion.identity,GetComponent<Transform>());
+            GameObject aux = Instantiate(CardInstance, new Vector3(Random.Range(MaxX * -1, MaxX), Random.Range(MaxY*-1, MaxY),0),Quaternion.identity,GetComponent<Transform>());
             mEvCards[i] = aux.GetComponent<EvCard>();
             mEvCards[i].setCardMan(this);
-            mEvCards[i].setPos(i+1);            
-            mEvCards[i].goToPos();
+            mEvCards[i].setPos(i+1);                        
             mEvCards[i].Peek(true);
         }
     }
@@ -63,8 +65,7 @@ public class CardManager : MonoBehaviour
             _canBeClicked = true;
             StopAllCoroutines();
             for (int i = 0; i <mCardMax; i++)
-            {
-                mEvCards[i].goToPos();
+            {                
                 mEvCards[i].Peek(true);
             }
             if(mCardMax <= 0)
