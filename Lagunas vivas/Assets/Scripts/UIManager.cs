@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     #region parameters
     [SerializeField] private TMP_Text _textoDinero;
 
+    [SerializeField] private GameObject _nextTurno;
 
     [SerializeField] private Image _sliderFelicidad;
 
@@ -18,12 +19,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image _sliderFauna;
 
     [SerializeField] private TMP_Text _diaActual;
-
-    [SerializeField] private Image _infoIconGrande;
-
-    [SerializeField] private Image _infoIconChica;
-
-    [SerializeField] private Image _infoIconSal;
 
     [SerializeField] private TMP_Text _EfectoDinero;
 
@@ -161,9 +156,7 @@ public class UIManager : MonoBehaviour
         SetBarWidth(_sliderEcosistema, _recursosManager.getEcosistema(), _recursosManager.getPrevEcosistema(), _maxEcosistemaWidth, smooth);
         SetBarWidth(_sliderFauna, _recursosManager.getFauna(), _recursosManager.getPrevFauna(), _maxFaunaWidth, smooth);
 
-        _diaActual.text = "Semana: " + _gameManager.getTurno().ToString() + "/" + Constants.NUM_TURNOS_PARA_FIN;
-
-        SetInfoIcons();
+        _diaActual.text = "Semana: " + _gameManager.getTurno().ToString() + "/" + Constants.NUM_TURNOS_PARA_FIN;        
     }
     // Metodo para establecer el with de las barras segun su valor
     private void SetBarWidth(Image bar, double currentValue, double prevValue, float maxWidth, bool smooth)
@@ -187,29 +180,6 @@ public class UIManager : MonoBehaviour
         }
         yield return new WaitForSeconds((2 * TIEMPO_FUNDIDO) / (DIVISIONES2 + DIVISIONES1));
         bar.rectTransform.sizeDelta = new Vector2(maxWidth * percentage, bar.rectTransform.sizeDelta.y);
-    }
-    // Metodo para mostrar los iconos en las lagunas donde hay eventos
-    private void SetInfoIcons()
-    {
-        if (SceneManager.GetActiveScene().buildIndex == 1) // Si es la escena mapa
-        {
-            // Comprobamos si la grande tiene eventos
-            if (_gameManager.getLagunaTieneEventos(0)) _infoIconGrande.enabled = true;
-            else _infoIconGrande.enabled = false;
-            // Comprobamos si la chica tiene eventos
-            if (_gameManager.getLagunaTieneEventos(1)) _infoIconChica.enabled = true;
-            else _infoIconChica.enabled = false;
-            // Comprobamos si la sal tiene eventos
-            if (_gameManager.getLagunaTieneEventos(2)) _infoIconSal.enabled = true;
-            else _infoIconSal.enabled = false;
-        }
-        else
-        {
-            _infoIconGrande.enabled = false;
-            _infoIconChica.enabled = false;
-            _infoIconSal.enabled = false;
-        }
-
     }
 
     public void nextLine()
@@ -246,5 +216,9 @@ public class UIManager : MonoBehaviour
             _dialogManager.addDialogue(_gameManager.GetDialogos().dialogoInicial);
             _gameManager.setDialogoInicial();
         }
+    }
+    public void setVisibleNext()
+    {
+        _nextTurno.SetActive(true);
     }
 }

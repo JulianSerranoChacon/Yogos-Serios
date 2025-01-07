@@ -27,8 +27,7 @@ public class InputManager : MonoBehaviour
             }
         }
         else if (context.canceled)
-        {
-
+        {            
             if (_myUI.getInDialgue())
             {
                 _myUI.nextLine();

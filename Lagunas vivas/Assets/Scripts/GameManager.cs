@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour
     { 
         _UIManager = x;
     }
+    public void AssignCardManager(CardManager x)
+    {
+        _cardManager = x;
+    }
     public void setEvent(string s)
     {
         _eventManager.setEvento(s);
@@ -53,10 +57,12 @@ public class GameManager : MonoBehaviour
     ListaImagenes _listImages;
     TurnosManager _turnosManager;
     Dialogos _dialogos;
+    CardManager _cardManager;
     public RecursosManager getResMan() { return _recursosManager; }
     public UIManager getUIManager() { return _UIManager; }
     public Sprite getImageEv(int i) {  return _listImages.getImage(i); }
-    public Dialogos GetDialogos() { return _dialogos; }
+    public Sprite getIconEv(int i) { return _listImages.getIcono(i); }
+    public Dialogos GetDialogos() { return _dialogos; }    
     public string[] getWeekDialogue(int day)
     {
         switch (day)
@@ -154,11 +160,21 @@ public class GameManager : MonoBehaviour
         {
             clickeable.enviaEvento();
             _eventManager.getEventos();
-        }            
+        }
+        else
+        {
+            EvCard carta = clickedObject.GetComponent<EvCard>();
+            if(carta != null)
+            {
+                carta.Click();
+                _eventManager.getEventos();
+                HandleClick(clickedObject);
+            }
+        }          
     }
 
     public void HandleClick(GameObject clickedObject)
-    {
+    {        
         ClickeableObject clickeable = clickedObject.GetComponent<ClickeableObject>();
 
         if (clickeable != null)
@@ -180,7 +196,15 @@ public class GameManager : MonoBehaviour
                         setPrefabs = clickeable.getNumScene() - 2;
                     }
                 }
-            }            
+            }
+        }
+        else
+        {
+            EvCard carta = clickedObject.GetComponent<EvCard>();
+            if (carta != null)
+            {
+                GenerateNewEvent();
+            }
         }
     }
     public void PullUpPrefabs()
@@ -202,6 +226,7 @@ public class GameManager : MonoBehaviour
     public void EventFinsihed()
     {
         _runningEvent = false;
+        _cardManager.EventFinished();
     }
     public int getTurno()
     {
@@ -209,6 +234,15 @@ public class GameManager : MonoBehaviour
     }
     public bool getLagunaTieneEventos(int donde)
     {
-        return _turnosManager.LagunaTieneEventos(donde);
+        return false;//_turnosManager.LagunaTieneEventos(donde);
+    }
+
+    public void DrawCards()
+    {
+        _cardManager.DrawCards(_turnosManager.GetTurno());
+    }
+    public void VisibleNextTurno()
+    {
+        _UIManager.setVisibleNext();
     }
 }

@@ -15,11 +15,13 @@ Decides que es una moda pasajera que no durará mucho y son cosas de críos
 -20
 -30
 0
+
 Decides prohibir directamente la pesca
 -20
 0
 0
 0
+
 Decides regular la pesca para que solamente gente con cierta licencia y experiencia pueda pescar.
 -10
 0

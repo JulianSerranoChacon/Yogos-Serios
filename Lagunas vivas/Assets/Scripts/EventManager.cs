@@ -137,6 +137,7 @@ public class EventManager : MonoBehaviour
             evActual = PickRandEvent();
         }
         else evActual = ev;
+        //Debug.Log(evActual._textoPrincipal);
         TextoPrincipal.text = evActual._textoPrincipal;
         if (evActual._mySprite != -1)
         {

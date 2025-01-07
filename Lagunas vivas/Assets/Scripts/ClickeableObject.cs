@@ -15,18 +15,18 @@ public class ClickeableObject : MonoBehaviour
 
     public void enviaEvento()
     {
-        GameManager.Instance.setEvent(Constants.EVENTOS[(int)evento]);        
+        GameManager.Instance.setEvent(Constants.EVENTOS[(int)evento]);
     }
 
     public void CreateEvento(Constants.EVENTOS_ENUM ev, float _x, float _y, Sprite im)
-    {
+    {        
         evento = ev;
         GetComponent<Transform>().position = new Vector3(_x, _y, 0);        
         GetComponent<SpriteRenderer>().sprite = im;
     }
     
     public void SetEvento(Constants.EVENTOS_ENUM i, int PosEnArr = -1)
-    {
+    {        
         evento = i;
         if (PosEnArr != -1) posEnArray = PosEnArr;
     }

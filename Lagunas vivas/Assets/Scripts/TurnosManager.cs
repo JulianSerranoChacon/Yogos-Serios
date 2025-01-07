@@ -10,16 +10,16 @@ public class TurnosManager : MonoBehaviour
 
     #region Prefabs eventos
     [SerializeField] GameObject _pref;
-    struct ParaPrefab
+    /*struct ParaPrefab
     {
         public Constants.EVENTOS_ENUM NumEv;
         public float PosX;
         public float PosY;
         public Sprite spr;
         public bool initialized;
-    }
+    }*/
     int LastBeen;
-    ParaPrefab[,] Lagunas;
+    //ParaPrefab[,] Lagunas;
     int numGran;
     int numChic;
     int numSal;
@@ -30,7 +30,8 @@ public class TurnosManager : MonoBehaviour
 
     void ResetPrefabs()
     {
-        NumEvLeft = GameManager.Instance.getTurno()+1;    //A cambiar para numero de eventos por turno
+        NumEvLeft = GameManager.Instance.getTurno();    //A cambiar para numero de eventos por turno
+        /*
         Lagunas = new ParaPrefab[3, NumEvLeft];        
         numGran = 0;
         numChic = 0;
@@ -44,9 +45,11 @@ public class TurnosManager : MonoBehaviour
             GeneratePrefab(donde, guia);
             donde++;
         }
+        */
     }
     void GeneratePrefab(int donde, bool[,] guia)
     {
+        /*
         int max;
         switch (donde)
         {
@@ -98,11 +101,12 @@ public class TurnosManager : MonoBehaviour
                 default:
                     break;
             }
-        }
+        }*/
     }
 
     public void Show(int donde)
     {
+        /*
         LastBeen = donde;
         int max = 0;
         switch(donde)
@@ -126,19 +130,25 @@ public class TurnosManager : MonoBehaviour
                 g.GetComponent<ClickeableObject>().SetEvento(Lagunas[donde, i].NumEv, i);
                 g.GetComponent<SpriteRenderer>().sprite = Lagunas[donde, i].spr;
             }            
-        }
+        }*/
     }
 
     public void Uncheck(int pos)
     {
+        /*
         Lagunas[LastBeen, pos].initialized = false;
-        NumEvLeft--;
+        NumEvLeft--;*/
     }
     public bool AllEventsDone()
     {
         return NumEvLeft <= 0;
     }
 
+    public void subEvLeft()
+    {
+        NumEvLeft -= 1;        
+    }
+    /*
     public bool LagunaTieneEventos(int donde) // Determina si una laguna tiene eventos
     {
         int max = 0;
@@ -155,6 +165,7 @@ public class TurnosManager : MonoBehaviour
         }
         return false;
     }
+    */
 
     #endregion
     private void Start()
@@ -181,6 +192,7 @@ public class TurnosManager : MonoBehaviour
         else
         {
             ResetPrefabs();
+            GameManager.Instance.DrawCards();
         }
     }
 }

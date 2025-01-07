@@ -3536,13 +3536,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textoDinero: {fileID: 2130350098574902947}
+  _nextTurno: {fileID: 7686509250748716656}
   _sliderFelicidad: {fileID: 8465207366575994367}
   _sliderEcosistema: {fileID: 8443764976771373790}
   _sliderFauna: {fileID: 2687317549787409852}
   _diaActual: {fileID: 5278777709172906399}
-  _infoIconGrande: {fileID: 1632301889781697350}
-  _infoIconChica: {fileID: 7912482040205995853}
-  _infoIconSal: {fileID: 7174942842674045613}
   _EfectoDinero: {fileID: 1148304540056486719}
   _dialogManager: {fileID: 8089643688689617592}
 --- !u!114 &8089643688689617592
