@@ -37,7 +37,6 @@
       - [Octavo evento](#octavo-evento)
       - [Novveno evento](#noveno-evento)
       - [Décimo evento](#décimo-evento)
-      - [Onceavo evento](#onceavo-evento)
     - [Eventos reparaciones](#eventos-reparaciones)
       - [Primer evento](#primer-evento-1)
       - [Segundo evento](#segundo-evento-1)
@@ -45,6 +44,20 @@
       - [Cuarto evento](#cuarto-evento-1)
       - [Quinto evento](#quinto-evento-1)
       - [Sexto evento](#sexto-evento-1)
+      - [Séptimo evento](#séptimo-evento-1)🆕
+    - [Eventos Fauna](#eventos-fauna)
+      - [Primer evento](#primer-evento-2)
+      - [Segundo evento](#segundo-evento-2)🆕
+      - [Tercer evento](#tercer-evento-2)🆕
+      - [Cuarto evento](#cuarto-evento-2)🆕
+      - [Quinto evento](#quinto-evento-2)🆕
+    - [Eventos Ecosistema](#eventos-fauna)
+      - [Primer evento](#primer-evento-3)🆕
+      - [Segundo evento](#segundo-evento-3)🆕
+      - [Tercer evento](#tercer-evento-3)🆕
+      - [Cuarto evento](#cuarto-evento-3)🆕
+    - [Otros Eventos](#otros-eventos)
+      - [Primer evento](#primer-evento-4)🆕
 
 ---
 ## Nombre del juego
@@ -227,15 +240,6 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   - Tal vez sería mejor que la excursión dure menos, aunque signifique que no aprendan tanto como le gustaría a la escuela
     - El ecosistema, la fauna y la felicidad bajan un poco (menos de lo que habían subido en primer lugar)
 
-#### Onceavo evento
-- Un visitante ha reportado haber visto tortugas no autóctonas en la laguna. Estas son una especie invasora que puede desplazar a las especies nativas.
-  - Organicemos una captura para retirar las especies invasoras
-    - aumenta la fauna por el coste de dinero
-  - Concienciemos a los visitantes sobre los riesgos de liberar mascotas exóticas
-    - Baja la fauna
-  - No hacer nada, son solo unas pocas tortugas
-    - baja la fauna muchísimo
-
 ### Eventos reparaciones
 
 #### Primer evento
@@ -303,6 +307,121 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
     - Baja el ecosistema y la felicidad.
 
 - Diálogo educativo con el agente forestal antes de aparecer este evento: “Cuidado con realizar incendios controlados cuando hay mucho viento, pueden descontrolarse…”
+
+#### Séptimo evento
+- El constante tránsito de visitantes está causando la erosión del suelo en varias áreas del parque
+  - Rehabilitar los senderos.
+    - Baja dinero, sube un poco el ecosistema.
+  - Redirigir el tráfico a senderos alternativos menos vulnerables
+    - Baja la felicidad, sube un poco el ecosistema.
+  - No actuar
+    - Baja un poco ecosistema y la felicidad.
+
+### Eventos fauna
+
+#### Primer evento
+- Un visitante ha reportado haber visto tortugas no autóctonas en la laguna. Estas son una especie invasora que puede desplazar a las especies nativas.
+  - Organicemos una captura para retirar las especies invasoras
+    - aumenta la fauna por el coste de dinero
+  - Concienciemos a los visitantes sobre los riesgos de liberar mascotas exóticas
+    - Baja la fauna
+  - No hacer nada, son solo unas pocas tortugas
+    - baja la fauna muchísimo
+
+#### Segundo evento
+- Se está viendo un aumento significativo en la proliferación de ratones debido a la falta de depredadores. Esto puede ser perjudicial para el ecosistema ya que los ratones consumen semillas y otros frutos.
+  - Introducir especies de depredadores como aves rapaces
+    - Sube el ecosistema, baja dinero.
+  - Establecer trampas
+    - ¡Unos turistas te han pillado colocando trampas! ¡Qué atrocidad! (Baja la felicidad)
+  - Controlar la población con métodos éticos (como trampas no letales y relocalización)
+    - Baja dinero, sube el ecosistema.
+  - No hacer nada
+    - Baja el ecosistema y la felicidad.
+
+#### Tercer evento
+- Un crecimiento descontrolado de la población de conejos está afectando el equilibrio del ecosistema, ya que se están comiendo la vegetación más joven.
+  - Controlar la población con métodos éticos (como trampas no letales y relocalización)
+    - Baja dinero, sube el ecosistema.
+  - Introducir depredadores naturales como zorros o rapaces
+    - Sube el ecosistema.
+  - Dejar que la naturaleza siga su curso
+    - Baja el ecosistema y la fauna.
+
+#### Cuarto evento
+- Aparecen peces muertos en la orilla de la laguna.
+  - Investigar las posibles causas por tu cuenta
+    - Baja dinero
+  - Descubres restos de fertilizantes cerca de la laguna:
+    - Hablar con los agricultores para proponer soluciones conjuntas
+      - Baja felicidad, aumenta el ecosistema.
+    - Invertir en barreras naturales para filtrar los fertilizantes
+      - Baja dinero, sube el ecosistema.
+  - No actuar
+    - Baja la fauna.
+
+#### Quinto evento
+- Visitantes han reportado la presencia de un nido de avispas agresivas cerca de las áreas recreativas.
+  - Retirar el nido de forma segura con ayuda de especialistas
+    - Baja dinero, sube la felicidad.
+  - Colocar señalización y mantener a los visitantes alejados
+    - Baja la felicidad, sube el ecosistema.
+  - No hacer nada
+    - Baja la felicidad.
+
+### Eventos ecosistema
+
+#### Primer evento
+- Un visitante reporta un extraño color y olor en una sección de la laguna, lo que podría indicar vertidos ilegales de una fábrica cercana
+  - Investigar las posibles causas por tu cuenta (baja dinero, ir al 1.1)
+  - Llamar a las autoridades
+    - No ganas ni pierdes nada.
+  - No actuar
+    - Baja significativamente el ecosistema.
+    
+- 1.1 Tu investigación revela residuos químicos que coinciden con los productos fabricados en una planta industrial cercana. Esto confirma que podría haber vertidos 
+  - Recopilar pruebas detalladas y denunciar a la fábrica
+      - Baja dinero pero suben el ecosistema y la fauna.
+  - Hablar con la fábrica para proponer soluciones
+      - suben el ecosistema y la fauna.
+  - No actuar para evitar conflictos con la fábrica
+    - Baja significativamente el ecosistema y fauna.
+
+#### Segundo evento
+- Una sequía prolongada está afectando la flora y fauna del parque
+  - Implementar un sistema de riego temporal en las áreas más afectadas
+    - Baja mucho el dinero, sube el ecosistema.
+  - Organizar campañas educativas para plantar especies resistentes a la sequía
+    - Baja un poco el dinero, sube el ecosistema y la felicidad.
+  - No intervenir
+    - Baja el ecosistema y la fauna.
+
+#### Tercer evento
+- Algunos árboles del parque muestran signos de estar infectados con un hongo
+  - Contratar especialistas para tratar los árboles afectados
+    - Baja dinero, sube el ecosistema.
+  - Eliminar los árboles enfermos y plantar nuevos
+    - Baja dinero y fauna, sube el ecosistema
+  - No hacer nada
+    - Baja el ecosistema y la fauna.
+
+#### Cuarto evento
+- Se ha observado una capa densa de algas cubriendo partes de la laguna, lo que podría reducir el oxígeno disponible para los peces y otras especies acuáticas.
+  - Instalar aireadores para oxigenar el agua
+    - Baja mucho dinero, sube el ecosistema.
+  - Implementar un programa de limpieza manual de algas
+    - Baja dinero, sube el ecosistema.
+  - No actuar
+    - Baja el ecosistema y la fauna.
+
+### Otros Eventos
+
+#### Primer evento
+- Una compañía turística quiere ofrecer visitas nocturnas al parque...
+
+#### Segundo evento
+- Ha llegado una propuesta de inversión en el parque, se trata de una...
+
 
 ## Capturas
 
