@@ -1,0 +1,23 @@
+s
+1
+Una sequía prolongada más de lo previsto está afectando la flora y fauna del parque
+Imagen
+23
+3
+Implementaremos un sistema de riego temporal en las áreas más afectadas
+-120
+20
+5
+10
+
+Plantaremos especies resistentes a la sequía
+-15
+-10
+0
+0
+
+No intervendremos. Tarde o temprano, la sequía pasará
+0
+-20
+0
+-5

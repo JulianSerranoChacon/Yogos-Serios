@@ -1,0 +1,34 @@
+s
+2
+Ha habido reportes ligeramente por encima de lo normal sobre el encuentro de peces muertos en las orillas de las lagunas
+Imagen
+20
+2
+Investigaremos al respecto
+-15
+0
+0
+0
+Cont
+No hay por qué preocuparse. Es solo una mala racha...
+0
+-10
+-20
+0
+
+Tras una pequeña investigación, se han descubierto restos de fertilizante en las zonas donde se han reportado los peces
+Imagen
+20
+2
+Tendremos que hablar con los agricultores e intentar reducir su uso y evitar filtraciones
+0
+7
+7
+-10
+
+Invertiremos en barreras naturales para filtrar los fertilizantes
+-50
+7
+7
+0
+

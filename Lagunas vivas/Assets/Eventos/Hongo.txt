@@ -1,0 +1,18 @@
+s
+1
+Algunos árboles del parque muestran signos de estar infectados con algún tipo de hongo, y hay temor de que este se propague. Hay que tratar este problema
+Imagen
+24
+2
+Contrataremos especialistas para tratar estos árboles afectados
+-125
+25
+0
+0
+
+Cortaremos los árboles infectados y replantaremos unos nuevos
+-30
+5
+-10
+0
+

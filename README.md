@@ -399,18 +399,14 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
 #### Tercer evento
 - Algunos árboles del parque muestran signos de estar infectados con un hongo
   - Contratar especialistas para tratar los árboles afectados
-    - Baja dinero, sube el ecosistema.
+    - Baja mucho el dinero, sube mucho el ecosistema.
   - Eliminar los árboles enfermos y plantar nuevos
-    - Baja dinero y fauna, sube el ecosistema
-  - No hacer nada
-    - Baja el ecosistema y la fauna.
+    - Baja dinero y fauna, sube poco el ecosistema  
 
 #### Cuarto evento
 - Se ha observado una capa densa de algas cubriendo partes de la laguna, lo que podría reducir el oxígeno disponible para los peces y otras especies acuáticas.
-  - Instalar aireadores para oxigenar el agua
-    - Baja mucho dinero, sube el ecosistema.
-  - Implementar un programa de limpieza manual de algas
-    - Baja dinero, sube el ecosistema.
+  - Implementar un programa de limpieza manual de algas con voluntarios
+    - Baja la felicidad, sube el ecosistema.
   - No actuar
     - Baja el ecosistema y la fauna.
 
