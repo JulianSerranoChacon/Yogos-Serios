@@ -55,7 +55,6 @@
       - [Primer evento](#primer-evento-3)🆕
       - [Segundo evento](#segundo-evento-3)🆕
       - [Tercer evento](#tercer-evento-3)🆕
-      - [Cuarto evento](#cuarto-evento-3)🆕
     - [Propuestas Eventos](#Propuestas-eventos)
       - [Primer evento](#primer-evento-4)🆕
       - [Segundo evento](#segundo-evento-4)🆕
@@ -374,20 +373,11 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
 ### Eventos ecosistema
 
 #### Primer evento
-- Un visitante reporta un extraño color y olor en una sección de la laguna, lo que podría indicar vertidos ilegales de una fábrica cercana
-  - Investigar las posibles causas por tu cuenta (baja dinero, ir al 1.1)
-  - Llamar a las autoridades
-    - No ganas ni pierdes nada.
+- Se ha observado una capa densa de algas cubriendo partes de la laguna, lo que podría reducir el oxígeno disponible para los peces y otras especies acuáticas.
+  - Implementar un programa de limpieza manual de algas con voluntarios
+    - Baja la felicidad, sube el ecosistema.
   - No actuar
-    - Baja significativamente el ecosistema.
-    
-- 1.1 Tu investigación revela residuos químicos que coinciden con los productos fabricados en una planta industrial cercana. Esto confirma que podría haber vertidos 
-  - Recopilar pruebas detalladas y denunciar a la fábrica
-      - Baja dinero pero suben el ecosistema y la fauna.
-  - Hablar con la fábrica para proponer soluciones
-      - suben el ecosistema y la fauna.
-  - No actuar para evitar conflictos con la fábrica
-    - Baja significativamente el ecosistema y fauna.
+    - Baja el ecosistema y la fauna.
 
 #### Segundo evento
 - Una sequía prolongada está afectando la flora y fauna del parque
@@ -405,41 +395,33 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   - Eliminar los árboles enfermos y plantar nuevos
     - Baja dinero y fauna, sube poco el ecosistema  
 
-#### Cuarto evento
-- Se ha observado una capa densa de algas cubriendo partes de la laguna, lo que podría reducir el oxígeno disponible para los peces y otras especies acuáticas.
-  - Implementar un programa de limpieza manual de algas con voluntarios
-    - Baja la felicidad, sube el ecosistema.
-  - No actuar
-    - Baja el ecosistema y la fauna.
 
 ### Propuestas Eventos
 
 #### Primer evento
 - Una compañía turística quiere ofrecer visitas nocturnas al parque, utilizando iluminación para mostrar la belleza de las lagunas. Sin embargo, esto podría perturbar la fauna nocturna.
   - Aprobar la propuesta
-      - Sube dinero, baja el ecosistema y fauna.
+      - Sube dinero, baja gravemente la fauna.
   - Aprobar la propuesta con estrictas regulaciones de iluminación y limitar la frecuencia de las visitas
-    - Sube un poco menos el dinero y baja ligeramente el ecosistema y fauna.
+    - Sube un poco menos el dinero y baja la fauna.
   - Rechazar la propuesta para proteger la fauna nocturna
-    - Baja ligeramente la felicidad. Sube ligeramente el ecosistema.
+    - Sube la fauna
 
 #### Segundo evento
 - Ha llegado una propuesta de inversión en el parque, se trata de una empresa que quiere instalar un restaurante con vistas a la laguna. Aunque promete atraer más visitantes, podría generar residuos.
   - Aprobar el proyecto
-    - Sube dinero y felicidad, baja ligeramente el ecosistema.
+    - Sube dinero y felicidad, baja un poco la fauna y gravemente el ecosistema.
   - Negociar para que el restaurante opere con prácticas ecológicas
-    - Sube ligeramente el dinero, sube la felicidad.
+    - Sube la felicidad, baja ligeramente el ecosistema.
   - Rechazar la propuesta para priorizar la conservación
-    - Baja ligeramente la felicidad.
+    - Sube el ecosistema.
 
 #### Tercer evento
 - Un club local de pesca propone realizar un torneo en las lagunas. Esto podría atraer visitantes, pero también podría sobreexplotar las especies acuáticas.
   - Proponer un torneo de pesca sin captura (atrapar y liberar)
-    - sube dinero, sube felicidad y mantiene el ecosistema.
+    - Sube felicidad y mantiene el ecosistema.
   - Rechazar el torneo para proteger la biodiversidad
-    - Baja felicidad, sube ligeramente el ecosistema.
-  - Permitir el torneo con un límite estricto de captura y supervisión
-    - Sube dinero, baja el ecosistema.
+    - Baja felicidad, sube ligeramente el ecosistema y la fauna.
 
 ## Capturas
 

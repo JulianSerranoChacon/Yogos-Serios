@@ -69,13 +69,13 @@ public class EvCard : MonoBehaviour
                     }
                 }
             }
-        }            
-
+        }        
         mEvento = (Constants.EVENTOS_ENUM)i;
 
         mImag.sprite = GameManager.Instance.getIconEv((int)mEvento);
 
         Peek(true);
+        
     }
 
 

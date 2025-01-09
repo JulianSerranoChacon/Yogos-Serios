@@ -662,6 +662,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 513531bef9571a64aa60596625edee94, type: 3}
   - {fileID: 21300000, guid: 78ee9c59a37efcb42a966ba5e3020012, type: 3}
   - {fileID: 21300000, guid: d30d8ec59c41f064abc6fd7e537791f3, type: 3}
+  - {fileID: 21300000, guid: 2da0d19a623ae644c8932e03c1732a9a, type: 3}
+  - {fileID: 21300000, guid: f1f4e88f7d9c311439115b4f6d638ee8, type: 3}
+  - {fileID: 21300000, guid: 4b6da44201c443247bd3136def5fe132, type: 3}
   _listIconos:
   - {fileID: 21300000, guid: c0afebe5480aef344845310b8da81f9f, type: 3}
   - {fileID: 21300000, guid: c0afebe5480aef344845310b8da81f9f, type: 3}
@@ -694,6 +697,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8d9c3d81ae9ec8441b7723bb29ed70df, type: 3}
   - {fileID: 21300000, guid: 9d6a440856dace3419cf05a7674b5ee9, type: 3}
   - {fileID: 21300000, guid: 37106b41b7707f64ea7d07d949869a2a, type: 3}
+  - {fileID: 21300000, guid: fb017b4538be163458c77a218b2a3cdb, type: 3}
+  - {fileID: 21300000, guid: 04be3b627ddfcc040bd0cbef6c8ddd0e, type: 3}
+  - {fileID: 21300000, guid: 52c52ee6758413f4285ceb809c875b1a, type: 3}
 --- !u!114 &818059297
 MonoBehaviour:
   m_ObjectHideFlags: 0

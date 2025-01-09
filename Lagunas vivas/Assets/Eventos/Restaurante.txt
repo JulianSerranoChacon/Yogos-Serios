@@ -1,0 +1,23 @@
+s
+1
+Ha llegado una propuesta de inversión en el parque. Se trata de una empresa que quiere instalar un restaurante con vistas a la laguna. Aunque promete atraer más visitantes, podría generar residuos...
+Imagen
+27
+3
+Aprobaremos este proyecto
+100
+-30
+-15
+10
+
+A ver, primero habrá que negociar para que el restaurante opere con prácticas ecológicas
+0
+-5
+0
+10
+
+Me temo que habrá que rechazar esta propuesta; hay que priorizar la conservación
+0
+15
+0
+0

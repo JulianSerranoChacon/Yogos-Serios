@@ -1,0 +1,23 @@
+s
+1
+Una compañía turística quiere ofrecer visitas nocturnas al parque, utilizando iluminación para mostrar la belleza de las lagunas. Sin embargo, esto podría perturbar la fauna nocturna.
+Imagen
+26
+3
+Aprobaremos este proyecto
+500
+0
+-25
+0
+
+Aprobaremos la propuesta con estrictas regulaciones de iluminación y limitaremos la frecuencia de las visitas
+50
+0
+-15
+0
+
+Mejor no... Hay que proteger la fauna nocturna
+0
+0
+10
+0
