@@ -56,8 +56,10 @@
       - [Segundo evento](#segundo-evento-3)🆕
       - [Tercer evento](#tercer-evento-3)🆕
       - [Cuarto evento](#cuarto-evento-3)🆕
-    - [Otros Eventos](#otros-eventos)
+    - [Propuestas Eventos](#Propuestas-eventos)
       - [Primer evento](#primer-evento-4)🆕
+      - [Segundo evento](#segundo-evento-4)🆕
+      - [Tercer evento](#tercer-evento-4)🆕
 
 ---
 ## Nombre del juego
@@ -410,14 +412,34 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   - No actuar
     - Baja el ecosistema y la fauna.
 
-### Otros Eventos
+### Propuestas Eventos
 
 #### Primer evento
-- Una compañía turística quiere ofrecer visitas nocturnas al parque...
+- Una compañía turística quiere ofrecer visitas nocturnas al parque, utilizando iluminación para mostrar la belleza de las lagunas. Sin embargo, esto podría perturbar la fauna nocturna.
+  - Aprobar la propuesta
+      - Sube dinero, baja el ecosistema y fauna.
+  - Aprobar la propuesta con estrictas regulaciones de iluminación y limitar la frecuencia de las visitas
+    - Sube un poco menos el dinero y baja ligeramente el ecosistema y fauna.
+  - Rechazar la propuesta para proteger la fauna nocturna
+    - Baja ligeramente la felicidad. Sube ligeramente el ecosistema.
 
 #### Segundo evento
-- Ha llegado una propuesta de inversión en el parque, se trata de una...
+- Ha llegado una propuesta de inversión en el parque, se trata de una empresa que quiere instalar un restaurante con vistas a la laguna. Aunque promete atraer más visitantes, podría generar residuos.
+  - Aprobar el proyecto
+    - Sube dinero y felicidad, baja ligeramente el ecosistema.
+  - Negociar para que el restaurante opere con prácticas ecológicas
+    - Sube ligeramente el dinero, sube la felicidad.
+  - Rechazar la propuesta para priorizar la conservación
+    - Baja ligeramente la felicidad.
 
+#### Tercer evento
+- Un club local de pesca propone realizar un torneo en las lagunas. Esto podría atraer visitantes, pero también podría sobreexplotar las especies acuáticas.
+  - Proponer un torneo de pesca sin captura (atrapar y liberar)
+    - sube dinero, sube felicidad y mantiene el ecosistema.
+  - Rechazar el torneo para proteger la biodiversidad
+    - Baja felicidad, sube ligeramente el ecosistema.
+  - Permitir el torneo con un límite estricto de captura y supervisión
+    - Sube dinero, baja el ecosistema.
 
 ## Capturas
 
