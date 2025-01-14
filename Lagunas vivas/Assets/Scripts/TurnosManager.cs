@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurnosManager : MonoBehaviour
 {
@@ -184,7 +185,7 @@ public class TurnosManager : MonoBehaviour
 
     public void NextTurn()
     {
-        //if (TurnoActual == 1) TurnoActual = 8;
+        //if (TurnoActual == 1) TurnoActual = 9;
         TurnoActual++;
 
         if(TurnoActual < Constants.NUM_TURNOS_PARA_FIN)
@@ -200,7 +201,7 @@ public class TurnosManager : MonoBehaviour
             End++;
             if(End >= 5)
             {
-                Debug.Log("HAS GANADO :D");
+                SceneManager.LoadScene(7);
             }
         }
     }
