@@ -429,4 +429,5 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura0.png" alt="Menu" width="300">
   <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura1.png" alt="Mapa" width="300">
   <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura2.png" alt="Eventos" width="300">
+  <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura3.png" alt="Eventos" width="300">
 </div>
