@@ -235,10 +235,10 @@ public class UIManager : MonoBehaviour
     {
         switch (personaje) 
         { 
-            case 1:
+            case 0:
                 sara.SetActive(true);
                 break;
-            case 0:
+            case 1:
                 juan.SetActive(true);
                 break;
         }
