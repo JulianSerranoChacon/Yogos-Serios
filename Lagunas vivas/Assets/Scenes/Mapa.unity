@@ -557,8 +557,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1789354389}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818059292
@@ -792,7 +791,7 @@ MonoBehaviour:
     y dem\xE1s costos de mantenimiento podr\xEDan arruinarnos."
   - "Dicho esto, buena suerte y \xE1nimo en tu nuevo trabajo."
   semana1:
-  - "\xA1Bienvenido! Mi nombre es Juan y soy empleado desde hace m\xE1s de 30 a\xF1os.
+  - "\xA1Bienvenido! Mi nombre es Juan y fui empleado desde hace m\xE1s de 30 a\xF1os.
     \n"
   - ' Ahora eres el nuevo gerente de las lagunas. Este es un lugar precioso, lleno
     de vida y naturaleza.'
@@ -1262,7 +1261,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 647243797}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 309984600521709330, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1360,6 +1359,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5800951802234387907, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: m_Name
+      value: Sara
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800951802234387907, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6793255574757904402, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: m_Name
       value: UI
@@ -1367,6 +1374,10 @@ PrefabInstance:
     - target: {fileID: 6888193781940732507, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842816641541076180, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8089643688689617592, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: dialogos.Array.size
@@ -1392,6 +1403,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 406
       objectReference: {fileID: 0}
+    - target: {fileID: 8262575223664843917, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371590434032095715, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: juan
+      value: 
+      objectReference: {fileID: 1789354389}
+    - target: {fileID: 8371590434032095715, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+      propertyPath: sara
+      value: 
+      objectReference: {fileID: 1789354390}
     - target: {fileID: 8628865342741740340, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 406
@@ -1404,9 +1427,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
---- !u!224 &1789354389 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 712940812112264353, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+--- !u!1 &1789354389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5800951802234387907, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
+  m_PrefabInstance: {fileID: 1789354388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1789354390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8262575223664843917, guid: d11d1c2af79e2a348a0351f293d8c0fc, type: 3}
   m_PrefabInstance: {fileID: 1789354388}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
@@ -1419,3 +1447,4 @@ SceneRoots:
   - {fileID: 1311562841}
   - {fileID: 818059295}
   - {fileID: 35166497}
+  - {fileID: 1789354388}

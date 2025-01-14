@@ -39,6 +39,7 @@ public class DialogManager : MonoBehaviour
     {
         recuadroDeTexto.SetActive(false);
         inDialogue=false;
+        GetComponent<UIManager>().dialogEnd();
         GameManager.Instance.GetComponent<TurnosManager>().CheckIfVictory(); //Esto es para comprobar si se ha acabado el juego para cambiar a la escena final
     }
 

@@ -24,6 +24,9 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private DialogManager _dialogManager;
 
+    [SerializeField] private GameObject sara;
+    [SerializeField] private GameObject juan;
+
     private float _maxFelicidadWidth;
     private float _maxEcosistemaWidth;
     private float _maxFaunaWidth;
@@ -214,11 +217,35 @@ public class UIManager : MonoBehaviour
         if (_gameManager.getTurno() == 0 && !_gameManager.getDialogoInicial())
         {
             _dialogManager.addDialogue(_gameManager.GetDialogos().dialogoInicial);
+            chooseCharacter(0);
             _gameManager.setDialogoInicial();
         }
     }
     public void setVisibleNext()
     {
         _nextTurno.SetActive(true);
+    }
+
+    /// <summary>
+    /// 1 = Sara
+    /// 0 = Juan
+    /// </summary>
+    /// <param name="personaje"></param>
+    public void chooseCharacter(int personaje)
+    {
+        switch (personaje) 
+        { 
+            case 1:
+                sara.SetActive(true);
+                break;
+            case 0:
+                juan.SetActive(true);
+                break;
+        }
+    }
+    public void dialogEnd()
+    {
+        sara.SetActive(false);
+        juan.SetActive(false);
     }
 }
