@@ -244,5 +244,5 @@ public class GameManager : MonoBehaviour
     public void VisibleNextTurno()
     {
         _UIManager.setVisibleNext();
-    }
+    }    
 }

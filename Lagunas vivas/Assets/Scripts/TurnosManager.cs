@@ -6,6 +6,7 @@ public class TurnosManager : MonoBehaviour
 {
     #region recursos
     int TurnoActual;
+    int End = 0; //Variable que tiene que llegar a 5 para pasar a la escena final
     #endregion
 
     #region Prefabs eventos
@@ -183,16 +184,24 @@ public class TurnosManager : MonoBehaviour
 
     public void NextTurn()
     {
+        //if (TurnoActual == 1) TurnoActual = 8;
         TurnoActual++;
 
-        if(TurnoActual >= Constants.NUM_TURNOS_PARA_FIN)
-        {
-            Debug.Log("HAS GANADO :D");
-        }
-        else
-        {
+        if(TurnoActual < Constants.NUM_TURNOS_PARA_FIN)
+        {           
             ResetPrefabs();
             GameManager.Instance.DrawCards();
+        }        
+    }
+    public void CheckIfVictory()
+    {
+        if (TurnoActual >= Constants.NUM_TURNOS_PARA_FIN)
+        {
+            End++;
+            if(End >= 5)
+            {
+                Debug.Log("HAS GANADO :D");
+            }
         }
     }
 }
