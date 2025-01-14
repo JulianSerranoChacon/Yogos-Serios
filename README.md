@@ -431,3 +431,6 @@ Se podría aumentar el presupuesto con el que comienza a los jugadores que elija
   <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura2.png" alt="Eventos" width="300">
   <img src="https://github.com/JulianSerranoChacon/Yogos-Serios/blob/main/Lagunas%20vivas/Assets/WebImages/Captura3.png" alt="Eventos" width="300">
 </div>
+
+## Links Imagenes
+https://docs.google.com/document/d/1_E0izpPoFOREsIvMOwv6_Z0l6qW1lk6TWqx8wiRGDOk/edit?usp=sharing
