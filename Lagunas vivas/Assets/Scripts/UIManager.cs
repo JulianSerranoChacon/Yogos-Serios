@@ -216,8 +216,8 @@ public class UIManager : MonoBehaviour
 
         if (_gameManager.getTurno() == 0 && !_gameManager.getDialogoInicial())
         {
-            _dialogManager.addDialogue(_gameManager.GetDialogos().dialogoInicial);
             chooseCharacter(0);
+            _dialogManager.addDialogue(_gameManager.GetDialogos().dialogoInicial);
             _gameManager.setDialogoInicial();
         }
     }

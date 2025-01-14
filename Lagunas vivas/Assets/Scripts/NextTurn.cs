@@ -20,8 +20,8 @@ public class NextTurn : MonoBehaviour
         gameObject.SetActive(false);
         UIManager uIManager = gM.getUIManager();
         uIManager.ActualizarInterfaz();
-        uIManager.addDialogue(gM.getTurno());
         uIManager.chooseCharacter(1);
+        uIManager.addDialogue(gM.getTurno());
         if(gM.getTurno()%2 == 0)
         {
             uIManager.addDialogue(gM.getRecursoDialogue("Felicidad"));
